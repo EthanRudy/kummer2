@@ -1,0 +1,78 @@
+BODY {
+	FONT-SIZE: 12px; MARGIN: 0px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.bgtop {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND-IMAGE: url(/images/top_bgfill.gif); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; BACKGROUND-REPEAT: repeat-x
+}
+.bgfill2 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND-IMAGE: url(/images/top_bgfill2.gif); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; BACKGROUND-REPEAT: repeat-x
+}
+.bg_bt {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND-IMAGE: url(/images/bgfill_bottom.gif); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; BACKGROUND-REPEAT: repeat-x
+}
+.footer {
+	FONT-SIZE: 11px; COLOR: #9c453a; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+H1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #9b2a29; FONT-FAMILY: Arial, Helvetica, sans-serif; WHITE-SPACE: normal; POSITION: static; TEXT-ALIGN: left
+}
+A {
+	COLOR: #9b2a29; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+A:hover {
+	COLOR: #f5bf05
+}
+.leftspace {
+	PADDING-LEFT: 7px; MARGIN: 0px; PADDING-TOP: 0px
+}
+.leftspacebig {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 12px
+}
+.title {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #9b2a29; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.cs {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #b59b7e; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.copyright {
+	FONT-SIZE: 11px; COLOR: #cccccc; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.border_menu {
+	BORDER-RIGHT: #d3b18b 1px solid; BORDER-TOP: #d3b18b 1px solid; BORDER-LEFT: #d3b18b 1px solid; BORDER-BOTTOM: #d3b18b 1px solid
+}
+.leftspacesm {
+	PADDING-LEFT: 2px; MARGIN: 0px; PADDING-TOP: 0px
+}
+.bottom_line {
+	BORDER-BOTTOM: #d3b18b 1px solid
+}
+.menu {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #9b2a29; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.selected {
+	FONT-WEIGHT: bold; COLOR: #f8bb03
+}
+.formstyle {
+	BORDER-RIGHT: #9b2a29 1px solid; BORDER-TOP: #9b2a29 1px solid; BORDER-LEFT: #9b2a29 1px solid; WIDTH: 200px; BORDER-BOTTOM: #9b2a29 1px solid
+}
+.formstyle_but {
+	BORDER-RIGHT: #9b2a29 1px solid; BORDER-TOP: #9b2a29 1px solid; FONT-WEIGHT: bold; FONT-SIZE: 12px; BORDER-LEFT: #9b2a29 1px solid; WIDTH: 70px; COLOR: #9b2a29; BORDER-BOTTOM: #9b2a29 1px solid; FONT-FAMILY: Arial, Helvetica, sans-serif; HEIGHT: 20px; BACKGROUND-COLOR: #efe6dc
+}
+.navig {
+	PADDING-LEFT: 5px; PADDING-TOP: 10px
+}
+H2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #8b3d32; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+H3 {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.strech {
+	HEIGHT: 12px
+}
+.titlecolor {
+	COLOR: #9b2a29
+}
+.titlelike {
+	FONT-WEIGHT: bold; COLOR: #9b2a29
+}

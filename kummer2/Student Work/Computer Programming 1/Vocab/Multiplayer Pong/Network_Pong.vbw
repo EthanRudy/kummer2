@@ -1,0 +1,5 @@
+frmGameDisplay = 0, 0, 0, 0, C, 66, 87, 665, 543, C
+modDelay = 130, 130, 1045, 552, C
+frmSetup = 0, 0, 0, 0, C, 44, 58, 643, 514, C
+frmWait = 0, 0, 0, 0, C, 22, 29, 621, 485, C
+frmConnecting = 0, 0, 0, 0, C, 88, 116, 687, 572, C

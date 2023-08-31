@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0052)http://www.dcs.napier.ac.uk/hci/VB50/HTML/timer.html -->
+<HTML><HEAD><TITLE>Timing events in Visual Basic</TITLE>
+<META content="text/html; charset=windows-1252" http-equiv=Content-Type>
+<META content="MSHTML 5.00.2314.1000" name=GENERATOR></HEAD>
+<BODY bgColor=#c0c0c0><IMG align=right alt="VB Logo" 
+src="Timing events in Visual Basic_files/vb_logo.gif"> <BR>
+<H1>Timing events in Visual Basic</H1>
+<P><IMG src="Timing events in Visual Basic_files/line_rainbow.gif"></P><BR>
+<P>Visual Basic is not an ideal environment in which to do accurate timing. One 
+thing to make sure of when trying to take measurements, is that <I>no other 
+processes are running</I>. Close down all applications other than your 
+program.</P>
+<P>Visual Basic provides several time-related facilities. If timings accurate to 
+plus or minus 1 second are satisfactory the <TT><B>Timer</B></TT> function can 
+be used. This returns the number of seconds that have elapsed since 12 midnight. 
+Before using this function, check, and if necessary set, the system time on your 
+PC (this is done by typing <TT><B>time</B></TT> at the DOS prompt). If working 
+late at night, remember that your results will be affected if midnight strikes 
+during a timing experiment!</P>
+<P>Below is a simple example of using <TT><B>Timer</B></TT>. The elapsed time 
+since midnight is stored when the start button is clicked and again when the 
+stop button is clicked. Elapsed time between clicking on start and clicking on 
+stop is displayed in the text box. Start and Finish are long (i.e. numeric) 
+private module variables declared in the ‘(General) (Declarations)’ section of a 
+module.</P>
+<TABLE border=0 cellPadding=8>
+  <TBODY>
+  <TR>
+    <TD><IMG src="Timing events in Visual Basic_files/timer_1.gif"></TD>
+    <TD><B><PRE><FONT color=#23238e>Private</FONT> <FONT color=#23238e>start As Long</FONT>
+<FONT color=#23238e>Private</FONT> finish <FONT color=#23238e>As Long</FONT>
+
+<FONT color=#23238e>Private Sub</FONT> cmdStart_Click <FONT color=#23238e>()</FONT>
+  start <FONT color=#23238e>= Timer</FONT>
+<FONT color=#23238e>End Sub</FONT>
+
+<FONT color=#23238e>Private Sub</FONT> cmdStop_Click <FONT color=#23238e>()</FONT>
+  finish <FONT color=#23238e>= Timer</FONT>
+  text1.Text <FONT color=#23238e>=</FONT> finish - start
+<FONT color=#23238e>End Sub</FONT></PRE></B></TD></TR></TBODY></TABLE>
+<P>Sometimes, for example if trying to record mouse selection speeds, intervals 
+of less than one second will occur. These cannot be accurately handled in VB, 
+but a good enough approximation can be obtained using the Timer control, which 
+can be found on the ToolBox - it looks like a stop watch <IMG 
+src="Timing events in Visual Basic_files/timer.gif">.</P>
+<P>Place a <TT><B>Timer control</B></TT> on your form (it will not be visible at 
+run time). Set its interval property to 100 (the interval is measured in 
+milliseconds, so this means than any code behind the timer event will be 
+executed every tenth of second). Below are two screens, the left one shows the 
+Timer control at design time and the right screen shows how the window appears 
+at run time. This program measures the elapsed time in tenths of a second from 
+clicking on the ‘Go’ button to clicking on the rectangle (a PictureBox).</P><IMG 
+src="Timing events in Visual Basic_files/timer_2.gif"> <IMG 
+src="Timing events in Visual Basic_files/timer_3.gif"> <B><PRE><FONT color=#23238e>Private</FONT> elapsed <FONT color=#23238e>As Long</FONT>      <FONT color=green>' Private module variable</FONT>
+
+<FONT color=#23238e>Private Sub</FONT> cmdGo_Click <FONT color=#23238e>()</FONT>
+  elapsed <FONT color=#23238e>=</FONT> 0
+  timer1.Enabled <FONT color=#23238e>= True</FONT>
+<FONT color=#23238e>End Sub
+
+Private Sub</FONT> Timer1_Timer <FONT color=#23238e>()</FONT>
+  elapsed <FONT color=#23238e>=</FONT> elapsed + 1
+<FONT color=#23238e>End Sub
+
+Private Sub</FONT> Picture1_Click <FONT color=#23238e>()</FONT>
+  timer1.Enabled <FONT color=#23238e>= False</FONT>
+  text1.Text <FONT color=#23238e>=</FONT> elapsed
+<FONT color=#23238e>End Sub</FONT>
+</PRE></B>
+<P>The timer control is particularly useful when you want to do time-related 
+things that do not require absolute precision. For example, in a public 
+walk-up-and-use system you might want to trigger automatically back to the 
+welcome screen if there has been no interaction for about 2 minutes. In a 
+computer-based learning program you might want to offer some sort of help if a 
+user has been looking at a self-assessment question for some time, but has made 
+no response. In interactive games, timers are used to selectively change aspects 
+of the screen, for example to maintain an illusion of animation in a ‘living’ 
+book.</P><BR>
+<HR noShade SIZE=1>
+<BR><A href="http://www.dcs.napier.ac.uk/hci/VB50/home.html"><IMG align=middle 
+border=0 src="Timing events in Visual Basic_files/left.gif"> 
+Menu</A><BR></BODY></HTML>

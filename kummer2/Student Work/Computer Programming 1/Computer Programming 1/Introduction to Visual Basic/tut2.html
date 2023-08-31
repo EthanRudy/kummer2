@@ -1,0 +1,97 @@
+<HTML>
+
+<HEAD>
+<TITLE>Tutorial 2</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#C0C0C0">
+<IMG ALIGN=RIGHT SRC="kprog copy.gif">
+<BR>
+<H1>Tutorial: Understanding Events</H1>
+<P><img src="commline.gif"></P>
+
+<BR>
+<P><B>The objective of this tutorial is to become familiar with what Events are and how they can be used. At the end of this tutorial you should be able to:</B></P>
+
+<UL>
+<LI><P>Know what an Event is.</P>
+<LI><P>Determine what Events a control can have.</P>
+<LI><P>Write code for one or more Events.</P>
+</UL>
+
+<HR NOSHADE SIZE="1">
+<H2><I>Introduction</I></H2>
+
+<P>The &#145;look&#146; of a Visual Basic application is determined by what controls are used, but the &#145;feel&#146; is determined by the events. An event is something which can happen to a control. For example, a user can click on a button, change a text box, or resize a form. As explained in <A HREF="create_app.html">Creating a Visual Basic Application</A>, writing a program is made up of three events: 1) select suitable controls, 2) set the properties, and 3) write the code. It is at the code writing stage when it become important to choose appropriate events for each control. To do this double click on the control the event will be used for or click on the <IMG SRC="view_code.gif"> icon in the project window (usually top right of screen). A code window should now be displayed similar to the one shown below.</P>
+
+<P><DIV ALIGN="CENTER"><IMG SRC="tut_1_1.gif"></DIV></P>
+
+<P>The left hand dropdown box provides a list of all controls used by the current form, the form itself, and a special section called General Declarations. The corresponding dropdown box on the right displays a list of all events applicable to the current control (as specified by the left hand dropdown box). Events displayed in bold signify that code has already been written for them, unbold events are unused.</P>
+
+<P>To demonstrate that different events can play a significant role in determining the feel of an application, a small example program will be written to add two numbers together and display the answer. The first solution to this problem will use the <B><TT>click</TT></B> event of a command button, while the second will the <B><TT>change</TT></B> event of two text boxes.</P>
+
+<HR NOSHADE SIZE="1">
+<H2><I>Solution #1 - &#145;Click&#146; event</I></H2>
+
+<P>Before any events can be coded it is necessary to design the interface from suitable controls. As shown in the screen shot below use: 2 text boxes to enter the numbers, a label for the &#145;+&#146; sign, a command button for the &#145;=&#146; sign, and another label for the answer.</P>
+
+<P><B>Note:</B> Labels are used for the equals sign and the answer so that the user cannot alter them. Text boxes are alright for the two numbers because the user is required to change these.</P>
+
+<P><DIV ALIGN="CENTER"><IMG SRC="tut_1_2.gif"></DIV></P>
+
+<P>Now that the user interface has been complete, double click on the command button to bring up a code window. Before writing any code check that the event is set to &#145;Click&#146;. It should already be set because this is the default event of a command button. Next, write the code to add the two numbers together and display it in the answer label. For those just beginning VB the code should look like:</P>
+
+<B><PRE>  <FONT COLOR="#23238E">Private Sub</FONT> cmdEquals_Click()
+    lblAnswer.Caption = Str$(Val(txtNumber1.Text) + Val(txtNumber2.Text))
+  <FONT COLOR="#23238E">End Sub</FONT>
+</PRE></B>
+
+<P>Run the program, enter a number into each text box and then click on the equals button.</P>
+
+<HR NOSHADE SIZE="1">
+<H2><I>Solution #2 - &#145;Change&#146; event</I></H2>
+
+<P>In the first example the user has to enter two numbers and then explicitly click on the equals button to produce an answer. However, the program can be changed so that the answer will be calculated every time either of the two numbers are changed without requiring an equals button.</P>
+
+<P>To do this first remove the equals command button and replace it with a label with the caption set to &#145;=&#146;. Now, bring up a code window and copy to the Windows clipboard the line <B><TT>lblAnswer = Str$(Val(txtNumber1.Text) + Val(txtNumber2.Text))</TT></B>. Using the left hand dropdown box select the first text box and then select the <B><TT>Change</TT></B> event from the right dropdown box. Then paste the code from the clipboard into the empty subroutine. Select the second text box and do the same. The same line is required twice because the two click events belong to two separate controls. The final code should look like:</P>
+
+<B><PRE>  <FONT COLOR="#23238E">Private Sub</FONT> txtNumber1_Change()
+    lblAnswer.Caption = Str$(Val(txtNumber1.Text) + Val(txtNumber2.Text))
+  <FONT COLOR="#23238E">End Sub</FONT>
+
+  <FONT COLOR="#23238E">Private Sub</FONT> txtNumber2_Change()
+    lblAnswer.Caption = Str$(Val(txtNumber1.Text) + Val(txtNumber2.Text))
+  <FONT COLOR="#23238E">End Sub</FONT>
+</PRE></B>
+
+<P>Run the program again, enter the two numbers and observe what happens. Each time a digit changes the answer is recalculated.</P>
+
+<P><B>Note:</B> There may be times when recalculating more advanced problems takes too long on each change and so requiring the user to enter all the data first and then click on an answer button might more appropriate.</P>
+
+<HR NOSHADE SIZE="1">
+<H2><I>Adding a &#145;GotFocus&#146; event</I></H2>
+
+<P>So far only one event has been used per control, however this does not have to be the case! Add a StatusBar control to the bottom of the form, bring up the code window using <IMG SRC="view_code.gif">, select the first text box (txtNumber1) from the left hand dropdown box, and then select the <TT><B>GotFocus</B></TT> event from the right hand dropdown box. Now some basic instructions can be written in the status bar so that when the cursor is in the text box (the text box has focus) the status bar reads &#147;Enter the first number&#148;. After completing this change to the second text box and using the same GotFocus event change the statusbar text to &#147;Enter a second number&#148;. The code to set the status bar can be seen below.</P>
+
+<B><PRE>  <FONT COLOR="#23238E">Private Sub</FONT> txtNumber1_GotFocus()
+    StatusBar.Panels(1).Text = "Enter the first number"
+  <FONT COLOR="#23238E">End Sub</FONT>
+
+  <FONT COLOR="#23238E">Private Sub</FONT> txtNumber2_GotFocus()
+    StatusBar.Panels(1).Text = "Enter a second number"
+  <FONT COLOR="#23238E">End Sub</FONT>
+</PRE></B>
+
+<P>The completed program should now have two text boxes which recalculate an answer using a <TT><B>Change</B></TT> event and update the statusbar when they receive a <TT><B>GotFocus</B></TT> event.</P>
+
+<HR NOSHADE SIZE="1">
+<BR>
+<A HREF="tut1.html"><img border=0 align="middle" src="up.gif">
+Tutorial 1</A> (Exploring the Visual Basic Environment)<BR>
+<A HREF="dvbhome.html"><img border=0 align="middle" src="left.gif">
+Menu</A><BR>
+<A HREF="tut3.html"><img border=0 align="middle" src="down.gif">
+Tutorial 3</A> (Command Buttons, Option Buttons and Check Boxes)<BR>
+
+</BODY>
+</HTML>

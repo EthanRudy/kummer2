@@ -1,0 +1,2395 @@
+From: <Saved by Windows Internet Explorer 8>
+Subject: CMIS 142 Syllabus - Visual Basic.NET Programming
+Date: Mon, 5 Dec 2011 14:07:43 -0500
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_0028_01CCB357.4209B1C0"
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.6090
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0028_01CCB357.4209B1C0
+Content-Type: text/html;
+	charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.siue.edu/~dbock/cmis142/cmis142.htm
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML xmlns=3D"http://www.w3.org/TR/REC-html40" xmlns:v =3D=20
+"urn:schemas-microsoft-com:vml" xmlns:o =3D=20
+"urn:schemas-microsoft-com:office:office" xmlns:w =3D=20
+"urn:schemas-microsoft-com:office:word" xmlns:m =3D=20
+"http://schemas.microsoft.com/office/2004/12/omml" xmlns:st1 =3D=20
+"urn:schemas-microsoft-com:office:smarttags"><HEAD><TITLE>CMIS 142 =
+Syllabus - Visual Basic.NET Programming</TITLE>
+<META content=3D"text/html; charset=3Dwindows-1252" =
+http-equiv=3DContent-Type>
+<META name=3DProgId content=3DWord.Document>
+<META name=3DGENERATOR content=3D"MSHTML 8.00.6001.19019">
+<META name=3DOriginator content=3D"Microsoft Word 12"><LINK =
+rel=3DFile-List=20
+href=3D"cmis142_files/filelist.xml"><LINK rel=3DEdit-Time-Data=20
+href=3D"cmis142_files/editdata.mso"><!--[if !mso]>
+<STYLE>v\:* {
+	BEHAVIOR: url(#default#VML)
+}
+o\:* {
+	BEHAVIOR: url(#default#VML)
+}
+w\:* {
+	BEHAVIOR: url(#default#VML)
+}
+.shape {
+	BEHAVIOR: url(#default#VML)
+}
+</STYLE>
+<![endif]--><o:SmartTagType name=3D"PersonName"=20
+namespaceuri=3D"urn:schemas-microsoft-com:office:smarttags"></o:SmartTagT=
+ype><!--[if gte mso 9]><xml>=0A=
+ <o:DocumentProperties>=0A=
+  <o:Author>D Bock</o:Author>=0A=
+  <o:Template>Normal</o:Template>=0A=
+  <o:LastAuthor>DBOCK</o:LastAuthor>=0A=
+  <o:Revision>6</o:Revision>=0A=
+  <o:TotalTime>639</o:TotalTime>=0A=
+  <o:LastPrinted>2005-08-15T17:08:00Z</o:LastPrinted>=0A=
+  <o:Created>2010-11-15T14:30:00Z</o:Created>=0A=
+  <o:LastSaved>2011-06-22T21:57:00Z</o:LastSaved>=0A=
+  <o:Pages>3</o:Pages>=0A=
+  <o:Words>1904</o:Words>=0A=
+  <o:Characters>10853</o:Characters>=0A=
+  <o:Company>CMIS Dept SIUE</o:Company>=0A=
+  <o:Lines>90</o:Lines>=0A=
+  <o:Paragraphs>25</o:Paragraphs>=0A=
+  <o:CharactersWithSpaces>12732</o:CharactersWithSpaces>=0A=
+  <o:Version>12.00</o:Version>=0A=
+ </o:DocumentProperties>=0A=
+</xml><![endif]--><LINK=20
+rel=3DthemeData href=3D"cmis142_files/themedata.thmx"><LINK =
+rel=3DcolorSchemeMapping=20
+href=3D"cmis142_files/colorschememapping.xml"><!--[if gte mso 9]><xml>=0A=
+ <w:WordDocument>=0A=
+  <w:Zoom>BestFit</w:Zoom>=0A=
+  <w:TrackMoves>false</w:TrackMoves>=0A=
+  <w:TrackFormatting/>=0A=
+  <w:ValidateAgainstSchemas/>=0A=
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>=0A=
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>=0A=
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>=0A=
+  <w:DoNotPromoteQF/>=0A=
+  <w:LidThemeOther>EN-US</w:LidThemeOther>=0A=
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>=0A=
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>=0A=
+  <w:Compatibility>=0A=
+   <w:BreakWrappedTables/>=0A=
+   <w:SnapToGridInCell/>=0A=
+   <w:WrapTextWithPunct/>=0A=
+   <w:UseAsianBreakRules/>=0A=
+   <w:DontGrowAutofit/>=0A=
+   <w:SplitPgBreakAndParaMark/>=0A=
+   <w:DontVertAlignCellWithSp/>=0A=
+   <w:DontBreakConstrainedForcedTables/>=0A=
+   <w:DontVertAlignInTxbx/>=0A=
+   <w:Word11KerningPairs/>=0A=
+   <w:CachedColBalance/>=0A=
+  </w:Compatibility>=0A=
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>=0A=
+  <m:mathPr>=0A=
+   <m:mathFont m:val=3D"Cambria Math"/>=0A=
+   <m:brkBin m:val=3D"before"/>=0A=
+   <m:brkBinSub m:val=3D"&#45;-"/>=0A=
+   <m:smallFrac m:val=3D"off"/>=0A=
+   <m:dispDef/>=0A=
+   <m:lMargin m:val=3D"0"/>=0A=
+   <m:rMargin m:val=3D"0"/>=0A=
+   <m:defJc m:val=3D"centerGroup"/>=0A=
+   <m:wrapIndent m:val=3D"1440"/>=0A=
+   <m:intLim m:val=3D"subSup"/>=0A=
+   <m:naryLim m:val=3D"undOvr"/>=0A=
+  </m:mathPr>  <u1:mathPr>=0A=
+   <u1:mathFont u1:val=3D"Cambria Math"/>=0A=
+   <u1:brkBin u1:val=3D"before"/>=0A=
+   <u1:brkBinSub u1:val=3D"--"/>=0A=
+   <u1:smallFrac u1:val=3D"off"/>=0A=
+   <u1:dispDef/>=0A=
+   <u1:lMargin u1:val=3D"0"/>=0A=
+   <u1:rMargin u1:val=3D"0"/>=0A=
+   <u1:defJc u1:val=3D"centerGroup"/>=0A=
+   <u1:wrapIndent u1:val=3D"1440"/>=0A=
+   <u1:intLim u1:val=3D"subSup"/>=0A=
+   <u1:naryLim u1:val=3D"undOvr"/>=0A=
+  </u1:mathPr>=0A=
+ </w:WordDocument>=0A=
+</xml><![endif]--><!--[if gte mso 9]><xml>=0A=
+ <w:LatentStyles DefLockedState=3D"false" DefUnhideWhenUsed=3D"false"=0A=
+  DefSemiHidden=3D"false" DefQFormat=3D"false" LatentStyleCount=3D"267">=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"99" Name=3D"header"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"99" Name=3D"footer"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"99" Name=3D"page number"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"1" Name=3D"Default =
+Paragraph Font"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"99" Name=3D"Normal =
+(Web)"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"99" Name=3D"No List"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"99" SemiHidden=3D"true"=0A=
+   Name=3D"Placeholder Text"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"1" QFormat=3D"true" =
+Name=3D"No Spacing"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"60" Name=3D"Light =
+Shading"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"61" Name=3D"Light List"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"62" Name=3D"Light Grid"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"63" Name=3D"Medium =
+Shading 1"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"64" Name=3D"Medium =
+Shading 2"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"65" Name=3D"Medium List =
+1"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"66" Name=3D"Medium List =
+2"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"67" Name=3D"Medium Grid =
+1"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"68" Name=3D"Medium Grid =
+2"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"69" Name=3D"Medium Grid =
+3"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"70" Name=3D"Dark List"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"71" Name=3D"Colorful =
+Shading"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"72" Name=3D"Colorful =
+List"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"73" Name=3D"Colorful =
+Grid"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"60" Name=3D"Light Shading =
+Accent 1"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"61" Name=3D"Light List =
+Accent 1"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"62" Name=3D"Light Grid =
+Accent 1"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"63" Name=3D"Medium =
+Shading 1 Accent 1"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"64" Name=3D"Medium =
+Shading 2 Accent 1"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"65" Name=3D"Medium List 1 =
+Accent 1"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"99" SemiHidden=3D"true" =
+Name=3D"Revision"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"34" QFormat=3D"true"=0A=
+   Name=3D"List Paragraph"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"29" QFormat=3D"true" =
+Name=3D"Quote"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"30" QFormat=3D"true"=0A=
+   Name=3D"Intense Quote"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"66" Name=3D"Medium List 2 =
+Accent 1"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"67" Name=3D"Medium Grid 1 =
+Accent 1"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"68" Name=3D"Medium Grid 2 =
+Accent 1"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"69" Name=3D"Medium Grid 3 =
+Accent 1"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"70" Name=3D"Dark List =
+Accent 1"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"71" Name=3D"Colorful =
+Shading Accent 1"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"72" Name=3D"Colorful List =
+Accent 1"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"73" Name=3D"Colorful Grid =
+Accent 1"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"60" Name=3D"Light Shading =
+Accent 2"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"61" Name=3D"Light List =
+Accent 2"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"62" Name=3D"Light Grid =
+Accent 2"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"63" Name=3D"Medium =
+Shading 1 Accent 2"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"64" Name=3D"Medium =
+Shading 2 Accent 2"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"65" Name=3D"Medium List 1 =
+Accent 2"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"66" Name=3D"Medium List 2 =
+Accent 2"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"67" Name=3D"Medium Grid 1 =
+Accent 2"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"68" Name=3D"Medium Grid 2 =
+Accent 2"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"69" Name=3D"Medium Grid 3 =
+Accent 2"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"70" Name=3D"Dark List =
+Accent 2"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"71" Name=3D"Colorful =
+Shading Accent 2"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"72" Name=3D"Colorful List =
+Accent 2"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"73" Name=3D"Colorful Grid =
+Accent 2"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"60" Name=3D"Light Shading =
+Accent 3"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"61" Name=3D"Light List =
+Accent 3"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"62" Name=3D"Light Grid =
+Accent 3"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"63" Name=3D"Medium =
+Shading 1 Accent 3"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"64" Name=3D"Medium =
+Shading 2 Accent 3"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"65" Name=3D"Medium List 1 =
+Accent 3"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"66" Name=3D"Medium List 2 =
+Accent 3"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"67" Name=3D"Medium Grid 1 =
+Accent 3"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"68" Name=3D"Medium Grid 2 =
+Accent 3"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"69" Name=3D"Medium Grid 3 =
+Accent 3"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"70" Name=3D"Dark List =
+Accent 3"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"71" Name=3D"Colorful =
+Shading Accent 3"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"72" Name=3D"Colorful List =
+Accent 3"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"73" Name=3D"Colorful Grid =
+Accent 3"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"60" Name=3D"Light Shading =
+Accent 4"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"61" Name=3D"Light List =
+Accent 4"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"62" Name=3D"Light Grid =
+Accent 4"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"63" Name=3D"Medium =
+Shading 1 Accent 4"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"64" Name=3D"Medium =
+Shading 2 Accent 4"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"65" Name=3D"Medium List 1 =
+Accent 4"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"66" Name=3D"Medium List 2 =
+Accent 4"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"67" Name=3D"Medium Grid 1 =
+Accent 4"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"68" Name=3D"Medium Grid 2 =
+Accent 4"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"69" Name=3D"Medium Grid 3 =
+Accent 4"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"70" Name=3D"Dark List =
+Accent 4"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"71" Name=3D"Colorful =
+Shading Accent 4"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"72" Name=3D"Colorful List =
+Accent 4"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"73" Name=3D"Colorful Grid =
+Accent 4"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"60" Name=3D"Light Shading =
+Accent 5"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"61" Name=3D"Light List =
+Accent 5"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"62" Name=3D"Light Grid =
+Accent 5"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"63" Name=3D"Medium =
+Shading 1 Accent 5"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"64" Name=3D"Medium =
+Shading 2 Accent 5"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"65" Name=3D"Medium List 1 =
+Accent 5"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"66" Name=3D"Medium List 2 =
+Accent 5"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"67" Name=3D"Medium Grid 1 =
+Accent 5"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"68" Name=3D"Medium Grid 2 =
+Accent 5"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"69" Name=3D"Medium Grid 3 =
+Accent 5"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"70" Name=3D"Dark List =
+Accent 5"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"71" Name=3D"Colorful =
+Shading Accent 5"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"72" Name=3D"Colorful List =
+Accent 5"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"73" Name=3D"Colorful Grid =
+Accent 5"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"60" Name=3D"Light Shading =
+Accent 6"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"61" Name=3D"Light List =
+Accent 6"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"62" Name=3D"Light Grid =
+Accent 6"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"63" Name=3D"Medium =
+Shading 1 Accent 6"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"64" Name=3D"Medium =
+Shading 2 Accent 6"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"65" Name=3D"Medium List 1 =
+Accent 6"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"66" Name=3D"Medium List 2 =
+Accent 6"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"67" Name=3D"Medium Grid 1 =
+Accent 6"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"68" Name=3D"Medium Grid 2 =
+Accent 6"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"69" Name=3D"Medium Grid 3 =
+Accent 6"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"70" Name=3D"Dark List =
+Accent 6"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"71" Name=3D"Colorful =
+Shading Accent 6"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"72" Name=3D"Colorful List =
+Accent 6"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"73" Name=3D"Colorful Grid =
+Accent 6"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"19" QFormat=3D"true"=0A=
+   Name=3D"Subtle Emphasis"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"21" QFormat=3D"true"=0A=
+   Name=3D"Intense Emphasis"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"31" QFormat=3D"true"=0A=
+   Name=3D"Subtle Reference"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"32" QFormat=3D"true"=0A=
+   Name=3D"Intense Reference"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"33" QFormat=3D"true" =
+Name=3D"Book Title"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"37" SemiHidden=3D"true"=0A=
+   UnhideWhenUsed=3D"true" Name=3D"Bibliography"/>=0A=
+  <w:LsdException Locked=3D"false" Priority=3D"39" SemiHidden=3D"true"=0A=
+   UnhideWhenUsed=3D"true" QFormat=3D"true" Name=3D"TOC Heading"/>=0A=
+ </w:LatentStyles>=0A=
+</xml><![endif]--><!--[if !mso]>
+<OBJECT id=3Dieooui =
+classid=3Dclsid:38481807-CA0E-42D2-BF39-B33AF135CC4D></OBJECT>
+<STYLE>st1\:* {
+	BEHAVIOR: url(#ieooui)
+}
+</STYLE>
+<![endif]-->
+<STYLE>@font-face {
+	font-family: Wingdings;
+}
+@font-face {
+	font-family: Cambria Math;
+}
+@font-face {
+	font-family: Verdana;
+}
+@page  {mso-footnote-separator: url("cmis142_files/header.htm") fs; =
+mso-footnote-continuation-separator: url("cmis142_files/header.htm") =
+fcs; mso-endnote-separator: url("cmis142_files/header.htm") es; =
+mso-endnote-continuation-separator: url("cmis142_files/header.htm") ecs; =
+}
+@page WordSection1 {size: 8.5in 11.0in; margin: .8in .7in .9in .9in; =
+mso-header-margin: .5in; mso-footer-margin: .5in; mso-even-header: =
+url("cmis142_files/header.htm") eh1; mso-header: =
+url("cmis142_files/header.htm") h1; mso-even-footer: =
+url("cmis142_files/header.htm") ef1; mso-footer: =
+url("cmis142_files/header.htm") f1; mso-first-header: =
+url("cmis142_files/header.htm") fh1; mso-first-footer: =
+url("cmis142_files/header.htm") ff1; mso-paper-source: 0; }
+P.MsoNormal {
+	TEXT-ALIGN: justify; LINE-HEIGHT: 18pt; MARGIN: 0in 0in 0pt; =
+FONT-FAMILY: "Arial","sans-serif"; FONT-SIZE: 10pt; mso-style-unhide: =
+no; mso-style-qformat: yes; mso-style-parent: ""; mso-pagination: none; =
+mso-layout-grid-align: none; mso-bidi-font-size: 12.0pt; =
+mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times =
+New Roman"
+}
+LI.MsoNormal {
+	TEXT-ALIGN: justify; LINE-HEIGHT: 18pt; MARGIN: 0in 0in 0pt; =
+FONT-FAMILY: "Arial","sans-serif"; FONT-SIZE: 10pt; mso-style-unhide: =
+no; mso-style-qformat: yes; mso-style-parent: ""; mso-pagination: none; =
+mso-layout-grid-align: none; mso-bidi-font-size: 12.0pt; =
+mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times =
+New Roman"
+}
+DIV.MsoNormal {
+	TEXT-ALIGN: justify; LINE-HEIGHT: 18pt; MARGIN: 0in 0in 0pt; =
+FONT-FAMILY: "Arial","sans-serif"; FONT-SIZE: 10pt; mso-style-unhide: =
+no; mso-style-qformat: yes; mso-style-parent: ""; mso-pagination: none; =
+mso-layout-grid-align: none; mso-bidi-font-size: 12.0pt; =
+mso-fareast-font-family: "Times New Roman"; mso-bidi-font-family: "Times =
+New Roman"
+}
+P.MsoHeader {
+	TEXT-ALIGN: justify; LINE-HEIGHT: 18pt; MARGIN: 0in 0in 0pt; =
+FONT-FAMILY: "Arial","sans-serif"; FONT-SIZE: 10pt; mso-style-unhide: =
+no; mso-pagination: none; mso-layout-grid-align: none; =
+mso-bidi-font-size: 12.0pt; mso-fareast-font-family: "Times New Roman"; =
+mso-bidi-font-family: "Times New Roman"; mso-style-priority: 99; =
+mso-style-link: "Header Char"; tab-stops: center 3.0in right 6.0in
+}
+LI.MsoHeader {
+	TEXT-ALIGN: justify; LINE-HEIGHT: 18pt; MARGIN: 0in 0in 0pt; =
+FONT-FAMILY: "Arial","sans-serif"; FONT-SIZE: 10pt; mso-style-unhide: =
+no; mso-pagination: none; mso-layout-grid-align: none; =
+mso-bidi-font-size: 12.0pt; mso-fareast-font-family: "Times New Roman"; =
+mso-bidi-font-family: "Times New Roman"; mso-style-priority: 99; =
+mso-style-link: "Header Char"; tab-stops: center 3.0in right 6.0in
+}
+DIV.MsoHeader {
+	TEXT-ALIGN: justify; LINE-HEIGHT: 18pt; MARGIN: 0in 0in 0pt; =
+FONT-FAMILY: "Arial","sans-serif"; FONT-SIZE: 10pt; mso-style-unhide: =
+no; mso-pagination: none; mso-layout-grid-align: none; =
+mso-bidi-font-size: 12.0pt; mso-fareast-font-family: "Times New Roman"; =
+mso-bidi-font-family: "Times New Roman"; mso-style-priority: 99; =
+mso-style-link: "Header Char"; tab-stops: center 3.0in right 6.0in
+}
+P.MsoFooter {
+	TEXT-ALIGN: justify; LINE-HEIGHT: 18pt; MARGIN: 0in 0in 0pt; =
+FONT-FAMILY: "Arial","sans-serif"; FONT-SIZE: 10pt; mso-style-unhide: =
+no; mso-pagination: none; mso-layout-grid-align: none; =
+mso-bidi-font-size: 12.0pt; mso-fareast-font-family: "Times New Roman"; =
+mso-bidi-font-family: "Times New Roman"; mso-style-priority: 99; =
+mso-style-link: "Footer Char"; tab-stops: center 3.0in right 6.0in
+}
+LI.MsoFooter {
+	TEXT-ALIGN: justify; LINE-HEIGHT: 18pt; MARGIN: 0in 0in 0pt; =
+FONT-FAMILY: "Arial","sans-serif"; FONT-SIZE: 10pt; mso-style-unhide: =
+no; mso-pagination: none; mso-layout-grid-align: none; =
+mso-bidi-font-size: 12.0pt; mso-fareast-font-family: "Times New Roman"; =
+mso-bidi-font-family: "Times New Roman"; mso-style-priority: 99; =
+mso-style-link: "Footer Char"; tab-stops: center 3.0in right 6.0in
+}
+DIV.MsoFooter {
+	TEXT-ALIGN: justify; LINE-HEIGHT: 18pt; MARGIN: 0in 0in 0pt; =
+FONT-FAMILY: "Arial","sans-serif"; FONT-SIZE: 10pt; mso-style-unhide: =
+no; mso-pagination: none; mso-layout-grid-align: none; =
+mso-bidi-font-size: 12.0pt; mso-fareast-font-family: "Times New Roman"; =
+mso-bidi-font-family: "Times New Roman"; mso-style-priority: 99; =
+mso-style-link: "Footer Char"; tab-stops: center 3.0in right 6.0in
+}
+A:link {
+	COLOR: blue; TEXT-DECORATION: underline; mso-style-unhide: no; =
+text-underline: single
+}
+SPAN.MsoHyperlink {
+	COLOR: blue; TEXT-DECORATION: underline; mso-style-unhide: no; =
+text-underline: single
+}
+A:visited {
+	COLOR: blue; TEXT-DECORATION: underline; mso-style-unhide: no; =
+text-underline: single
+}
+SPAN.MsoHyperlinkFollowed {
+	COLOR: blue; TEXT-DECORATION: underline; mso-style-unhide: no; =
+text-underline: single
+}
+P {
+	TEXT-ALIGN: justify; LINE-HEIGHT: 18pt; FONT-FAMILY: =
+"Arial","sans-serif"; MARGIN-LEFT: 0in; FONT-SIZE: 10pt; MARGIN-RIGHT: =
+0in; mso-style-unhide: no; mso-pagination: none; mso-layout-grid-align: =
+none; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: "Times New =
+Roman"; mso-bidi-font-family: "Times New Roman"; mso-style-priority: 99; =
+mso-margin-top-alt: auto; mso-margin-bottom-alt: auto
+}
+P.MsoListParagraph {
+	TEXT-ALIGN: justify; LINE-HEIGHT: 18pt; MARGIN: 0in 0in 0pt 0.5in; =
+FONT-FAMILY: "Arial","sans-serif"; FONT-SIZE: 10pt; mso-style-unhide: =
+no; mso-style-qformat: yes; mso-pagination: none; mso-layout-grid-align: =
+none; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: "Times New =
+Roman"; mso-bidi-font-family: "Times New Roman"; mso-style-priority: 34; =
+mso-add-space: auto
+}
+LI.MsoListParagraph {
+	TEXT-ALIGN: justify; LINE-HEIGHT: 18pt; MARGIN: 0in 0in 0pt 0.5in; =
+FONT-FAMILY: "Arial","sans-serif"; FONT-SIZE: 10pt; mso-style-unhide: =
+no; mso-style-qformat: yes; mso-pagination: none; mso-layout-grid-align: =
+none; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: "Times New =
+Roman"; mso-bidi-font-family: "Times New Roman"; mso-style-priority: 34; =
+mso-add-space: auto
+}
+DIV.MsoListParagraph {
+	TEXT-ALIGN: justify; LINE-HEIGHT: 18pt; MARGIN: 0in 0in 0pt 0.5in; =
+FONT-FAMILY: "Arial","sans-serif"; FONT-SIZE: 10pt; mso-style-unhide: =
+no; mso-style-qformat: yes; mso-pagination: none; mso-layout-grid-align: =
+none; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: "Times New =
+Roman"; mso-bidi-font-family: "Times New Roman"; mso-style-priority: 34; =
+mso-add-space: auto
+}
+P.MsoListParagraphCxSpFirst {
+	TEXT-ALIGN: justify; LINE-HEIGHT: 18pt; MARGIN: 0in 0in 0pt 0.5in; =
+FONT-FAMILY: "Arial","sans-serif"; FONT-SIZE: 10pt; mso-style-unhide: =
+no; mso-style-qformat: yes; mso-pagination: none; mso-layout-grid-align: =
+none; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: "Times New =
+Roman"; mso-bidi-font-family: "Times New Roman"; mso-style-priority: 34; =
+mso-add-space: auto; mso-style-type: export-only
+}
+LI.MsoListParagraphCxSpFirst {
+	TEXT-ALIGN: justify; LINE-HEIGHT: 18pt; MARGIN: 0in 0in 0pt 0.5in; =
+FONT-FAMILY: "Arial","sans-serif"; FONT-SIZE: 10pt; mso-style-unhide: =
+no; mso-style-qformat: yes; mso-pagination: none; mso-layout-grid-align: =
+none; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: "Times New =
+Roman"; mso-bidi-font-family: "Times New Roman"; mso-style-priority: 34; =
+mso-add-space: auto; mso-style-type: export-only
+}
+DIV.MsoListParagraphCxSpFirst {
+	TEXT-ALIGN: justify; LINE-HEIGHT: 18pt; MARGIN: 0in 0in 0pt 0.5in; =
+FONT-FAMILY: "Arial","sans-serif"; FONT-SIZE: 10pt; mso-style-unhide: =
+no; mso-style-qformat: yes; mso-pagination: none; mso-layout-grid-align: =
+none; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: "Times New =
+Roman"; mso-bidi-font-family: "Times New Roman"; mso-style-priority: 34; =
+mso-add-space: auto; mso-style-type: export-only
+}
+P.MsoListParagraphCxSpMiddle {
+	TEXT-ALIGN: justify; LINE-HEIGHT: 18pt; MARGIN: 0in 0in 0pt 0.5in; =
+FONT-FAMILY: "Arial","sans-serif"; FONT-SIZE: 10pt; mso-style-unhide: =
+no; mso-style-qformat: yes; mso-pagination: none; mso-layout-grid-align: =
+none; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: "Times New =
+Roman"; mso-bidi-font-family: "Times New Roman"; mso-style-priority: 34; =
+mso-add-space: auto; mso-style-type: export-only
+}
+LI.MsoListParagraphCxSpMiddle {
+	TEXT-ALIGN: justify; LINE-HEIGHT: 18pt; MARGIN: 0in 0in 0pt 0.5in; =
+FONT-FAMILY: "Arial","sans-serif"; FONT-SIZE: 10pt; mso-style-unhide: =
+no; mso-style-qformat: yes; mso-pagination: none; mso-layout-grid-align: =
+none; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: "Times New =
+Roman"; mso-bidi-font-family: "Times New Roman"; mso-style-priority: 34; =
+mso-add-space: auto; mso-style-type: export-only
+}
+DIV.MsoListParagraphCxSpMiddle {
+	TEXT-ALIGN: justify; LINE-HEIGHT: 18pt; MARGIN: 0in 0in 0pt 0.5in; =
+FONT-FAMILY: "Arial","sans-serif"; FONT-SIZE: 10pt; mso-style-unhide: =
+no; mso-style-qformat: yes; mso-pagination: none; mso-layout-grid-align: =
+none; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: "Times New =
+Roman"; mso-bidi-font-family: "Times New Roman"; mso-style-priority: 34; =
+mso-add-space: auto; mso-style-type: export-only
+}
+P.MsoListParagraphCxSpLast {
+	TEXT-ALIGN: justify; LINE-HEIGHT: 18pt; MARGIN: 0in 0in 0pt 0.5in; =
+FONT-FAMILY: "Arial","sans-serif"; FONT-SIZE: 10pt; mso-style-unhide: =
+no; mso-style-qformat: yes; mso-pagination: none; mso-layout-grid-align: =
+none; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: "Times New =
+Roman"; mso-bidi-font-family: "Times New Roman"; mso-style-priority: 34; =
+mso-add-space: auto; mso-style-type: export-only
+}
+LI.MsoListParagraphCxSpLast {
+	TEXT-ALIGN: justify; LINE-HEIGHT: 18pt; MARGIN: 0in 0in 0pt 0.5in; =
+FONT-FAMILY: "Arial","sans-serif"; FONT-SIZE: 10pt; mso-style-unhide: =
+no; mso-style-qformat: yes; mso-pagination: none; mso-layout-grid-align: =
+none; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: "Times New =
+Roman"; mso-bidi-font-family: "Times New Roman"; mso-style-priority: 34; =
+mso-add-space: auto; mso-style-type: export-only
+}
+DIV.MsoListParagraphCxSpLast {
+	TEXT-ALIGN: justify; LINE-HEIGHT: 18pt; MARGIN: 0in 0in 0pt 0.5in; =
+FONT-FAMILY: "Arial","sans-serif"; FONT-SIZE: 10pt; mso-style-unhide: =
+no; mso-style-qformat: yes; mso-pagination: none; mso-layout-grid-align: =
+none; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: "Times New =
+Roman"; mso-bidi-font-family: "Times New Roman"; mso-style-priority: 34; =
+mso-add-space: auto; mso-style-type: export-only
+}
+SPAN.HeaderChar {
+	FONT-FAMILY: "Arial","sans-serif"; mso-style-unhide: no; =
+mso-bidi-font-size: 12.0pt; mso-bidi-font-family: Arial; =
+mso-style-priority: 99; mso-style-link: Header; mso-style-name: "Header =
+Char"; mso-style-locked: yes; mso-ascii-font-family: Arial; =
+mso-hansi-font-family: Arial
+}
+SPAN.FooterChar {
+	FONT-FAMILY: "Arial","sans-serif"; mso-style-unhide: no; =
+mso-bidi-font-size: 12.0pt; mso-bidi-font-family: Arial; =
+mso-style-priority: 99; mso-style-link: Footer; mso-style-name: "Footer =
+Char"; mso-style-locked: yes; mso-ascii-font-family: Arial; =
+mso-hansi-font-family: Arial
+}
+P.msolistparagraph0 {
+	TEXT-ALIGN: justify; LINE-HEIGHT: 18pt; MARGIN: 0in 0in 0pt 0.5in; =
+FONT-FAMILY: "Arial","sans-serif"; FONT-SIZE: 10pt; mso-style-unhide: =
+no; mso-style-qformat: yes; mso-pagination: none; mso-layout-grid-align: =
+none; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: "Times New =
+Roman"; mso-bidi-font-family: "Times New Roman"; mso-style-priority: 34; =
+mso-add-space: auto; mso-style-name: msolistparagraph
+}
+LI.msolistparagraph0 {
+	TEXT-ALIGN: justify; LINE-HEIGHT: 18pt; MARGIN: 0in 0in 0pt 0.5in; =
+FONT-FAMILY: "Arial","sans-serif"; FONT-SIZE: 10pt; mso-style-unhide: =
+no; mso-style-qformat: yes; mso-pagination: none; mso-layout-grid-align: =
+none; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: "Times New =
+Roman"; mso-bidi-font-family: "Times New Roman"; mso-style-priority: 34; =
+mso-add-space: auto; mso-style-name: msolistparagraph
+}
+DIV.msolistparagraph0 {
+	TEXT-ALIGN: justify; LINE-HEIGHT: 18pt; MARGIN: 0in 0in 0pt 0.5in; =
+FONT-FAMILY: "Arial","sans-serif"; FONT-SIZE: 10pt; mso-style-unhide: =
+no; mso-style-qformat: yes; mso-pagination: none; mso-layout-grid-align: =
+none; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: "Times New =
+Roman"; mso-bidi-font-family: "Times New Roman"; mso-style-priority: 34; =
+mso-add-space: auto; mso-style-name: msolistparagraph
+}
+P.msolistparagraph0CxSpFirst {
+	TEXT-ALIGN: justify; LINE-HEIGHT: 18pt; MARGIN: 0in 0in 0pt 0.5in; =
+FONT-FAMILY: "Arial","sans-serif"; FONT-SIZE: 10pt; mso-style-unhide: =
+no; mso-style-qformat: yes; mso-pagination: none; mso-layout-grid-align: =
+none; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: "Times New =
+Roman"; mso-bidi-font-family: "Times New Roman"; mso-style-priority: 34; =
+mso-add-space: auto; mso-style-type: export-only; mso-style-name: =
+msolistparagraphCxSpFirst
+}
+LI.msolistparagraph0CxSpFirst {
+	TEXT-ALIGN: justify; LINE-HEIGHT: 18pt; MARGIN: 0in 0in 0pt 0.5in; =
+FONT-FAMILY: "Arial","sans-serif"; FONT-SIZE: 10pt; mso-style-unhide: =
+no; mso-style-qformat: yes; mso-pagination: none; mso-layout-grid-align: =
+none; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: "Times New =
+Roman"; mso-bidi-font-family: "Times New Roman"; mso-style-priority: 34; =
+mso-add-space: auto; mso-style-type: export-only; mso-style-name: =
+msolistparagraphCxSpFirst
+}
+DIV.msolistparagraph0CxSpFirst {
+	TEXT-ALIGN: justify; LINE-HEIGHT: 18pt; MARGIN: 0in 0in 0pt 0.5in; =
+FONT-FAMILY: "Arial","sans-serif"; FONT-SIZE: 10pt; mso-style-unhide: =
+no; mso-style-qformat: yes; mso-pagination: none; mso-layout-grid-align: =
+none; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: "Times New =
+Roman"; mso-bidi-font-family: "Times New Roman"; mso-style-priority: 34; =
+mso-add-space: auto; mso-style-type: export-only; mso-style-name: =
+msolistparagraphCxSpFirst
+}
+P.msolistparagraph0CxSpMiddle {
+	TEXT-ALIGN: justify; LINE-HEIGHT: 18pt; MARGIN: 0in 0in 0pt 0.5in; =
+FONT-FAMILY: "Arial","sans-serif"; FONT-SIZE: 10pt; mso-style-unhide: =
+no; mso-style-qformat: yes; mso-pagination: none; mso-layout-grid-align: =
+none; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: "Times New =
+Roman"; mso-bidi-font-family: "Times New Roman"; mso-style-priority: 34; =
+mso-add-space: auto; mso-style-type: export-only; mso-style-name: =
+msolistparagraphCxSpMiddle
+}
+LI.msolistparagraph0CxSpMiddle {
+	TEXT-ALIGN: justify; LINE-HEIGHT: 18pt; MARGIN: 0in 0in 0pt 0.5in; =
+FONT-FAMILY: "Arial","sans-serif"; FONT-SIZE: 10pt; mso-style-unhide: =
+no; mso-style-qformat: yes; mso-pagination: none; mso-layout-grid-align: =
+none; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: "Times New =
+Roman"; mso-bidi-font-family: "Times New Roman"; mso-style-priority: 34; =
+mso-add-space: auto; mso-style-type: export-only; mso-style-name: =
+msolistparagraphCxSpMiddle
+}
+DIV.msolistparagraph0CxSpMiddle {
+	TEXT-ALIGN: justify; LINE-HEIGHT: 18pt; MARGIN: 0in 0in 0pt 0.5in; =
+FONT-FAMILY: "Arial","sans-serif"; FONT-SIZE: 10pt; mso-style-unhide: =
+no; mso-style-qformat: yes; mso-pagination: none; mso-layout-grid-align: =
+none; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: "Times New =
+Roman"; mso-bidi-font-family: "Times New Roman"; mso-style-priority: 34; =
+mso-add-space: auto; mso-style-type: export-only; mso-style-name: =
+msolistparagraphCxSpMiddle
+}
+P.msolistparagraph0CxSpLast {
+	TEXT-ALIGN: justify; LINE-HEIGHT: 18pt; MARGIN: 0in 0in 0pt 0.5in; =
+FONT-FAMILY: "Arial","sans-serif"; FONT-SIZE: 10pt; mso-style-unhide: =
+no; mso-style-qformat: yes; mso-pagination: none; mso-layout-grid-align: =
+none; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: "Times New =
+Roman"; mso-bidi-font-family: "Times New Roman"; mso-style-priority: 34; =
+mso-add-space: auto; mso-style-type: export-only; mso-style-name: =
+msolistparagraphCxSpLast
+}
+LI.msolistparagraph0CxSpLast {
+	TEXT-ALIGN: justify; LINE-HEIGHT: 18pt; MARGIN: 0in 0in 0pt 0.5in; =
+FONT-FAMILY: "Arial","sans-serif"; FONT-SIZE: 10pt; mso-style-unhide: =
+no; mso-style-qformat: yes; mso-pagination: none; mso-layout-grid-align: =
+none; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: "Times New =
+Roman"; mso-bidi-font-family: "Times New Roman"; mso-style-priority: 34; =
+mso-add-space: auto; mso-style-type: export-only; mso-style-name: =
+msolistparagraphCxSpLast
+}
+DIV.msolistparagraph0CxSpLast {
+	TEXT-ALIGN: justify; LINE-HEIGHT: 18pt; MARGIN: 0in 0in 0pt 0.5in; =
+FONT-FAMILY: "Arial","sans-serif"; FONT-SIZE: 10pt; mso-style-unhide: =
+no; mso-style-qformat: yes; mso-pagination: none; mso-layout-grid-align: =
+none; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: "Times New =
+Roman"; mso-bidi-font-family: "Times New Roman"; mso-style-priority: 34; =
+mso-add-space: auto; mso-style-type: export-only; mso-style-name: =
+msolistparagraphCxSpLast
+}
+P.style11 {
+	TEXT-ALIGN: left; LINE-HEIGHT: normal; FONT-FAMILY: "Times New =
+Roman","serif"; MARGIN-LEFT: 0in; FONT-SIZE: 12pt; MARGIN-RIGHT: 0in; =
+mso-style-unhide: no; mso-pagination: widow-orphan; =
+mso-layout-grid-align: auto; mso-fareast-font-family: "Times New Roman"; =
+mso-style-priority: 99; mso-margin-top-alt: auto; mso-margin-bottom-alt: =
+auto; mso-style-name: style11
+}
+LI.style11 {
+	TEXT-ALIGN: left; LINE-HEIGHT: normal; FONT-FAMILY: "Times New =
+Roman","serif"; MARGIN-LEFT: 0in; FONT-SIZE: 12pt; MARGIN-RIGHT: 0in; =
+mso-style-unhide: no; mso-pagination: widow-orphan; =
+mso-layout-grid-align: auto; mso-fareast-font-family: "Times New Roman"; =
+mso-style-priority: 99; mso-margin-top-alt: auto; mso-margin-bottom-alt: =
+auto; mso-style-name: style11
+}
+DIV.style11 {
+	TEXT-ALIGN: left; LINE-HEIGHT: normal; FONT-FAMILY: "Times New =
+Roman","serif"; MARGIN-LEFT: 0in; FONT-SIZE: 12pt; MARGIN-RIGHT: 0in; =
+mso-style-unhide: no; mso-pagination: widow-orphan; =
+mso-layout-grid-align: auto; mso-fareast-font-family: "Times New Roman"; =
+mso-style-priority: 99; mso-margin-top-alt: auto; mso-margin-bottom-alt: =
+auto; mso-style-name: style11
+}
+SPAN.smalltxt1 {
+	FONT-FAMILY: "Arial","sans-serif"; COLOR: black; mso-style-unhide: no; =
+mso-bidi-font-size: 6.0pt; mso-bidi-font-family: Arial; mso-style-name: =
+smalltxt1; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial; =
+mso-ansi-font-size: 6.0pt
+}
+.MsoChpDefault {
+	FONT-SIZE: 10pt; mso-bidi-font-size: 10.0pt; mso-style-type: =
+export-only; mso-ansi-font-size: 10.0pt; mso-default-props: yes
+}
+DIV.WordSection1 {
+	page: WordSection1
+}
+OL {
+	MARGIN-BOTTOM: 0in
+}
+UL {
+	MARGIN-BOTTOM: 0in
+}
+</STYLE>
+<!--[if gte mso 10]>=0A=
+<style>=0A=
+ /* Style Definitions */=0A=
+ table.MsoNormalTable=0A=
+	{mso-style-name:"Table Normal";=0A=
+	mso-tstyle-rowband-size:0;=0A=
+	mso-tstyle-colband-size:0;=0A=
+	mso-style-noshow:yes;=0A=
+	mso-style-priority:99;=0A=
+	mso-style-qformat:yes;=0A=
+	mso-style-parent:"";=0A=
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;=0A=
+	mso-para-margin:0in;=0A=
+	mso-para-margin-bottom:.0001pt;=0A=
+	mso-pagination:widow-orphan;=0A=
+	font-size:10.0pt;=0A=
+	font-family:"Times New Roman","serif";}=0A=
+table.MsoTableGrid=0A=
+	{mso-style-name:"Table Grid";=0A=
+	mso-tstyle-rowband-size:0;=0A=
+	mso-tstyle-colband-size:0;=0A=
+	mso-style-unhide:no;=0A=
+	border:solid windowtext 1.0pt;=0A=
+	mso-border-alt:solid windowtext .5pt;=0A=
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;=0A=
+	mso-border-insideh:.5pt solid windowtext;=0A=
+	mso-border-insidev:.5pt solid windowtext;=0A=
+	mso-para-margin:0in;=0A=
+	mso-para-margin-bottom:.0001pt;=0A=
+	text-align:justify;=0A=
+	line-height:18.0pt;=0A=
+	mso-pagination:none;=0A=
+	mso-layout-grid-align:none;=0A=
+	font-size:10.0pt;=0A=
+	font-family:"Times New Roman","serif";}=0A=
+</style>=0A=
+<![endif]-->
+<META name=3DAuthor content=3D"Doug B."><!--[if gte mso 9]><xml>=0A=
+ <o:shapedefaults v:ext=3D"edit" spidmax=3D"167938"/>=0A=
+</xml><![endif]--><!--[if gte mso 9]><xml>=0A=
+ <o:shapelayout v:ext=3D"edit">=0A=
+  <o:idmap v:ext=3D"edit" data=3D"1"/>=0A=
+ </o:shapelayout></xml><![endif]--></HEAD>
+<BODY style=3D"tab-interval: .5in" lang=3DEN-US=20
+background=3Dhttp://www.siue.edu/~dbock/cmis142/bockbg.gif link=3Dblue =
+bgColor=3Dwhite=20
+vLink=3Dblue>
+<DIV class=3DWordSection1>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft>cmis142.htm; revised June 22, 2011 </P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><SPAN style=3D"FONT-SIZE: =
+12pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: center; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dcenter><B><SPAN style=3D"FONT-SIZE: 14pt">CMIS 142: Visual =
+Basic.NET=20
+Programming - 3 semester credit hours</SPAN></B><B=20
+style=3D"mso-bidi-font-weight: normal"><SPAN=20
+style=3D"FONT-SIZE: 14pt"><o:p></o:p></SPAN></B></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><B><o:p>&nbsp;</o:p></B></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><B><SPAN style=3D"FONT-SIZE: 12pt">COURSE OUTLINE - =
+Southern Illinois=20
+University at Edwardsville - School of Business; Dr. <st1:PersonName=20
+w:st=3D"on">Douglas Bock</st1:PersonName>, Founders Hall, Room 2334, =
+CMIS Office=20
+Phone: 618-650-2504, Direct Office Phone: 618-650-2424.<SPAN=20
+style=3D"mso-spacerun: yes">&nbsp; </SPAN>Office Hours: by appointment =
+or drop=20
+in;&nbsp;<A href=3D"mailto:dbock@siue.edu"><SPAN=20
+style=3D"mso-bidi-font-family: Arial">E-mail: =
+dbock@siue.edu</SPAN></A>;<SPAN=20
+style=3D"mso-spacerun: yes">&nbsp; </SPAN>Instructor Web site:&nbsp; <A=20
+href=3D"http://www.siue.edu/~dbock"><SPAN=20
+style=3D"mso-bidi-font-family: =
+Arial">http://www.siue.edu/~dbock</SPAN></A>.</SPAN></B><B=20
+style=3D"mso-bidi-font-weight: normal"><SPAN style=3D"FONT-SIZE: 12pt">=20
+<o:p></o:p></SPAN></B></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-weight: =
+bold"><o:p>&nbsp;</o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: center; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dcenter><B><SPAN=20
+style=3D"FONT-SIZE: 14pt; mso-bidi-font-family: Arial">COURSE SCHEDULE =
+AND=20
+COMPUTER LABORATORY ASSIGNMENTS</SPAN></B><SPAN=20
+style=3D"FONT-SIZE: 14pt"><o:p></o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><B><SPAN=20
+style=3D"mso-bidi-font-size: 10.0pt; mso-bidi-font-family: =
+Arial"><o:p>&nbsp;</o:p></SPAN></B></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><B><SPAN style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial">Graded=20
+examinations and computer programming labs are indicated in red =
+print.&nbsp;=20
+Class notes are provided through hyperlinks.&nbsp; You may wish to print =
+a copy=20
+of the notes prior to class for reference during class.</SPAN></B><SPAN=20
+style=3D"FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><SPAN style=3D"FONT-SIZE: =
+12pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><SPAN style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial">Week 1=20
+(Aug 22 &amp; 24) <o:p></o:p></SPAN></P>
+<P=20
+style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: -0.25in; =
+mso-list: l5 level1 lfo1"=20
+class=3DMsoListParagraphCxSpFirst align=3Dleft><![if =
+!supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol; FONT-SIZE: 12pt; mso-fareast-font-family: =
+Symbol; mso-bidi-font-family: Symbol"><SPAN=20
+style=3D"mso-list: Ignore">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN></SPAN><![endif]><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial"><A=20
+href=3D"http://www.siue.edu/~dbock/cmis142/WebNotes/Ch1Notes/1-introducti=
+on.htm">1-Introduction=20
+to Visual Basic</A>.<SPAN style=3D"mso-spacerun: yes">&nbsp; =
+</SPAN>Chapter 1=20
+takes about 2 normal hour-and-15 minute lectures.</SPAN><SPAN=20
+style=3D"FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P=20
+style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: -0.25in; =
+mso-list: l5 level1 lfo1"=20
+class=3DMsoListParagraphCxSpMiddle align=3Dleft><![if =
+!supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol; FONT-SIZE: 12pt; mso-fareast-font-family: =
+Symbol; mso-bidi-font-family: Symbol"><SPAN=20
+style=3D"mso-list: Ignore">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN></SPAN><![endif]><SPAN style=3D"FONT-SIZE: 12pt">How to =
+obtain your=20
+<U><A=20
+href=3D"http://www.siue.edu/~dbock/cmis142/ObtainVisualStudio/ObtainVisua=
+lStudio.htm">personal=20
+copy of Visual Studio, or Visual Basic Express, or Visual Web Developer=20
+Express</A></U>.</SPAN><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial"><o:p></o:p></SPAN></P>
+<P=20
+style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: -0.25in; =
+mso-list: l5 level1 lfo1"=20
+class=3DMsoListParagraphCxSpMiddle align=3Dleft><![if =
+!supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol; FONT-SIZE: 12pt; mso-fareast-font-family: =
+Symbol; mso-bidi-font-family: Symbol"><SPAN=20
+style=3D"mso-list: Ignore">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN></SPAN><![endif]><SPAN style=3D"FONT-SIZE: 12pt">Appendix =
+C.<SPAN=20
+style=3D"mso-spacerun: yes">&nbsp; </SPAN>Tips and Shortcuts for =
+Mastering the=20
+Environment.</SPAN><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial"><o:p></o:p></SPAN></P>
+<P=20
+style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: -0.25in; =
+mso-list: l5 level1 lfo1"=20
+class=3DMsoListParagraphCxSpLast align=3Dleft><![if !supportLists]><SPAN =
+
+style=3D"FONT-FAMILY: Symbol; FONT-SIZE: 12pt; mso-fareast-font-family: =
+Symbol; mso-bidi-font-family: Symbol"><SPAN=20
+style=3D"mso-list: Ignore">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN></SPAN><![endif]><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial">Are you missing =
+drive Y: on=20
+your campus computer?<SPAN style=3D"mso-spacerun: yes">&nbsp; </SPAN>-- =
+<A=20
+href=3D"http://www.siue.edu/~dbock/cmis142/MissingDriveY.htm">Mapping =
+Drive Y:=20
+Manually</A> instructions.<o:p></o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><SPAN style=3D"FONT-SIZE: =
+12pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><SPAN style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial">Week 2=20
+(Aug 29 &amp; Aug 30)<o:p></o:p></SPAN></P>
+<P=20
+style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: -0.25in; =
+mso-list: l5 level1 lfo1"=20
+class=3DMsoListParagraphCxSpFirst align=3Dleft><![if =
+!supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol; FONT-SIZE: 12pt; mso-fareast-font-family: =
+Symbol; mso-bidi-font-family: Symbol"><SPAN=20
+style=3D"mso-list: Ignore">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN></SPAN><![endif]><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial"><A=20
+href=3D"http://www.siue.edu/~dbock/cmis142/WebNotes/Ch2Notes/2-userinterf=
+ace.htm">2-User=20
+Interface</A>.&nbsp; Chapter 2 takes about 2 normal hour-and-15 minute=20
+lectures.</SPAN><SPAN style=3D"FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P=20
+style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: -0.25in; =
+VERTICAL-ALIGN: baseline; mso-list: l8 level1 lfo2"=20
+class=3DMsoListParagraphCxSpLast align=3Dleft><![if !supportLists]><SPAN =
+
+style=3D"FONT-FAMILY: Symbol; FONT-SIZE: 12pt; mso-fareast-font-family: =
+Symbol; mso-bidi-font-family: Symbol"><SPAN=20
+style=3D"mso-list: Ignore">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN></SPAN><![endif]><U><SPAN style=3D"FONT-SIZE: 12pt"><A=20
+href=3D"http://www.siue.edu/~dbock/cmis142/GradedLabs/BRPLabs/Lab1/Lab1.h=
+tm">Lab 1=20
+due</A></SPAN></U><SPAN style=3D"FONT-SIZE: =
+12pt">.<U><o:p></o:p></U></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; VERTICAL-ALIGN: =
+baseline"=20
+class=3DMsoNormal align=3Dleft><SPAN=20
+style=3D"FONT-SIZE: 12pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><SPAN style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial">Week 3=20
+(Sept 5 &amp; 7)<o:p></o:p></SPAN></P>
+<P=20
+style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: -0.25in; =
+mso-list: l11 level1 lfo3"=20
+class=3DMsoListParagraphCxSpFirst align=3Dleft><![if =
+!supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol; FONT-SIZE: 12pt; mso-fareast-font-family: =
+Symbol; mso-bidi-font-family: Symbol"><SPAN=20
+style=3D"mso-list: Ignore">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN></SPAN><![endif]><B style=3D"mso-bidi-font-weight: =
+normal"><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial">September 3-5 =
+Labor Day=20
+holiday =96 classes not in session.<o:p></o:p></SPAN></B></P>
+<P=20
+style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: -0.25in; =
+mso-list: l11 level1 lfo3"=20
+class=3DMsoListParagraphCxSpMiddle align=3Dleft><![if =
+!supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol; FONT-SIZE: 12pt; mso-fareast-font-family: =
+Symbol; mso-bidi-font-family: Symbol"><SPAN=20
+style=3D"mso-list: Ignore">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN></SPAN><![endif]><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial"><A=20
+href=3D"http://www.siue.edu/~dbock/cmis142/WebNotes/Ch2Notes/2-userinterf=
+ace.htm">2-User=20
+Interface</A>.<o:p></o:p></SPAN></P>
+<P=20
+style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: -0.25in; =
+mso-list: l11 level1 lfo3"=20
+class=3DMsoListParagraphCxSpLast align=3Dleft><![if !supportLists]><SPAN =
+
+style=3D"FONT-FAMILY: Symbol; FONT-SIZE: 12pt; mso-fareast-font-family: =
+Symbol; mso-bidi-font-family: Symbol"><SPAN=20
+style=3D"mso-list: Ignore">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN></SPAN><![endif]><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial"><A=20
+href=3D"http://www.siue.edu/~dbock/cmis142/WebNotes/Ch3Notes/3-variables.=
+htm">3-Variables,=20
+Constants, and Calculations</A>.<SPAN style=3D"mso-spacerun: yes">&nbsp; =
+
+</SPAN>Chapter 3 takes about 3 normal hour-and-15 minute=20
+lectures.<o:p></o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><SPAN style=3D"FONT-SIZE: =
+12pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><SPAN style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial">Week 4=20
+(Sept 12 &amp; 14)<o:p></o:p></SPAN></P>
+<P=20
+style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: -0.25in; =
+mso-pagination: widow-orphan; mso-layout-grid-align: auto; mso-list: l10 =
+level1 lfo4"=20
+class=3DMsoListParagraphCxSpFirst align=3Dleft><![if =
+!supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol; FONT-SIZE: 12pt; mso-fareast-font-family: =
+Symbol; mso-bidi-font-family: Symbol"><SPAN=20
+style=3D"mso-list: Ignore">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN></SPAN><![endif]><U><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial"><A=20
+href=3D"http://www.siue.edu/~dbock/cmis142/GradedLabs/BRPLabs/Lab2/Lab2.h=
+tm">Lab 2=20
+due</A>.</SPAN></U><SPAN style=3D"FONT-SIZE: =
+12pt"><o:p></o:p></SPAN></P>
+<P=20
+style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: -0.25in; =
+mso-list: l10 level1 lfo4"=20
+class=3DMsoListParagraphCxSpMiddle align=3Dleft><![if =
+!supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol; FONT-SIZE: 12pt; mso-fareast-font-family: =
+Symbol; mso-bidi-font-family: Symbol"><SPAN=20
+style=3D"mso-list: Ignore">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN></SPAN><![endif]><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial"><A=20
+href=3D"http://www.siue.edu/~dbock/cmis142/WebNotes/Ch3Notes/CalculationS=
+ampleProblems.htm">Chapter=20
+3 Sample Coding Exercises</A> available from this=20
+hyperlink.<o:p></o:p></SPAN></P>
+<P=20
+style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: -0.25in; =
+mso-list: l10 level1 lfo4"=20
+class=3DMsoListParagraphCxSpLast align=3Dleft><![if !supportLists]><SPAN =
+
+style=3D"FONT-FAMILY: Symbol; FONT-SIZE: 12pt; mso-fareast-font-family: =
+Symbol; mso-bidi-font-family: Symbol"><SPAN=20
+style=3D"mso-list: Ignore">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN></SPAN><![endif]><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial"><A=20
+href=3D"http://www.siue.edu/~dbock/cmis142/WebNotes/Ch3Notes/3-variables.=
+htm">3-Variables,=20
+Constants, and Calculations</A>.&nbsp;<B=20
+style=3D"mso-bidi-font-weight: normal"><o:p></o:p></B></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial"><o:p>&nbsp;</o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><SPAN style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial">Week 5=20
+(Sept 19 &amp; 21)<o:p></o:p></SPAN></P>
+<P=20
+style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: -0.25in; =
+mso-list: l14 level1 lfo5"=20
+class=3DMsoListParagraphCxSpFirst align=3Dleft><![if =
+!supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol; FONT-SIZE: 12pt; mso-fareast-font-family: =
+Symbol; mso-bidi-font-family: Symbol"><SPAN=20
+style=3D"mso-list: Ignore">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN></SPAN><![endif]><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial"><A=20
+href=3D"http://www.siue.edu/~dbock/cmis142/WebNotes/Ch4Notes/4-decisions.=
+htm">4-Decisions=20
+and Conditions</A>.<SPAN style=3D"mso-spacerun: yes">&nbsp; =
+</SPAN>Chapter 4 takes=20
+about 4 normal hour-and-15-minute lectures.<o:p></o:p></SPAN></P>
+<P=20
+style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: -0.25in; =
+VERTICAL-ALIGN: baseline; mso-list: l14 level1 lfo5"=20
+class=3DMsoListParagraphCxSpMiddle align=3Dleft><![if =
+!supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol; FONT-SIZE: 12pt; mso-fareast-font-family: =
+Symbol; mso-bidi-font-family: Symbol"><SPAN=20
+style=3D"mso-list: Ignore">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN></SPAN><![endif]><B style=3D"mso-bidi-font-weight: =
+normal"><SPAN=20
+style=3D"COLOR: red; FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial">Written Exam=20
+1</SPAN></B><SPAN=20
+style=3D"COLOR: red; FONT-SIZE: 12pt; mso-bidi-font-family: Arial"> =
+</SPAN><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial">=96 Covers =
+Chapters 1, 2, and=20
+3 (100 points).<o:p></o:p></SPAN></P>
+<P=20
+style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; MARGIN-LEFT: 0in; =
+mso-add-space: auto"=20
+class=3DMsoListParagraphCxSpLast align=3Dleft><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial"><o:p>&nbsp;</o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><SPAN style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial">Week 6=20
+(Sept 26 &amp; 28)<o:p></o:p></SPAN></P>
+<P=20
+style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: -0.25in; =
+VERTICAL-ALIGN: baseline; mso-list: l6 level1 lfo6"=20
+class=3DMsoListParagraphCxSpFirst align=3Dleft><![if =
+!supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol; FONT-SIZE: 12pt; mso-fareast-font-family: =
+Symbol; mso-bidi-font-family: Symbol"><SPAN=20
+style=3D"mso-list: Ignore">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN></SPAN><![endif]><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial"><A=20
+href=3D"http://www.siue.edu/~dbock/cmis142/GradedLabs/BRPLabs/Lab3/Lab3.h=
+tm">Lab 3=20
+due</A></SPAN><SPAN style=3D"FONT-SIZE: 12pt">.</SPAN><U><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial"><o:p></o:p></SPAN></U></P>
+<P=20
+style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: -0.25in; =
+mso-list: l6 level1 lfo6"=20
+class=3DMsoListParagraphCxSpLast align=3Dleft><![if !supportLists]><SPAN =
+
+style=3D"FONT-FAMILY: Symbol; FONT-SIZE: 12pt; mso-fareast-font-family: =
+Symbol; mso-bidi-font-family: Symbol"><SPAN=20
+style=3D"mso-list: Ignore">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN></SPAN><![endif]><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial"><A=20
+href=3D"http://www.siue.edu/~dbock/cmis142/WebNotes/Ch4Notes/4-decisions.=
+htm">4-Decisions=20
+and Conditions</A>.<SPAN style=3D"mso-spacerun: yes">&nbsp; =
+</SPAN></SPAN><SPAN=20
+style=3D"FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><SPAN style=3D"FONT-SIZE: =
+12pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><SPAN style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial">Week 7=20
+(Oct 3 &amp; 5)<o:p></o:p></SPAN></P>
+<P=20
+style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: -0.25in; =
+tab-stops: list .5in; mso-list: l4 level1 lfo7"=20
+class=3DMsoListParagraphCxSpFirst align=3Dleft><![if =
+!supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol; FONT-SIZE: 12pt; mso-fareast-font-family: =
+Symbol; mso-bidi-font-family: Symbol"><SPAN=20
+style=3D"mso-list: Ignore">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN></SPAN><![endif]><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial"><A=20
+href=3D"http://www.siue.edu/~dbock/cmis142/WebNotes/Ch4Notes/4-decisions.=
+htm">4-Decisions=20
+and Conditions</A>.<SPAN style=3D"mso-spacerun: yes">&nbsp; =
+</SPAN></SPAN><SPAN=20
+style=3D"FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P=20
+style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: -0.25in; =
+tab-stops: list .5in; mso-list: l4 level1 lfo7"=20
+class=3DMsoListParagraphCxSpMiddle align=3Dleft><![if =
+!supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol; FONT-SIZE: 12pt; mso-fareast-font-family: =
+Symbol; mso-bidi-font-family: Symbol"><SPAN=20
+style=3D"mso-list: Ignore">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN></SPAN><![endif]><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial"><A=20
+href=3D"http://www.siue.edu/~dbock/cmis142/WebNotes/Ch4Notes/SampleIfElse=
+Problems.htm">Chapter=20
+4 Sample If-ElseIf-End If Coding Exercises</A> available from this=20
+hyperlink.</SPAN><SPAN style=3D"FONT-SIZE: 12pt"> </SPAN><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial"><o:p></o:p></SPAN></P>
+<P=20
+style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: -0.25in; =
+tab-stops: list .5in; mso-list: l4 level1 lfo7"=20
+class=3DMsoListParagraphCxSpLast align=3Dleft><![if !supportLists]><SPAN =
+
+style=3D"FONT-FAMILY: Symbol; FONT-SIZE: 12pt; mso-fareast-font-family: =
+Symbol; mso-bidi-font-family: Symbol"><SPAN=20
+style=3D"mso-list: Ignore">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN></SPAN><![endif]><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial">Practice Computer =
+
+Programming Laboratory Assignment Lab: Work through the Debugging =
+Step-by-Step=20
+Tutorial on your own =96 the Visual Basic solution folder for this =
+project=20
+containing the starter project for the exercise is on the CD-ROM that=20
+accompanies the textbook and also available by download from the drive =
+Y: server=20
+on the classroom computers.<o:p></o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><SPAN style=3D"FONT-SIZE: =
+12pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><SPAN style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial">Week 8=20
+(Oct 10 &amp; 12)<o:p></o:p></SPAN></P>
+<P=20
+style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: -0.25in; =
+mso-list: l12 level1 lfo8"=20
+class=3DMsoListParagraphCxSpFirst align=3Dleft><![if =
+!supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol; FONT-SIZE: 12pt; mso-fareast-font-family: =
+Symbol; mso-bidi-font-family: Symbol"><SPAN=20
+style=3D"mso-list: Ignore">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN></SPAN><![endif]><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial"><A=20
+href=3D"http://www.siue.edu/~dbock/cmis142/WebNotes/Ch5Notes/5-menus.htm"=
+>5-Menus,=20
+Common Dialog Controls, Sub Procedures and Function Procedures</A>.<SPAN =
+
+style=3D"mso-spacerun: yes">&nbsp; </SPAN>Chapter 5 takes about 3 normal =
+
+hour-and-15-minute lectures.<o:p></o:p></SPAN></P>
+<P=20
+style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: -0.25in; =
+mso-list: l12 level1 lfo8"=20
+class=3DMsoListParagraphCxSpLast align=3Dleft><![if !supportLists]><SPAN =
+
+style=3D"FONT-FAMILY: Symbol; FONT-SIZE: 12pt; mso-fareast-font-family: =
+Symbol; mso-bidi-font-family: Symbol"><SPAN=20
+style=3D"mso-list: Ignore">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN></SPAN><![endif]><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial"><A=20
+href=3D"http://www.siue.edu/~dbock/cmis142/GradedLabs/BRPLabs/Lab4/Lab4.h=
+tm">Lab 4=20
+due</A>.</SPAN><SPAN style=3D"FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><SPAN style=3D"FONT-SIZE: =
+12pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><SPAN style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial">Week 9=20
+(Oct 17 &amp; 19)<o:p></o:p></SPAN></P>
+<P=20
+style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: -0.25in; =
+mso-list: l3 level1 lfo9"=20
+class=3DMsoListParagraph align=3Dleft><![if !supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol; FONT-SIZE: 12pt; mso-fareast-font-family: =
+Symbol; mso-bidi-font-family: Symbol"><SPAN=20
+style=3D"mso-list: Ignore">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN></SPAN><![endif]><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial"><A=20
+href=3D"http://www.siue.edu/~dbock/cmis142/WebNotes/Ch5Notes/5-menus.htm"=
+>5-Menus,=20
+Common Dialog Controls, Sub Procedures and Function Procedures</A>.<SPAN =
+
+style=3D"mso-spacerun: yes">&nbsp; </SPAN><o:p></o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; MARGIN-LEFT: 0.25in"=20
+class=3DMsoNormal align=3Dleft><SPAN=20
+style=3D"FONT-SIZE: 12pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><SPAN style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial">Week 10=20
+(Oct 24 &amp; 26)<o:p></o:p></SPAN></P>
+<P=20
+style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: -0.25in; =
+mso-list: l18 level1 lfo10"=20
+class=3DMsoListParagraphCxSpFirst align=3Dleft><![if =
+!supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol; FONT-SIZE: 12pt; mso-fareast-font-family: =
+Symbol; mso-bidi-font-family: Symbol"><SPAN=20
+style=3D"mso-list: Ignore">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN></SPAN><![endif]><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial"><A=20
+href=3D"http://www.siue.edu/~dbock/cmis142/WebNotes/Ch7Notes/7-lists_loop=
+s.htm">7-Lists=20
+and Loops</A>.<SPAN style=3D"mso-spacerun: yes">&nbsp; </SPAN>(Skip =
+reading the=20
+section on Printing).<SPAN style=3D"mso-spacerun: yes">&nbsp; =
+</SPAN>Chapter 7=20
+takes about 3 normal hour-and-15-minute lectures.</SPAN><SPAN=20
+style=3D"FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P=20
+style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: -0.25in; =
+mso-list: l18 level1 lfo10"=20
+class=3DMsoListParagraphCxSpLast align=3Dleft><![if !supportLists]><SPAN =
+
+style=3D"FONT-FAMILY: Symbol; FONT-SIZE: 12pt; mso-fareast-font-family: =
+Symbol; mso-bidi-font-family: Symbol"><SPAN=20
+style=3D"mso-list: Ignore">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN></SPAN><![endif]><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial"><A=20
+href=3D"http://www.siue.edu/~dbock/cmis142/GradedLabs/BRPLabs/Lab5/Lab5.h=
+tm">Lab 5=20
+<SPAN style=3D"mso-bidi-font-family: 'Times New =
+Roman'">due</SPAN></A></SPAN><SPAN=20
+style=3D"FONT-SIZE: 12pt">.</SPAN><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial"><o:p></o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial"><o:p>&nbsp;</o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal =
+align=3Dleft><B=20
+style=3D"mso-bidi-font-weight: normal"><SPAN=20
+style=3D"COLOR: red; FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial">October 28 =96=20
+Last day to withdraw from a class without permission of advisor and=20
+instructor.<o:p></o:p></SPAN></B></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial"><o:p>&nbsp;</o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><SPAN style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial">Week 11=20
+(Oct 31 &amp; Nov 2)<o:p></o:p></SPAN></P>
+<P=20
+style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: -0.25in; =
+VERTICAL-ALIGN: baseline; mso-list: l15 level1 lfo11"=20
+class=3DMsoListParagraph align=3Dleft><![if !supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol; FONT-SIZE: 12pt; mso-fareast-font-family: =
+Symbol; mso-bidi-font-family: Symbol"><SPAN=20
+style=3D"mso-list: Ignore">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN></SPAN><![endif]><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial"><A=20
+href=3D"http://www.siue.edu/~dbock/cmis142/WebNotes/Ch7Notes/7-lists_loop=
+s.htm">7-Lists=20
+and Loops</A>.<SPAN style=3D"mso-spacerun: yes">&nbsp;=20
+</SPAN><o:p></o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial"><o:p>&nbsp;</o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><SPAN style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial">Week 12=20
+(Nov 7 &amp; 9)<o:p></o:p></SPAN></P>
+<P=20
+style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: -0.25in; =
+tab-stops: list .5in; mso-list: l2 level1 lfo12"=20
+class=3DMsoListParagraphCxSpFirst align=3Dleft><![if =
+!supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol; FONT-SIZE: 12pt; mso-fareast-font-family: =
+Symbol; mso-bidi-font-family: Symbol"><SPAN=20
+style=3D"mso-list: Ignore">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN></SPAN><![endif]><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial"><A=20
+href=3D"http://www.siue.edu/~dbock/cmis142/WebNotes/Ch8Notes/8-arrays.htm=
+">8-Arrays</A>.&nbsp;</SPAN><SPAN=20
+style=3D"FONT-SIZE: 12pt"> </SPAN><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial">Chapter 8 takes =
+about 3=20
+normal hour-and-15-minute lectures.</SPAN><SPAN=20
+style=3D"FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<P=20
+style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: -0.25in; =
+tab-stops: list .5in; mso-list: l2 level1 lfo12"=20
+class=3DMsoListParagraphCxSpMiddle align=3Dleft><![if =
+!supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol; FONT-SIZE: 12pt; mso-fareast-font-family: =
+Symbol; mso-bidi-font-family: Symbol"><SPAN=20
+style=3D"mso-list: Ignore">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN></SPAN><![endif]><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial"><A=20
+href=3D"http://www.siue.edu/~dbock/cmis142/GradedLabs/BRPLabs/Lab7/Lab7.h=
+tm">Lab 7=20
+due</A>.<B style=3D"mso-bidi-font-weight: =
+normal"><o:p></o:p></B></SPAN></P>
+<P=20
+style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: -0.25in; =
+VERTICAL-ALIGN: baseline; tab-stops: list .5in; mso-list: l2 level1 =
+lfo12"=20
+class=3DMsoListParagraphCxSpLast align=3Dleft><![if !supportLists]><SPAN =
+
+style=3D"FONT-FAMILY: Symbol; FONT-SIZE: 12pt; mso-fareast-font-family: =
+Symbol; mso-bidi-font-family: Symbol"><SPAN=20
+style=3D"mso-list: Ignore">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN></SPAN><![endif]><B style=3D"mso-bidi-font-weight: =
+normal"><SPAN=20
+style=3D"COLOR: red; FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial">Written Exam=20
+2</SPAN></B><SPAN style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial"> =96 Covers=20
+Chapters 4, 5, and 7 (100 points).<o:p></o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><SPAN style=3D"FONT-SIZE: =
+12pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><SPAN style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial">Week 13=20
+(Nov 14 &amp; 16)<o:p></o:p></SPAN></P>
+<P=20
+style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: -0.25in; =
+mso-list: l0 level1 lfo13"=20
+class=3DMsoListParagraphCxSpFirst align=3Dleft><![if =
+!supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol; FONT-SIZE: 12pt; mso-fareast-font-family: =
+Symbol; mso-bidi-font-family: Symbol"><SPAN=20
+style=3D"mso-list: Ignore">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN></SPAN><![endif]><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial"><A=20
+href=3D"http://www.siue.edu/~dbock/cmis142/WebNotes/Ch8Notes/8-arrays.htm=
+">8-Arrays</A>.&nbsp;</SPAN><SPAN=20
+style=3D"FONT-SIZE: 12pt"> <o:p></o:p></SPAN></P>
+<P=20
+style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: -0.25in; =
+mso-list: l0 level1 lfo13"=20
+class=3DMsoListParagraphCxSpMiddle align=3Dleft><![if =
+!supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol; FONT-SIZE: 12pt; mso-fareast-font-family: =
+Symbol; mso-bidi-font-family: Symbol"><SPAN=20
+style=3D"mso-list: Ignore">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN></SPAN><![endif]><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial"><A=20
+href=3D"http://www.siue.edu/~dbock/cmis142/WebNotes/Ch10Notes/10-database=
+s.htm">10-Windows=20
+Database Programming =96 Multiple Document Interface</A>.<SPAN=20
+style=3D"mso-spacerun: yes">&nbsp; </SPAN>Chapter 10 takes about 4 =
+normal=20
+hour-and-15-minute lectures.<o:p></o:p></SPAN></P>
+<P=20
+style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: -0.25in; =
+mso-list: l0 level1 lfo13"=20
+class=3DMsoListParagraphCxSpLast align=3Dleft><![if !supportLists]><SPAN =
+
+style=3D"FONT-FAMILY: Symbol; FONT-SIZE: 12pt; mso-fareast-font-family: =
+Symbol; mso-bidi-font-family: Symbol"><SPAN=20
+style=3D"mso-list: Ignore">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN></SPAN><![endif]><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial">Copy or download =
+the <B=20
+style=3D"mso-bidi-font-weight: normal">VBUniversity.mdb</B> database =
+file from the=20
+drive Y: server in the computer classroom.<SPAN style=3D"mso-spacerun: =
+yes">&nbsp;=20
+</SPAN><o:p></o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial"><o:p>&nbsp;</o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal =
+align=3Dleft><B=20
+style=3D"mso-bidi-font-weight: normal"><SPAN=20
+style=3D"COLOR: red; FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial">November 21-27=20
+=96 no classes, Thanksgiving Break<o:p></o:p></SPAN></B></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial"><o:p>&nbsp;</o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><SPAN style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial">Week 14=20
+(Nov 28 &amp; Nov 30)<o:p></o:p></SPAN></P>
+<P=20
+style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: -0.25in; =
+mso-list: l13 level1 lfo14"=20
+class=3DMsoListParagraphCxSpFirst align=3Dleft><![if =
+!supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol; FONT-SIZE: 12pt; mso-fareast-font-family: =
+Symbol; mso-bidi-font-family: Symbol"><SPAN=20
+style=3D"mso-list: Ignore">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN></SPAN><![endif]><SPAN style=3D"FONT-SIZE: 12pt">There is =
+no Lab 8 =96=20
+the material is incorporated into Lab 10.</SPAN><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial"><o:p></o:p></SPAN></P>
+<P=20
+style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: -0.25in; =
+mso-list: l13 level1 lfo14"=20
+class=3DMsoListParagraphCxSpLast align=3Dleft><![if !supportLists]><SPAN =
+
+style=3D"FONT-FAMILY: Symbol; FONT-SIZE: 12pt; mso-fareast-font-family: =
+Symbol; mso-bidi-font-family: Symbol"><SPAN=20
+style=3D"mso-list: Ignore">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN></SPAN><![endif]><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial"><A=20
+href=3D"http://www.siue.edu/~dbock/cmis142/WebNotes/Ch10Notes/10-database=
+s.htm">10-Windows=20
+Database Programming =96 Multiple Document Interface</A>.<SPAN=20
+style=3D"mso-spacerun: yes">&nbsp; </SPAN>(Notes incorporate material on =
+Multiform=20
+Projects).<o:p></o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial"><o:p>&nbsp;</o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><SPAN style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial">Week 15=20
+(Dec 5 &amp; 7)<o:p></o:p></SPAN></P>
+<P=20
+style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: -0.25in; =
+VERTICAL-ALIGN: baseline; mso-list: l17 level1 lfo15"=20
+class=3DMsoListParagraphCxSpFirst align=3Dleft><![if =
+!supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol; FONT-SIZE: 12pt; mso-fareast-font-family: =
+Symbol; mso-bidi-font-family: Symbol"><SPAN=20
+style=3D"mso-list: Ignore">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN></SPAN><![endif]><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial"><A=20
+href=3D"http://www.siue.edu/~dbock/cmis142/WebNotes/Ch10Notes/10-database=
+s.htm">10-Windows=20
+Database Programming =96 Multiple Document Interface</A>.<SPAN=20
+style=3D"mso-spacerun: yes">&nbsp;&nbsp; </SPAN><o:p></o:p></SPAN></P>
+<P=20
+style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: -0.25in; =
+VERTICAL-ALIGN: baseline; mso-list: l17 level1 lfo15"=20
+class=3DMsoListParagraphCxSpLast align=3Dleft><![if !supportLists]><SPAN =
+
+style=3D"FONT-FAMILY: Symbol; FONT-SIZE: 12pt; mso-fareast-font-family: =
+Symbol; mso-bidi-font-family: Symbol"><SPAN=20
+style=3D"mso-list: Ignore">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN></SPAN><![endif]><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial"><A=20
+href=3D"http://www.siue.edu/~dbock/cmis142/GradedLabs/BRPLabs/Lab10/Lab10=
+.htm">Lab=20
+10 due</A>.<SPAN style=3D"mso-spacerun: yes">&nbsp; </SPAN><A=20
+href=3D"http://www.siue.edu/~dbock/cmis142/GradedLabs/BRPLabs/Lab10/Lab10=
+GradingForm.htm">Lab=20
+10 Grading Form</A>.<SPAN style=3D"mso-spacerun: yes">&nbsp; =
+</SPAN>Submit the lab=20
+no later than Friday, 12 noon the week prior to final exam week.<SPAN=20
+style=3D"mso-spacerun: yes">&nbsp; </SPAN>For this lab, if you are late, =
+you will=20
+lose <U>20% per day</U> that the lab is late, example: you submit the =
+lab after=20
+12 noon on Friday but before 12 noon on Saturday prior to final exam =
+week, you=20
+lose 20%, after 12 noon Saturday but before 12 noon on Sunday you lose =
+40%, etc.=20
+<o:p></o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><SPAN style=3D"FONT-SIZE: =
+12pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><SPAN style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial">Week 16=20
+(week of December 12)<o:p></o:p></SPAN></P>
+<P=20
+style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: -0.25in; =
+VERTICAL-ALIGN: baseline; mso-list: l1 level1 lfo16"=20
+class=3DMsoListParagraphCxSpFirst align=3Dleft><![if =
+!supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol; FONT-SIZE: 12pt; mso-fareast-font-family: =
+Symbol; mso-bidi-font-family: Symbol"><SPAN=20
+style=3D"mso-list: Ignore">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN></SPAN><![endif]><B style=3D"mso-bidi-font-weight: =
+normal"><SPAN=20
+style=3D"COLOR: red; FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial">Written Exam=20
+3</SPAN></B><SPAN style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial"> =96 Covers=20
+Chapters 8 and 10 (100 points).<SPAN style=3D"mso-spacerun: yes">&nbsp;=20
+</SPAN><o:p></o:p></SPAN></P>
+<P=20
+style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: -0.25in; =
+MARGIN-LEFT: 1in; VERTICAL-ALIGN: baseline; mso-add-space: auto; =
+mso-list: l1 level2 lfo16"=20
+class=3DMsoListParagraphCxSpMiddle align=3Dleft><![if =
+!supportLists]><SPAN=20
+style=3D"FONT-FAMILY: 'Courier New'; FONT-SIZE: 12pt; =
+mso-fareast-font-family: 'Courier New'"><SPAN=20
+style=3D"mso-list: Ignore">o<SPAN style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;=20
+</SPAN></SPAN></SPAN><![endif]><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial">Mon-Wed section =
+011 meeting=20
+1:30-2:45 pm =96 the exam is on <B style=3D"mso-bidi-font-weight: =
+normal"><SPAN=20
+style=3D"COLOR: red">Tuesday, December 13 from 12:00-1:40 pm</SPAN></B> =
+in=20
+FH-3207.<o:p></o:p></SPAN></P>
+<P=20
+style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: -0.25in; =
+MARGIN-LEFT: 1in; VERTICAL-ALIGN: baseline; mso-add-space: auto; =
+mso-list: l1 level2 lfo16"=20
+class=3DMsoListParagraphCxSpMiddle align=3Dleft><![if =
+!supportLists]><SPAN=20
+style=3D"FONT-FAMILY: 'Courier New'; FONT-SIZE: 12pt; =
+mso-fareast-font-family: 'Courier New'"><SPAN=20
+style=3D"mso-list: Ignore">o<SPAN style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;=20
+</SPAN></SPAN></SPAN><![endif]><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial">Mon-Wed section =
+031 meeting=20
+3:00-4:15 pm =96 the exam is on <B style=3D"mso-bidi-font-weight: =
+normal"><SPAN=20
+style=3D"COLOR: red">Wednesday, December 14 from 2:00-3:40 pm</SPAN></B> =
+in=20
+FH-3103.<o:p></o:p></SPAN></P>
+<P=20
+style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: -0.25in; =
+VERTICAL-ALIGN: baseline; mso-list: l1 level1 lfo16"=20
+class=3DMsoListParagraphCxSpLast align=3Dleft><![if !supportLists]><SPAN =
+
+style=3D"FONT-FAMILY: Symbol; FONT-SIZE: 12pt; mso-fareast-font-family: =
+Symbol; mso-bidi-font-family: Symbol"><SPAN=20
+style=3D"mso-list: Ignore">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN></SPAN><![endif]><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial">Check Blackboard =
+for your=20
+exam grades.<SPAN style=3D"mso-spacerun: yes">&nbsp; =
+</SPAN><o:p></o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial"><o:p>&nbsp;</o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><SPAN style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial">Optional=20
+topics (cover if time allows=97you can also study these notes on your=20
+own).<o:p></o:p></SPAN></P>
+<P=20
+style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; TEXT-INDENT: -0.25in; =
+tab-stops: list .5in; mso-list: l9 level1 lfo17"=20
+class=3DMsoListParagraph align=3Dleft><![if !supportLists]><SPAN=20
+style=3D"FONT-FAMILY: Symbol; FONT-SIZE: 12pt; mso-fareast-font-family: =
+Symbol; mso-bidi-font-family: Symbol"><SPAN=20
+style=3D"mso-list: Ignore">=B7<SPAN=20
+style=3D"FONT: 7pt 'Times New =
+Roman'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+</SPAN></SPAN></SPAN><![endif]><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial"><A=20
+href=3D"http://www.siue.edu/~dbock/cmis142/WebNotes/Ch4aNotes/4a-smartdev=
+ices.htm">4a-Programming=20
+Smart Devices</A>.</SPAN><SPAN style=3D"FONT-SIZE: =
+12pt"><o:p></o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial"><o:p>&nbsp;</o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: center; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dcenter><B><SPAN=20
+style=3D"FONT-SIZE: 14pt; mso-bidi-font-family: Arial">COURSE =
+INFORMATION AND=20
+POLICIES<o:p></o:p></SPAN></B></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><B><SPAN style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial"><SPAN=20
+style=3D"mso-spacerun: yes">&nbsp;</SPAN><o:p></o:p></SPAN></B></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><B><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial">PREREQUISITE:&nbsp;=20
+</SPAN></B><SPAN style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial">CMIS 108=20
+or CS 108, or concurrent enrollment in either CMIS 108 or CS 108; and =
+MATH 120=20
+or 3 years of college preparatory mathematics in high=20
+school.<o:p></o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial"><o:p>&nbsp;</o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><B><SPAN style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial">COURSE=20
+DESCRIPTION: </SPAN></B><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial">The Visual Basic=20
+programming language is used to teach business computer programming =
+using a=20
+visual programming approach; includes fundamental programming principles =
+for=20
+event-driven programming.<o:p></o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial"><o:p>&nbsp;</o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><B><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial">REQUIRED =
+TEXTBOOK:=20
+</SPAN></B><SPAN style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial">Bradley,=20
+Julie Case and Anita C. Millspaugh. <B><I=20
+style=3D"mso-bidi-font-style: normal"><SPAN style=3D"COLOR: =
+black">PROGRAMMING IN=20
+VISUAL BASIC 2010,</SPAN></I></B></SPAN><B><SPAN=20
+style=3D"FONT-FAMILY: 'Verdana','sans-serif'; COLOR: black; FONT-SIZE: =
+12pt">=20
+</SPAN></B><SPAN style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial">Boston,=20
+MA: McGraw-Hill, Copyright 2011, </SPAN><SPAN class=3Dsmalltxt1><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-size: 6.0pt">ISBN-13:=20
+978-0-07-351725-4</SPAN></SPAN><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial">.<SPAN=20
+style=3D"mso-spacerun: yes">&nbsp; </SPAN>Book Web Site <A=20
+href=3D"http://www.mhhe.com/VB2010/">http://www.mhhe.com/VB2010/</A>.<o:p=
+></o:p></SPAN></P>
+<P style=3D"LINE-HEIGHT: normal" class=3DMsoNormal><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial"><o:p>&nbsp;</o:p></SPAN></P>
+<P style=3D"LINE-HEIGHT: normal" class=3DMsoNormal><B><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial">SUPPLEMENTARY=20
+TEXTS:&nbsp;&nbsp;</SPAN></B><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial"> On-line course =
+notes and=20
+computer laboratory assignments.&nbsp;<o:p></o:p></SPAN></P>
+<P style=3D"LINE-HEIGHT: normal" class=3DMsoNormal><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial"><o:p>&nbsp;</o:p></SPAN></P>
+<P style=3D"LINE-HEIGHT: normal" class=3DMsoNormal><B><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial">RESOURCES=20
+NEEDED:</SPAN></B><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial">&nbsp; You will =
+need a=20
+flash drive to use for submitting graded projects.<o:p></o:p></SPAN></P>
+<P style=3D"LINE-HEIGHT: normal" class=3DMsoNormal><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial"><o:p>&nbsp;</o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><B><SPAN style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial">COURSE=20
+OBJECTIVES:&nbsp;</SPAN></B><SPAN style=3D"FONT-SIZE: 12pt">=20
+<o:p></o:p></SPAN></P>
+<UL style=3D"MARGIN-TOP: 0in" type=3Dsquare>
+  <LI=20
+  style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; tab-stops: list .5in; =
+mso-list: l7 level1 lfo18"=20
+  class=3DMsoNormal><SPAN=20
+  style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial">Understand and =
+use=20
+  computer terms from the textbook, lecture, and readings.</SPAN><SPAN=20
+  style=3D"FONT-SIZE: 12pt"><o:p></o:p></SPAN>=20
+  <LI=20
+  style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; tab-stops: list .5in; =
+mso-list: l7 level1 lfo18"=20
+  class=3DMsoNormal><SPAN=20
+  style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial">Implement =
+application=20
+  design specifications with a visual object-oriented, event-driven =
+programming=20
+  language.</SPAN><SPAN style=3D"FONT-SIZE: 12pt"><o:p></o:p></SPAN>=20
+  <LI=20
+  style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; tab-stops: list .5in; =
+mso-list: l7 level1 lfo18"=20
+  class=3DMsoNormal><SPAN=20
+  style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial">Learn visual =
+programming=20
+  language concepts applied to a business environment including: form =
+design,=20
+  common form tool controls, input-process-output model, arithmetic =
+operations=20
+  and assignment statements, predefined object methods &amp; functions, =
+decision=20
+  structures, looping structures, list controls, array and table =
+processing, sub=20
+  procedures and user-defined functions, and database =
+programming.</SPAN><SPAN=20
+  style=3D"FONT-SIZE: 12pt"><o:p></o:p></SPAN> </LI></UL>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><B><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial"><o:p>&nbsp;</o:p></SPAN></B></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; VERTICAL-ALIGN: =
+baseline"=20
+class=3DMsoNormal align=3Dleft><B><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial">EXAMINATIONS, =
+COMPUTER=20
+LABS, and QUIZZES: </SPAN></B><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial">You will be =
+graded in two=20
+ways=97in class written examinations and graded computer labs.<SPAN=20
+style=3D"mso-spacerun: yes">&nbsp;&nbsp; </SPAN>You may also be graded =
+during=20
+unannounced quizzes (see below).<SPAN style=3D"mso-spacerun: yes">&nbsp; =
+
+</SPAN><B>NO EXAMINATION OR LAB SCORE WILL BE DROPPED - EVERY SCORE WILL =
+COUNT=20
+IN YOUR GRADE.&nbsp;</B> </SPAN><SPAN=20
+style=3D"FONT-SIZE: 12pt"><o:p></o:p></SPAN></P>
+<UL style=3D"MARGIN-TOP: 0in" type=3Dsquare>
+  <LI=20
+  style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; VERTICAL-ALIGN: =
+baseline; tab-stops: list .5in; mso-list: l16 level1 lfo19"=20
+  class=3DMsoNormal><SPAN=20
+  style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial">There are three =
+written=20
+  examinations.<SPAN style=3D"mso-spacerun: yes">&nbsp; =
+</SPAN></SPAN><SPAN=20
+  style=3D"FONT-SIZE: 12pt"><o:p></o:p></SPAN>
+  <UL style=3D"MARGIN-TOP: 0in" type=3Dcircle>
+    <LI=20
+    style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; VERTICAL-ALIGN: =
+baseline; tab-stops: list 1.0in; mso-list: l16 level2 lfo19"=20
+    class=3DMsoNormal><SPAN=20
+    style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial">Each written=20
+    examination covers material since the last examination as indicated =
+on the=20
+    syllabus.<SPAN style=3D"mso-spacerun: yes">&nbsp; </SPAN>The =
+examinations are=20
+    not intentionally comprehensive; however, since this course teaches =
+you a=20
+    programming language, the material naturally builds on earlier =
+work.<SPAN=20
+    style=3D"mso-spacerun: yes">&nbsp; </SPAN></SPAN><SPAN=20
+    style=3D"FONT-SIZE: 12pt"><o:p></o:p></SPAN>
+    <LI=20
+    style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; VERTICAL-ALIGN: =
+baseline; tab-stops: list 1.0in; mso-list: l16 level2 lfo19"=20
+    class=3DMsoNormal><SPAN=20
+    style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial">Written =
+examinations=20
+    require you to be able to logon to SIUE's <B=20
+    style=3D"mso-bidi-font-weight: normal">Blackboard</B> software =96 =
+you must have=20
+    your SIUE EID and password in order to take the examination.<SPAN=20
+    style=3D"mso-spacerun: yes">&nbsp; </SPAN>Failure to have the EID =
+and password=20
+    will require you to coordinate with me to reschedule the=20
+    examination=97rescheduled examinations will be given at my =
+convenience.<SPAN=20
+    style=3D"mso-spacerun: yes">&nbsp; </SPAN></SPAN><SPAN=20
+    style=3D"FONT-SIZE: 12pt"><o:p></o:p></SPAN>
+    <LI=20
+    style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; VERTICAL-ALIGN: =
+baseline; tab-stops: list 1.0in; mso-list: l16 level2 lfo19"=20
+    class=3DMsoNormal><SPAN=20
+    style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial">If you miss a =
+written=20
+    examination you must make arrangements with me to take a makeup =
+examination=20
+    no later than one week after the regularly scheduled date for the=20
+    examination.<SPAN style=3D"mso-spacerun: yes">&nbsp; </SPAN>You will =
+also need=20
+    a very good excuse for missing the examination.</SPAN><SPAN=20
+    style=3D"FONT-SIZE: 12pt"><o:p></o:p></SPAN> </LI></UL>
+  <LI=20
+  style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; VERTICAL-ALIGN: =
+baseline; tab-stops: list .5in; mso-list: l16 level1 lfo19"=20
+  class=3DMsoNormal><B style=3D"mso-bidi-font-weight: normal"><SPAN=20
+  style=3D"FONT-SIZE: 12pt">There are seven computer programming=20
+  labs</SPAN></B><SPAN style=3D"FONT-SIZE: 12pt">.<SPAN=20
+  style=3D"mso-spacerun: yes">&nbsp; </SPAN>Each lab is numbered to =
+correspond to=20
+  the primary chapter for the material covered in the lab.<SPAN=20
+  style=3D"mso-spacerun: yes">&nbsp; </SPAN>There is no assigned lab for =
+chapter=20
+  8=97that material is incorporated into Lab 10.<SPAN=20
+  style=3D"mso-spacerun: yes">&nbsp; </SPAN>You must complete the =
+computer=20
+  programming labs outside of class.<SPAN style=3D"mso-spacerun: =
+yes">&nbsp;=20
+  </SPAN>You can obtain the Visual Studio software by download (see the=20
+  hyperlink above under week 1).<SPAN style=3D"mso-spacerun: yes">&nbsp; =
+</SPAN>If=20
+  you do not have a personal computer (Microsoft-based), you can use one =
+of the=20
+  computers available in the Founders Hall open-access computer=20
+  labs.<o:p></o:p></SPAN>=20
+  <UL style=3D"MARGIN-TOP: 0in" type=3Dcircle>
+    <LI=20
+    style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; VERTICAL-ALIGN: =
+baseline; tab-stops: list 1.0in; mso-list: l16 level2 lfo19"=20
+    class=3DMsoNormal><B style=3D"mso-bidi-font-weight: normal"><SPAN=20
+    style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial">Flash=20
+    Drive:</SPAN></B><SPAN=20
+    style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial"><SPAN=20
+    style=3D"mso-spacerun: yes">&nbsp; </SPAN>You must have a flash =
+drive to use=20
+    to bring your programming labs to class in order to submit =
+them.<SPAN=20
+    style=3D"mso-spacerun: yes">&nbsp; </SPAN>Labs are submitted by =
+copying your=20
+    lab from the flash drive to the <B=20
+    style=3D"mso-bidi-font-weight: normal">drive Y: server</B> that is =
+used by the=20
+    class.<SPAN style=3D"mso-spacerun: yes">&nbsp; </SPAN>Every student =
+is=20
+    allocated access to drive Y:.<SPAN style=3D"mso-spacerun: =
+yes">&nbsp;=20
+    </SPAN>Lab submissions ARE NOT accepted by email.</SPAN><SPAN=20
+    style=3D"FONT-SIZE: 12pt"><o:p></o:p></SPAN>=20
+    <LI=20
+    style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; VERTICAL-ALIGN: =
+baseline; tab-stops: list 1.0in; mso-list: l16 level2 lfo19"=20
+    class=3DMsoNormal><B style=3D"mso-bidi-font-weight: normal"><SPAN=20
+    style=3D"COLOR: red; FONT-SIZE: 14pt; mso-bidi-font-family: =
+Arial">Do NOT run=20
+    a lab project on a flash drive</SPAN></B><SPAN=20
+    style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial"> =96 this can =
+cause an=20
+    error in the project that is difficult to recover and can cause the =
+project=20
+    to NOT copy properly during submission to drive Y:.</SPAN><SPAN=20
+    style=3D"FONT-SIZE: 12pt"><o:p></o:p></SPAN>=20
+    <LI=20
+    style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; VERTICAL-ALIGN: =
+baseline; tab-stops: list 1.0in; mso-list: l16 level2 lfo19"=20
+    class=3DMsoNormal><SPAN style=3D"FONT-SIZE: 12pt">The actual due =
+date for lab=20
+    submissions are indicated in the syllabus but are subject to change =
+and will=20
+    be announced in class.<SPAN style=3D"mso-spacerun: yes">&nbsp; =
+</SPAN>It is=20
+    your responsibility to keep up with the due dates.<SPAN=20
+    style=3D"mso-spacerun: yes">&nbsp; </SPAN><o:p></o:p></SPAN>
+    <LI=20
+    style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; VERTICAL-ALIGN: =
+baseline; tab-stops: list 1.0in; mso-list: l16 level2 lfo19"=20
+    class=3DMsoNormal><B style=3D"mso-bidi-font-weight: normal"><SPAN=20
+    style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial">Late=20
+    Penalty:</SPAN></B><SPAN=20
+    style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial"><SPAN=20
+    style=3D"mso-spacerun: yes">&nbsp; </SPAN>Labs are due at the start =
+of a class=20
+    period.<SPAN style=3D"mso-spacerun: yes">&nbsp; </SPAN>Labs =
+submitted after=20
+    the start of a class period on the due date are considered =
+late.<SPAN=20
+    style=3D"mso-spacerun: yes">&nbsp; </SPAN>Labs that are submitted =
+late will=20
+    receive a 10% deduction in points available.<SPAN=20
+    style=3D"mso-spacerun: yes">&nbsp; </SPAN>After one week, a late lab =
+can no=20
+    longer be submitted and your score for that lab will be zero=20
+    points.</SPAN><SPAN style=3D"FONT-SIZE: 12pt"><o:p></o:p></SPAN> =
+</LI></UL>
+  <LI=20
+  style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; VERTICAL-ALIGN: =
+baseline; tab-stops: list .5in; mso-list: l16 level1 lfo19"=20
+  class=3DMsoNormal><SPAN=20
+  style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial">Unannounced =
+quizzes may=20
+  be given during class sessions.<SPAN style=3D"mso-spacerun: =
+yes">&nbsp;=20
+  </SPAN>If these are administered, the points available will be added =
+to the=20
+  course total of possible points.</SPAN><SPAN style=3D"FONT-SIZE: =
+12pt"><SPAN=20
+  style=3D"mso-spacerun: yes">&nbsp; </SPAN><o:p></o:p></SPAN></LI></UL>
+<P class=3DMsoNormal><SPAN style=3D"FONT-SIZE: =
+12pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P style=3D"LINE-HEIGHT: normal" class=3DMsoNormal><B><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial">GRADING=20
+SCALE:&nbsp;</SPAN></B><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial"> 90-100=3DA; 80 =
+but less than=20
+90=3DB; 70 but less than 80=3DC; 60 but less than 70=3DD; less than =
+60=3DF.<SPAN=20
+style=3D"mso-spacerun: yes">&nbsp; </SPAN><o:p></o:p></SPAN></P>
+<P class=3DMsoNormal><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial"><o:p>&nbsp;</o:p></SPAN></P>
+<TABLE=20
+style=3D"BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; =
+BORDER-COLLAPSE: collapse; MARGIN-LEFT: 53.6pt; BORDER-TOP: medium none; =
+BORDER-RIGHT: medium none; mso-border-alt: solid windowtext .5pt; =
+mso-yfti-tbllook: 480; mso-padding-alt: 0in 5.4pt 0in 5.4pt"=20
+class=3DMsoTableGrid border=3D1 cellSpacing=3D0 cellPadding=3D0>
+  <TBODY>
+  <TR style=3D"mso-yfti-irow: 0; mso-yfti-firstrow: yes">
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: =
+windowtext 1pt solid; PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; WIDTH: =
+6.25in; PADDING-RIGHT: 5.4pt; BORDER-TOP: windowtext 1pt solid; =
+BORDER-RIGHT: windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: =
+solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D600>
+      <P class=3DMsoNormal><SPAN=20
+      style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial">Three =
+Written Exams=20
+      (100 points each exam)<o:p></o:p></SPAN></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium =
+none; PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; WIDTH: 99pt; =
+PADDING-RIGHT: 5.4pt; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-left-alt: solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D132>
+      <P class=3DMsoNormal><SPAN=20
+      style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial">300=20
+      points<o:p></o:p></SPAN></P></TD></TR>
+  <TR style=3D"mso-yfti-irow: 1">
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: =
+windowtext 1pt solid; PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; WIDTH: =
+6.25in; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-top-alt: solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D600>
+      <P class=3DMsoNormal><SPAN=20
+      style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial">Seven labs =
+numbered 1=20
+      through 5, 7, and 10 (there is no lab 6, 8 or 9).<SPAN=20
+      style=3D"mso-spacerun: yes">&nbsp; </SPAN><o:p></o:p></SPAN></P>
+      <UL style=3D"MARGIN-TOP: 0in" type=3Ddisc>
+        <LI=20
+        style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; tab-stops: list =
+.5in; mso-list: l19 level1 lfo20"=20
+        class=3DMsoNormal><SPAN=20
+        style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial">Lab 1 =96 =
+20=20
+        points.<o:p></o:p></SPAN>=20
+        <LI=20
+        style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; tab-stops: list =
+.5in; mso-list: l19 level1 lfo20"=20
+        class=3DMsoNormal><SPAN=20
+        style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial">Lab 2 =96 =
+25=20
+        points.<o:p></o:p></SPAN>=20
+        <LI=20
+        style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; tab-stops: list =
+.5in; mso-list: l19 level1 lfo20"=20
+        class=3DMsoNormal><SPAN=20
+        style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial">Lab 3 =96 =
+25=20
+        points.<o:p></o:p></SPAN>=20
+        <LI=20
+        style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; tab-stops: list =
+.5in; mso-list: l19 level1 lfo20"=20
+        class=3DMsoNormal><SPAN=20
+        style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial">Lab 4 =96 =
+40=20
+        points.<o:p></o:p></SPAN>=20
+        <LI=20
+        style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; tab-stops: list =
+.5in; mso-list: l19 level1 lfo20"=20
+        class=3DMsoNormal><SPAN=20
+        style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial">Lab 5 =96 =
+50=20
+        points.<o:p></o:p></SPAN>=20
+        <LI=20
+        style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; tab-stops: list =
+.5in; mso-list: l19 level1 lfo20"=20
+        class=3DMsoNormal><SPAN=20
+        style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial">Lab 7 =96 =
+40=20
+        points.<o:p></o:p></SPAN>=20
+        <LI=20
+        style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal; tab-stops: list =
+.5in; mso-list: l19 level1 lfo20"=20
+        class=3DMsoNormal><SPAN=20
+        style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial">Lab 10 =
+=96 100 points=20
+        (incorporates material from Chapter 8)<o:p></o:p></SPAN> =
+</LI></UL></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium =
+none; PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; WIDTH: 99pt; =
+PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext =
+1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext .5pt; =
+mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid =
+windowtext .5pt"=20
+    vAlign=3Dtop width=3D132>
+      <P class=3DMsoNormal><SPAN=20
+      style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial">300=20
+      points<o:p></o:p></SPAN></P></TD></TR>
+  <TR style=3D"mso-yfti-irow: 2; mso-yfti-lastrow: yes">
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: =
+windowtext 1pt solid; PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; WIDTH: =
+6.25in; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; BORDER-RIGHT: =
+windowtext 1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext =
+.5pt; mso-border-top-alt: solid windowtext .5pt"=20
+    vAlign=3Dtop width=3D600>
+      <P class=3DMsoNormal><SPAN=20
+      style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial">Total =
+points possible=20
+      for the course:<o:p></o:p></SPAN></P></TD>
+    <TD=20
+    style=3D"BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium =
+none; PADDING-BOTTOM: 0in; PADDING-LEFT: 5.4pt; WIDTH: 99pt; =
+PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; BORDER-RIGHT: windowtext =
+1pt solid; PADDING-TOP: 0in; mso-border-alt: solid windowtext .5pt; =
+mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid =
+windowtext .5pt"=20
+    vAlign=3Dtop width=3D132>
+      <P class=3DMsoNormal><SPAN=20
+      style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial">600=20
+      points<o:p></o:p></SPAN></P></TD></TR></TBODY></TABLE>
+<P class=3DMsoNormal><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial"><o:p>&nbsp;</o:p></SPAN></P>
+<P style=3D"LINE-HEIGHT: normal" class=3DMsoNormal><B><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial">PLAGIARISM=20
+POLICY:&nbsp;&nbsp;</SPAN></B><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial"> The university =
+policy on=20
+plagiarism will be enforced to the fullest extent.&nbsp; Plagiarism is=20
+cheating.<SPAN style=3D"mso-spacerun: yes">&nbsp; </SPAN>If I catch you =
+cheating,=20
+you will automatically <B style=3D"mso-bidi-font-weight: normal">FAIL =
+THE=20
+COURSE</B>.<SPAN style=3D"mso-spacerun: yes">&nbsp; </SPAN>Additionally, =
+you will=20
+be reported to the Vice Chancellor for Academic Affairs for other =
+disciplinary=20
+action with a recommendation that you be placed on academic probation or =
+
+dismissed from the university.&nbsp; This is within the University =
+policy on=20
+plagiarism. <o:p></o:p></SPAN></P>
+<P style=3D"LINE-HEIGHT: normal" class=3DMsoNormal><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial"><o:p>&nbsp;</o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><B><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial">TUTORS:&nbsp;</SPAN></B><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial"> I will serve as =
+your=20
+tutor.<SPAN style=3D"mso-spacerun: yes">&nbsp; </SPAN>I will assist you =
+in solving=20
+problems for labs.<SPAN style=3D"mso-spacerun: yes">&nbsp; </SPAN>Please =
+seek=20
+assistance during office hours or make an appointment with me by =
+telephone or=20
+email.&nbsp;<o:p></o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><SPAN style=3D"FONT-SIZE: =
+12pt"><o:p>&nbsp;</o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><B><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial">INCOMPLETE=20
+POLICY:&nbsp;</SPAN></B><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial"> An=20
+<B><U>Incomplete</U></B> <B style=3D"mso-bidi-font-weight: normal">(I) =
+</B>grade=20
+will <B style=3D"mso-bidi-font-weight: normal">not</B> be given unless =
+some act=20
+beyond your control takes place which materially affects your ability to =
+
+complete the course, for example, severe illness, emotional trauma due =
+to a=20
+death in the family, or accident.&nbsp; If you get behind on course =
+work, you=20
+will be graded on that portion of the course work that is completed or =
+you can=20
+withdraw from the course.<o:p></o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial"><o:p>&nbsp;</o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><B><SPAN style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial">COURSE=20
+WITHDRAWAL POLICY:</SPAN></B><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial">&nbsp; See the =
+University=20
+policy on course withdrawals that is available =
+online.<o:p></o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial"><o:p>&nbsp;</o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><B><SPAN style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial">COURSE=20
+SCHEDULE AND ASSIGNMENTS:&nbsp;&nbsp;</SPAN></B><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial"> The amount of =
+material=20
+covered in any given week will vary depending on the depth of in-class=20
+discussion that is generated by the material.&nbsp; We will move along =
+at a=20
+lively rate.<SPAN style=3D"mso-spacerun: yes">&nbsp; </SPAN>I expect you =
+to study=20
+sufficiently outside of class to keep up with the material.<SPAN=20
+style=3D"mso-spacerun: yes">&nbsp; </SPAN>I have divided the material =
+into=20
+sessions, but the material we cover may not correspond exactly to a =
+session if=20
+the class discussion takes longer than anticipated.&nbsp; Try to stay =
+ahead in=20
+the readings about one session.&nbsp; Bring questions to=20
+class.<o:p></o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial"><o:p>&nbsp;</o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><B><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial">ATTENDANCE:</SPAN></B><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: Arial">&nbsp; Attendance =
+is=20
+mandatory for all scheduled classes and will be periodically taken.<SPAN =
+
+style=3D"mso-spacerun: yes">&nbsp; </SPAN><B=20
+style=3D"mso-bidi-font-weight: normal">Your course grade will be reduced =
+one=20
+letter grade for excessive absences (more than 3 absences during a=20
+term).<o:p></o:p></B></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial"><o:p>&nbsp;</o:p></SPAN></P>
+<P style=3D"TEXT-ALIGN: left; LINE-HEIGHT: normal" class=3DMsoNormal=20
+align=3Dleft><B><SPAN style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial">END OF=20
+SYLLABUS</SPAN></B><SPAN=20
+style=3D"FONT-SIZE: 12pt; mso-bidi-font-family: =
+Arial"><o:p></o:p></SPAN></P></DIV></BODY></HTML>
+
+------=_NextPart_000_0028_01CCB357.4209B1C0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.siue.edu/~dbock/cmis142/bockbg.gif
+
+R0lGODdhvQCRAPcAAAAAAAEBAQICAgMDAwQEBAUFBQYGBgcHBwgICAkJCQoKCgsLCwwMDA0NDQ4O
+Dg8PDxAQEBERERISEhMTExQUFBUVFRYWFhcXFxgYGBkZGRoaGhsbGxwcHB0dHR4eHh8fHyAgICEh
+ISIiIiMjIyQkJCUlJSYmJicnJygoKCkpKSoqKisrKywsLC0tLS4uLi8vLzAwMDExMTIyMjMzMzQ0
+NDU1NTY2Njc3Nzg4ODk5OTo6Ojs7Ozw8PD09PT4+Pj8/P0BAQEFBQUJCQkNDQ0REREVFRUZGRkdH
+R0hISElJSUpKSktLS0xMTE1NTU5OTk9PT1BQUFFRUVJSUlNTU1RUVFVVVVZWVldXV1hYWFlZWVpa
+WltbW1xcXF1dXV5eXl9fX2BgYGFhYWJiYmNjY2RkZGVlZWZmZmdnZ2hoaGlpaWpqamtra2xsbG1t
+bW5ubm9vb3BwcHFxcXJycnNzc3R0dHV1dXZ2dnd3d3h4eHl5eXp6ent7e3x8fH19fX5+fn9/f4CA
+gIGBgYKCgoODg4SEhIWFhYaGhoeHh4iIiImJiYqKiouLi4yMjI2NjY6Ojo+Pj5CQkJGRkZKSkpOT
+k5SUlJWVlZaWlpeXl5iYmJmZmZqampubm5ycnJ2dnZ6enp+fn6CgoKGhoaKioqOjo6SkpKWlpaam
+pqenp6ioqKmpqaqqqqurq6ysrK2tra6urq+vr7CwsLGxsbKysrOzs7S0tLW1tba2tre3t7i4uLm5
+ubq6uru7u7y8vL29vb6+vr+/v8DAwMHBwcLCwsPDw8TExMXFxcbGxsfHx8jIyMnJycrKysvLy8zM
+zM3Nzc7Ozs/Pz9DQ0NHR0dLS0tPT09TU1NXV1dbW1tfX19jY2NnZ2dra2tvb29zc3N3d3d7e3t/f
+3+Dg4OHh4eLi4uPj4+Tk5OXl5ebm5ufn5+jo6Onp6erq6uvr6+zs7O3t7e7u7u/v7/Dw8PHx8fLy
+8vPz8/T09PX19fb29vf39/j4+Pn5+fr6+vv7+/z8/P39/f7+/v///ywAAAAAvQCRAAAI/wDNmZsm
+sGA+gdMIIiyYsKBBhwcVEjyYj+C0iAwrDmTosGNDiBsXmqOocOBHgQc7puw4kiXIlRMHroT5cKXD
+kjIX2mRps2HEhAk1lrSY8aHJlho1cmyJcudNlyJTKqSYD+PFoCmr+rQ5cyjTpUpH/pTpFaXBrWZd
+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
+1tjJ78WLnC3kVnn25DicaadZuQyPTgICADs=
+
+------=_NextPart_000_0028_01CCB357.4209B1C0--

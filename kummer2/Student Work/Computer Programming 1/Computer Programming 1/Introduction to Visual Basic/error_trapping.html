@@ -1,0 +1,57 @@
+<HTML>
+<HEAD><TITLE>Error Trapping-Discovering Visual Basic</TITLE>
+</HEAD>
+<BODY bgColor=#c0c0c0><IMG   
+src="kprog copy.gif" align=right> <BR>
+<H1>Error Trapping</H1>
+<P><IMG 
+src="commline.gif"></P>
+
+
+<BR>
+<P>During run-time there are parts of a program where errors are unlikely, such as reading or writing a value to an internal variable, but there are other sections where the likelyhood of errors occuring is much higher. For example, anywhere in a program which tries to open a file could run into problems. The file might not be there, it could have been deleted a few days ago in the File Manager! Instead of the program grinding to a halt when it hits one of these errors the programmer can make some educated guesses where errors will most likely occur and then trap for them.</P>
+
+<P>The <B><TT>On Error</TT></B> command is used to tell VB what to do if an error occurs. If one does not happen and the program runs smoothly then any error trapping/handling code is ignored. The full syntax of this command is shown below:</P>
+<PRE>
+  <B>On Error</B> {<B>Goto</B> <I>line</I> | <B>Resume Next</B> | <B>Goto 0</B>}
+</PRE>
+
+<P>The <TT>On Error</TT> command does the error <I>trapping</I> so it is important to place this <B>before</B> and lines of code which could produce an error. The most common way to use this command is to set a line to goto when an error occurs:</P>
+
+<B><PRE>
+  <FONT COLOR="#23238E">On Error GoTo</FONT> ErrHandling
+</PRE></B>
+
+<P>Now that the error trapping code has been written we can put in the code which will <I>handle</I> the error. To do this we need to place the line label where VB will go in the even of an error. The above <TT>On Error</TT> specified the line ErrHandling, but this could be any user defined name. Below this line label can be placed any lines of code which are specifically written to deal with any error which occurs. After this we have to add <TT>Resume Next</TT> so that VB goes back to the line after where the error occured. The only other bit of code we need is an <TT>Exit Sub</TT> just before the error line label so that the error handling code is never run when there are no errors. The resulting code should look like:</P>
+
+<B><PRE>
+  <FONT COLOR="#23238E">Private Sub</FONT> Form_Load ()
+    <FONT COLOR="#23238E">On Error GoTo</FONT> ErrHandling      <FONT COLOR="GREEN">' Trap errors with this line</FONT>
+    <FONT COLOR="#23238E">Open</FONT> "C:\not_here.txt" <FONT COLOR="#23238E">For Input As</FONT> #1
+    <FONT COLOR="#23238E">Close</FONT> #1
+
+    <FONT COLOR="#23238E">Exit Sub</FONT>
+
+  ErrHandling:
+    <FONT COLOR="#23238E">Rem</FONT> <FONT COLOR="GREEN">Error handling section</FONT>
+    <FONT COLOR="#23238E">Debug.Print</FONT> "Error Number  = "; Err
+    <FONT COLOR="#23238E">Debug.Print</FONT> "Error Message = "; Error$(Err)
+    <FONT COLOR="#23238E">Resume Next</FONT>                    <FONT COLOR="GREEN">' Carry on program after the error occurred</FONT>
+  <FONT COLOR="#23238E">End Sub</FONT>
+</PRE></B>
+
+<P>Although the above program does not do much, there is a blank form displayed with no controls, it does, however, print two lines on the debug window:</P>
+
+<B><PRE>
+  Error Number  =  53 
+  Error Message = File not found
+</PRE></B>
+
+<P>These two lines are printed because the file &#147;NOT_HERE.TXT&#148; cannot be found on Drive &#145;C&#146;. Thus, when the error happens the program jumps down to the line label <TT>ErrHandle</TT> prints the two messages to the debug window, and then returns back up to the line after the error occurred. Try changing the name of the file to one that does exist and run the program again to see what happens.</P>
+<HR>
+<BR>
+<A HREF="dvbhome.html"><img border=0 align=middle src="left.gif">
+Menu</A>
+
+</BODY>
+</HTML>

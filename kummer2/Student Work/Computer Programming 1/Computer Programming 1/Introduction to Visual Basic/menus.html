@@ -1,0 +1,111 @@
+
+<HTML>
+
+<HEAD>
+<TITLE>Pull down and Popup Menus</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#C0C0C0">
+<IMG ALIGN=RIGHT SRC="kprog copy.gif" >
+<BR>
+<H1>Pull Down and Popup Menus</H1>
+<P><img src="commline.gif"></P>
+
+<BR>
+<H2><I>Pull Down Menus</I></H2>
+
+<P><B>Pull down menus are used extensively in Windows applications. They have a number of advantages:</B></P>
+
+<UL>
+<LI><P>The menu names are visible textual items on the menu bar, so the user can see the main functions of the software at all times.</P> 
+
+<LI><P>Menu titles, or menu items (such as Open Project on the File menu) should be unambiguous if they are well chosen, whereas, it can be difficult to design satisfactory icons for abstract functions <IMG SRC="open.gif"> is the standard icon for open.</P>
+
+<LI><P>The menu bar takes up very little space on the screen.</P>
+
+<LI><P>The menu options are generally available by means of access keys (holding down the Ctrl key then typing underlined letters of the menu title and menu item required, so Ctrl+O for &#145;Open Project&#146; on the &#145;File&#146; menu).</P>
+
+<LI><P>Functions are grouped together to form a set of menu items that are related, this helps users to know where to look for facilities.</P>
+
+<LI><P>An effort has been made to standardise the naming and ordering of menu items across applications (especially Microsoft), so that packages are easier to learn and use.</P>
+</UL>
+
+
+<P>When building new applications in VB, existing menu conventions should be used unless there is a very good reason to depart from them.</P>
+
+<P>Meus are created using the Menu Design Window found under the Window menu. This window can also be invoked by clicking on the <IMG SRC="pulldown.gif"> icon
+on the toolbar.</P>
+
+<P><DIV ALIGN="CENTER"><IMG BORDER=0 SRC="menu_1.gif"></DIV></P>
+
+
+<P>The top half of the Menu Design Window contains the menu control properties. The lower half is the menu control list box, where the menu/submenu structures for the current form are built up. The above Menu Design Window produces the menu shown below.</P>
+
+<P><DIV ALIGN="CENTER"><IMG BORDER=0 SRC="menu_2.gif"></DIV></P>
+
+<P>When an item is typed in the Caption text box, it also appears in the menu control list box. Selecting an item in the list box allows its properties to be edited (in a similar way to editing properties of controls in the properties window).</P>
+
+<UL>
+<LI><P>An item that appears on the left margin on the list box is the menu title.</P>
+
+<LI><P>Menu items are indented using the right arrow control. Move back to a previous level using the left arrow control.</P>
+
+<LI><P>The up and down arrows are used to move among the menu entries.</P>
+
+<LI><P>The insert button opens up space for an extra menu entry above the currently selected item in the list. The delete button removes the selected item.</P>
+
+<LI><P>If submenus are required (further drop down menus off menu items) these are created by indenting twice (using the right arrow control). At run time, the presence of a submenu is indicated by this symbol to the right of the menu item it hangs off). Four levels of submenus are supported.</P>
+
+<LI><P>The ampersand &#145;&&#146; is used to Precede the character that is to be underlined on the menu as the keyboard access character.</P>
+
+<LI><P>If the Caption of a menu entry is set to a hyphen &#145;-&#146;, this causes a separator bar to appear in the menu. Use this device to divide menus into logical groups.</P>
+
+<LI><P>The name of a menu entry is the name that will be used in the program code to refer to it.</P>
+
+<LI><P>The shortcut list allows any menu entry to be assigned a shortcut (Ctrl+character) instead of, or as well, as an access key.</P>
+
+<LI><P>If the property checked is set, this inserts a tick mark on the menu to indicate which of a set of options is currently in force.</P>
+
+<LI><P>If the property <TT>Enabled</TT> is set to false, that item is gray (faded) on the menu at run time and does not respond to events.</P>
+
+<P>At run time, <TT>mnuClose.Enabled = False</TT> would gray out the item <TT>Close</TT> on the first menu example.</P>
+
+<LI><P>The property <TT>Visible</TT> is used to determine whether the menu item is visible or invisible at run time. If a menu item is invisible, the items below it move up to fill in the space. If a menu title is invisible, that menu does not appear on the menu and all the menu titles to the right of it are moved one place left.</P>
+
+<P>At run time, <B><TT>mnuSaveAs.Visible = False</TT></B> would remove the item <TT>Save As...</TT> on the first menu example.
+</UL>
+
+<BR>
+<HR NOSHADE SIZE="1">
+<H2><I>Pop-up Menus</I></H2>
+
+<P>A pop-up menu is one that is displayed on top of a form and is not attached to the menu bar.</P>
+
+
+<P><B>PopupMenu Method Example:</B></P>
+
+<P>The code below displays a pop-up menu at the cursor location when the user clicks the right mouse button over a form. To try this example, create a form with a menu named “mnuFile” (“mnuFile” must have at least one submenu). Copy the code into the Declarations section of the form then run the application.</P>
+
+<PRE>
+  <B><FONT COLOR="#23238E">Private Sub</FONT> Form_MouseDown <FONT COLOR="#23238E">(</FONT>Button <FONT COLOR="#23238E">As Integer</FONT>, Shift <FONT COLOR="#23238E">As Integer</FONT>, X <FONT COLOR="#23238E">As Single</FONT>, Y <FONT COLOR="#23238E">As Single)</FONT>
+    <FONT COLOR="#23238E">If</FONT> Button = 2 <FONT COLOR="#23238E">Then PopupMenu</FONT> mnuFile
+
+  <FONT COLOR="#23238E">End Sub</FONT></B>
+</PRE>
+
+<P>In the above example, the pop-up menu appears at the X, Y position of the cursor, when the right mouse button is pressed (Button = 2). Use VB Help to explore the flags that can be set to specify the behaviour of a pop-up menu.</P> 
+
+<P><B>Note:</B> All controls are displayed relative to the co-ordinates of the parent object, so setting X and Y both to 0 displays a pop-up menu at the top left corner of the form.</P>
+
+<HR NOSHADE SIZE="1">
+<A HREF="dvbhome.html"><IMG BORDER=0 ALIGN="MIDDLE" SRC="left.gif">
+Menu</A><BR>
+
+<BR>
+<I>Tutorials using pull-down menus:</I><BR>
+<A HREF="tut5.html"><IMG BORDER=0 ALIGN="MIDDLE" SRC="right.gif">
+Tutorial 5</A> (Menus and List manipulation)<BR>
+
+
+</BODY>
+</HTML>

@@ -1,0 +1,127 @@
+<HTML>
+
+<HEAD>
+<TITLE>Tutorial 10</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#C0C0C0">
+<IMG ALIGN=RIGHT SRC="kprog copy.gif">
+<BR>
+<H1>Tutorial: Animation and Graphics</H1>
+<P><img src="commline.gif"></P>
+
+<BR>
+<P>The objective of this tutorial is to experiment more with VB&#146;s graphics facilities. At the end of this tutorial you should know more about:</P>
+
+<UL>
+<LI><P>Creating animations using arrays of picture boxes.</P>
+<LI><P>Designing graphics using another package, such as Paintshop Pro, and import them into Visual Basic.</P>
+<LI><P>Incorporating images from other sources such as the clipboard and scanners.</P>
+</UL>
+
+<HR NOSHADE SIZE="1">
+
+<P>Imaginative use of graphics and animation can greatly enhance an application. There is much scope for creativity when it comes to devising ways of acquiring, manipulating and using images. Microsoft&#146;s Windows 95 and NT make quite extensive use of animation sequences: file copy, Recycle Bin emptying, Disk Defragmentation, Internet Explorer logo, etc. Other software houses as well are using animation; for example, Norton uses an X-ray baggage handler sequence to virus scan files in Norton Anti-Virus (see below).</P>
+
+<CENTER><IMG SRC="nav_animation.gif"></CENTER>
+<BR>
+<HR NOSHADE SIZE="1">
+
+<OL>
+<LI><P>Effective animation can be achieved by setting up a <B>control array</B> of picture boxes, which have their visible property set to <TT>False</TT> and a further picture box (visible) which is used to display the animation. A series of still images is then created, one in each of the invisible picture boxes.</P>
+
+<P><B>Note:</B> A control array can be set up by creating the first control, then using the copy and paste commands to create the require number of &#145;clones&#146;.</P>
+
+<P>In the example below the telephones were created in Paint Shop Pro using the text tool. The telephone symbol was selected from the Wingdings font at 72pt. The handset was then cut out using the lasso tool, copied a few times, and then rotated varrying amounts to the left and right. To do this the colour depth had to be increased to 16.7 million, but after the rotations were complete this was put back down to 16 colours. Each phone was then saved into its own separate .BMP file. Next Visual Basic was started, a control array of empty picture boxes created and then the graphics files assigned to them. Two labels were added with the caption &#145;Bring&#146; and also two timer controls. One timer to control the animation sequence speed and the other to control the two labels. The interface for this can be seen in the figure below.</P>
+
+<CENTER><IMG SRC="tut_8b_1.gif"></CENTER>
+<BR>
+
+<P><B>Note:</B> The still images used in the animation do not need to be displayed on the form side by side. To save space they could be arrange on top of each other:</P>
+
+<CENTER><IMG SRC="tut_8b_2.gif"></CENTER>
+<BR>
+
+<P>The code necessary to create the illusion of animation is placed in one of the timers:</P>
+
+<B><PRE>
+<FONT COLOR="#23238E">Private Sub</FONT> tmrAnimate_Timer<FONT COLOR="#23238E">()</FONT>
+  <FONT COLOR="#23238E">Static</FONT> PhoneNo <FONT COLOR="#23238E">As Integer</FONT>
+
+  imgAnimation.Picture = imgStill(PhoneNo).Picture
+  PhoneNo = PhoneNo + 1
+
+  <FONT COLOR="#23238E">If</FONT> PhoneNo = 8 <FONT COLOR="#23238E">Then</FONT> PhoneNo = 0
+<FONT COLOR="#23238E">End Sub</FONT>
+</PRE></B>
+
+<P>The interval for this timer should be quite high (around 200). Experiment with different values to see what the effect is. The variable PhoneNo is declared as a Static so that other subroutines cannot access its value (and possible corrupt its contents), and also because a Local would loose its value every time the timer was called. The contents of the variable must be preserved between calls to the Timer subroutine so that we can use its value to control which still image is assigned to the animation image next.</P>
+
+<P>The other timer is used to hide the show the two labels (<TT>lblBring1</TT> and <TT>lblBring2</TT>) alternatively. The interval for this timer should be slower (about 1200) so that each label is displayed long enough to be seen.</P>
+
+<B><PRE>
+<FONT COLOR="#23238E">Private Sub</FONT> tmrText_Timer()
+  <FONT COLOR="#23238E">If</FONT> lblBring2.Visible <FONT COLOR="#23238E">Then</FONT>
+    lblBring2.Visible = <FONT COLOR="#23238E">False</FONT>
+    lblBring1.Visible = <FONT COLOR="#23238E">True</FONT>
+  <FONT COLOR="#23238E">Else</FONT>
+    lblBring1.Visible = <FONT COLOR="#23238E">False</FONT>
+    lblBring2.Visible = <FONT COLOR="#23238E">True</FONT>
+  <FONT COLOR="#23238E">End If</FONT>
+  
+<FONT COLOR="#23238E">End Sub</FONT>
+</PRE></B>
+<BR>
+
+<LI><P>Animation can be combined with moving position of the picture box dynamically. To do this add a line to the timer subroutine to change either the top or the left properties of the picture box which actually displays the animation (the stills do not require moving). To see this effect in action download the runner in <A HREF="ftp://ftp.dcs.napier.ac.uk/pub/s.wilkinson/animate.zip">ANIMATE.ZIP</A>.</P>
+<BR>
+
+<LI><P>Here are a few ideas for sequences of images to create and animate:</P>
+<UL>
+<LI TYPE="DISC">traffic lights
+<LI TYPE="DISC">a &#145;talking&#146; cartoon - two people with alternating speech bubbles
+<LI TYPE="DISC">one container pouring liquid into another
+<LI TYPE="DISC">somebody drinking out of a bottle
+<LI TYPE="DISC">snow or rain falling as the background to a scene
+<LI TYPE="DISC">a phantom pen drawing a poisonous message!
+</UL>
+<BR>
+
+<BR>
+<LI><P>Experiment with capturing screen images and manipulating them in a paint package such as Paint Shop Pro. To capture a Windows screen shot just hit the &#145;Print Screen&#146; button on the keyboard and the image will be placed onto the clipboard. Switch to Paint Shop Pro and select &#145;Paste&#146; from the &#145;Edit&#146; pulldown menu. One application of this is to capture screen images, annotate them, and create an on-line multimedia help system. The figure below could be one such image of this proposed system.</P>
+
+<CENTER><IMG SRC="annotate.gif"></CENTER>
+<BR>
+
+<P>Alternatively if you don&#146;t want annotations all over the screen shot, load in just the image itself and then place some labels over the parts you want to provide help on. Next make the <TT>BackStyle</TT> of the labels <TT>Transparent</TT> and remove the caption. This should have the effect of a label which you can&#146;t see but which can still recieve events as usual. Now add another label where you are going to display the annotations, rename it <TT><B>lblAnnotation</B></TT>. Go back to the labels over the picture and on the <TT><B>MouseMove</B></TT> event write the code you need to display the annotation (e.g. <TT><B>lblAnnotation.Caption = "Resize Handle"</B></TT>). Because the MouseMove event is used, when the application is run all the user has to do is point to the required part of the picture and the annotation label caption will update automatically.</P> 
+
+<BR>
+<LI><P>For photo-realistic graphics on a PC scanners can be used to digitise paper-based pictures. Alternatively, there are many clip-art libraries sold on CD-ROM which also include photos, fonts and sound effects files.</P>
+
+<P><B>Tip:</B> For maximum image quality always scan in images at the size you will be using them in Visual Basic. Although an image box can resize a picture, enlarging it will cause it to become blocky. Most scanners should have an option to measure in pixels, use this to calculate how big the scan will look on the screen resolution you are using.</P>
+
+<CENTER>
+<IMG SRC="space.jpg">
+<P><FONT FACE="ARIAL" SIZE=-1><B>JPEG image (384 x 288)</B></FONT></P>
+</CENTER>
+<BR>
+
+<P><B>Note:</B> Although different graphics formats can hold the same images, some are more efficient than others. For example, if the above astronaut was saved in GIF image it would require 36K <I>more</I> disk space. However, GIFs are more efficient for small images like the arrow buttons at the bottom of this page.</P>
+
+<P>Images on the WWW can be saved by right-clicking over the required image and then selecting &#145;Save Image As...&#146; from the popup menu. However, always remember copyright laws. Small icons and buttons are normally OK to copy, but permission should be sought before downloading any larger images or company logos.</P>
+
+</OL>
+
+<HR NOSHADE SIZE="1">
+<BR>
+
+<A HREF="tut9.html"><img border=0 align="middle" src="up.gif">
+Tutorial 9</A> (Working with files)<BR>
+<A HREF="dvbhome.html"><img border=0 align="middle" src="left.gif">
+Menu</A><BR>
+<A HREF="tut11.html"><img border=0 align="middle" src="down.gif">
+Tutorial 11</A> (Incorporating Sound)<BR>
+
+</BODY>
+
+</HTML>

@@ -1,0 +1,67 @@
+<HTML>
+
+<HEAD>
+<TITLE>Tutorial 5</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#C0C0C0"><IMG ALIGN=RIGHT SRC="kprog copy.gif" ><BR><H1>Tutorial: Menus and List Manipulation</H1><P><img src="commline.gif"></P><BR>
+<P>Create a Visual Basic program to satisfy the description below.</P>
+
+<H3>Interface</H3>
+<CENTER><IMG BORDER=0 SRC="tut_5_1.gif"></CENTER>
+<BR>
+<H3>Behaviour</H3>
+
+<P>This is a simple program conprising three drop down menus, three list boxes and a terminating button.</P>
+
+<P>The menus all act upon the list boxes, changing the foreground/background colour, the font size and type and allowing insertion and deletion of entries. Any of these actions affect all three lists simultaneously.</P>
+
+<P>The menu structures are given below.</P>
+
+<P><B>Note:</B> Clicking on any list item should cause the other two lists to highlight the corresponding words immediately.</P>
+<PRE>
+<B>Colours                      Fonts               Vocabulary</B>
+  <i>Foreground></i>  Grey            <i>Size></i>  10pt         Add
+               Light Blue             12pt         Delete
+               Light Green            15pt
+               Light cyan             20pt
+  <i>Backgound></i>   Black                  25pt
+               Blue            <i>Type></i>  Roman
+               Green                  Script
+               Cyan                   Courier
+               Red                    Modern
+               Magenta
+               Yellow
+</PRE>
+
+<H3>Hints</H3>
+<OL>
+<LI><P>If you do not know how to create a pull down menu please read - <A HREF="menus.html">Pull Down and Popup Menus</A>.</P>
+<LI><P>Enter the data into the lists so that corresponding words have the same index position in each list. You can put all the <tt>AddItem</tt> statements in the <tt>FormLoad</tt> procedure or use your own <tt>Add</tt> function on the menubar to do it at run time. Feel free to vary the languages or vocabularies.</P>
+<LI><P>The property <tt>ListIndex</tt> gives the position of the currently selected (highlighted) item in a list. The way to synchronise the lists is to assign the just selected <tt>ListIndex</tt> to the other lists, so in the <tt>Click</tt>
+event of <tt>lstFrench</tt> we would put:</P>
+
+<PRE>
+  <B>lstGerman.ListIndex = lstFrench.ListIndex
+  lstEnglish.ListIndex = lstFrench.ListIndex</B>
+</PRE>
+
+<P><B>Note:</B> meaningful names are better than <tt>List1</tt>, <tt>List2</tt>, <tt>List3</tt>.</P>
+
+<LI><P>To delete the currently highlighted words in the three lists, just use <tt>ListIndex</tt> to access them.</P>
+
+<LI><P>The <tt>Add</tt> function needs to prompt the user for the three items of vocabulary and append these to the appropriate lists. There are various possibilities to investigate.</P>
+</OL>
+
+<HR NOSHADE SIZE="1">
+<BR>
+<A HREF="tut4.html"><img align="middle" border=0 src="up.gif">
+Tutorial 4</A> (List Boxes and Combo Boxes)<BR>   
+<A HREF="dvbhome.html"><img align="middle" border=0 src="left.gif">
+Menu</A><BR>
+<A HREF="tut6.html"><img align="middle" border=0 src="down.gif">
+Tutorial 6</A> (Creating and using Arrays of Controls)<BR>
+
+</BODY>
+
+</HTML>

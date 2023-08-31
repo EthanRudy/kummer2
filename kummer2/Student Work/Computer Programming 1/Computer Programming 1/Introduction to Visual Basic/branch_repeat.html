@@ -1,0 +1,277 @@
+<HTML>
+<HEAD><TITLE>Branching and Repeating-Discovering Visual Basic</TITLE>
+</HEAD>
+<BODY bgColor=#c0c0c0><IMG   
+src="kprog copy.gif" align=right> <BR>
+<H1>Branching(Testing) and Repeating(Looping) Statements </H1>
+<P><IMG 
+src="commline.gif"></P>
+
+
+<DIV ALIGN="CENTER">
+<TABLE BORDER=0 CELLSPACING=15>
+<TR>
+<TD VALIGN="TOP">
+<B><A HREF="#branching">Branching(Testing) Statements:</A>&nbsp;&nbsp;</B>
+<UL>
+<LI><A HREF="#if">If...Then</A>
+<LI><A HREF="#case">Case Select</A>
+</UL>
+</TD>
+<TD VALIGN="TOP">
+<B><A HREF="#repeating">Repeating(Looping) Statements:</A></B>
+<UL>
+<LI><A HREF="#loop-until">Do...Loop Until</A>
+<LI><A HREF="#loop-while">Do...Loop While</A>
+<LI><A HREF="#do-while">Do While...Loop</A>
+<LI><A HREF="#do-until">Do Until...Loop</A>
+<LI><A HREF="#for-next">For...Next</A>
+<LI><A HREF="#while-wend">While...Wend</A>
+</UL>
+</TD>
+</TR>
+</TABLE>
+</DIV>
+
+<BR>
+
+<P>Visual Basic like other programming languages executes lines of code from the top of the program downwards. However, often a programmer does not wish all lines to be executed every time the program is run. Instead of writing several different programs for this job, branching and repeating commands can be used.</P>
+
+<P>Branching commands are used to determine when to execute a small section of code and when not to run it. One example is the &#145;<TT>If</TT>&#146; command. If something is true then the code will be run, if not it will not be executed and VB will continue further down the program.</P>
+
+<P>Repeating commands are useful for running small sections of code several times. If a programmer needs to read 200 lines of text from a file he could use 200 lines of code, one for every read statement, or alternatively a &#145;<TT>For Next</TT>&#146; loop could do a similar job using just three or four lines!<P>
+
+<HR NOSHADE SIZE="1">
+<A NAME="branching"><H2><I>Branching(Testing) Statements</I></H2></A>
+<BR>
+<A NAME="if"><H3>If...Then</H3></A>
+
+<P>Single line If (Example):</P>
+
+<B><PRE>  <FONT COLOR="#23238E">If</FONT> bytDayOfWeek <FONT COLOR="#23238E">=</FONT> 1 <FONT COLOR="#23238E">Then</FONT> Label1.Caption = "Sunday"</PRE></B>
+
+<P>Multi-line If (Example):</P>
+<B><PRE>
+  <FONT COLOR="#23238E">If</FONT> blnLeapYear = <FONT COLOR="#23238E">True And</FONT> bytMonth = 2 <FONT COLOR="#23238E">Then</FONT>
+     <FONT COLOR="#23238E">Print</FONT> "Current year is a leap year"
+     <FONT COLOR="#23238E">Print</FONT> "Month is February"
+     <FONT COLOR="#23238E">Print</FONT> "Thus number of days in month = 29"
+  <FONT COLOR="#23238E">End If</FONT>
+</PRE></B>
+
+<P>The multi-line If command requires the extra statement &#145;<tt>End If</tt>&#146; to define the end of the If block.</P>
+
+<P>In the following code a check is made to determine the price of cinema seats. Normal seats are priced at £4.40 while luxury seats are £6.00. Since there are only two types of seats the code only checks for standard and assumes luxury if this is false.</P>
+
+<P>If and Else (Example):</P>
+
+<PRE>  <B><FONT COLOR="#23238E">If</FONT> strSeatType = "normal" <FONT COLOR="#23238E">Then</FONT>
+    Label1.Caption <FONT COLOR="#23238E">=</FONT> "Price = £4.40"
+  <FONT COLOR="#23238E">Else</FONT>
+    Label1.Caption <FONT COLOR="#23238E">=</FONT> "Price = $6.00"
+  <FONT COLOR="#23238E">End If</FONT></B>
+</PRE>
+
+<P>However, if we adapt this cinema example to the theatre where there are more types of seats then we will require an &#145;<tt>ElseIf</tt>&#146; statement.
+
+<P>If and ElseIf (Example):</P>
+
+<PRE>  <B><FONT COLOR="#23238E">If</FONT> strSeatType = "stalls" <FONT COLOR="#23238E">Then</FONT>
+    Label1.Caption <FONT COLOR="#23238E">=</FONT> "Price = £8.25"
+  <FONT COLOR="#23238E">ElseIf</FONT> seat <FONT COLOR="#23238E">=</FONT> "circle"
+    Label1.Caption <FONT COLOR="#23238E">=</FONT> "Price = £10.50"
+  <FONT COLOR="#23238E">Else</FONT>     <FONT COLOR="green">' Assume the Upper Circle</FONT>
+    Label1.Caption <FONT COLOR="#23238E">=</FONT> "Price = £12.00"
+  <FONT COLOR="#23238E">End If</FONT></B>
+</PRE>
+<BR>
+
+<BR>
+<A NAME="case"><H3>Case Select</H3></A>
+
+<P>If more branches are required then a &#145;<tt>Select Case</tt>&#146; command can be used. Notice that in the following example, several values can trigger the same case statement. For example, the months 1, 3, 5, 7, 8, 10 and 12 all are 31 days long. Instead of writing 12 separate case statements, all these values can be included in one case by using commas.</P>
+
+<P>Case (Example):</P>
+<PRE>
+  <B><FONT COLOR="#23238E">Select Case</FONT> bytMonth
+    <FONT COLOR="#23238E">Case</FONT> 1, 3, 5, 7, 8, 10, 12
+      number_of_days = 31
+    <FONT COLOR="#23238E">Case</FONT> 2
+      number_of_days = 28
+    <FONT COLOR="#23238E">Case</FONT> 4, 6, 9, 11
+      number_of_days = 30
+  <FONT COLOR="#23238E">End Select</FONT></B>
+</PRE>
+
+<P>The &#145;<tt>End Select</tt>&#146; statement defines the end of the Case block. To &#145;trap&#146; any values not picked up by earlier cases used the &#145;<tt>Case Else</tt>&#146; construct.</P>
+
+<PRE>
+    <B>...
+    <FONT COLOR="#23238E">Case</FONT> 2
+      number_of_days = 28
+    <FONT COLOR="#23238E">Case</FONT> 4, 6, 9, 11
+      number_of_days = 30
+    <FONT COLOR="#23238E">Case Else</FONT>
+      <FONT COLOR="#23238E">MsgBox</FONT> "ERROR: Month must be between 1 and 12!"
+  <FONT COLOR="#23238E">End Select</FONT></B>
+</PRE>
+<BR>
+<HR NOSHADE SIZE="1">
+
+<A NAME="repeating"><H2><I>Repeating(Looping) Statements</I></H2></A>
+
+<P>The easist way to understand repetition is with the aid of a practical example. Consider the steps a milkman performs has he delivers pints of milk to all the houses in a street. There are four basic steps: 1) check number of pints requested on customer&#146;s note, 2) fetch required pints from milk float, 3) carry back empties, and 4) move to next house in street. If the street has 20 houses then the milkman has to carry out 80 individual steps to deliver all the milk. A computer simulation of this could be written in Visual Basic using 80 lines of code, one line for each step. However, this is very inefficient. A much better way is to &#145;wrap&#146; the four basic steps in some kind of repeating structure. Visual Basic supports the following types:</P>
+
+<UL>
+<LI>Do...Loop Until
+<LI>Do...Loop While
+<LI>Do While...Loop
+<LI>Do Until...Loop
+<LI>For...Next
+<LI>While...Wend
+</UL>
+
+<BR>
+<A NAME="loop-until"><H3>Do...Loop Until</H3></A>
+
+<P>This type of repeating statemente will <U>always</U> be executed at least once because the loop exit statement is at the end. The milkman problem could be solved in the following way:</P>
+
+<PRE><B>  intHouseNumber = 1
+  <FONT COLOR="#23238E">Do</FONT>
+    <FONT COLOR="green">' Check the order
+    ' Fetch correct order
+    ' Carry back empties</FONT>
+    intHouseNumber = intHouseNumber + 1
+  <FONT COLOR="#23238E">Loop Until</FONT> intHouseNumber > 20
+</B></PRE>
+
+<BR>
+<A NAME="loop-while"><H3>Do...Loop While</H3></A>
+
+<P>A &#145;Do...Loop While&#146; loop is very similar to the previous &#145;Do...Loop Until&#146;. The difference is in the logic of the exit condition. For example, the &#145;Loop While&#146; will repeat a block of instructions while a condition <I>remains</I> true, but the &#145;Loop Until&#146; loop will exit when the exit condition <I>turns</I> true.</P>
+
+<BR>
+<A NAME="do-while"><H3>Do While...Loop</H3></A>
+
+<P>This loop is functionally equivalent to the &#145;Do...Loop While&#146; except that the loop test condition is tested at the start of the loop. In practice this means that the &#145;Do While...Loop&#146; might not be executed at all (if condition is false), whereas the &#145;Do...Loop While&#146; will always be executed at least once.</P>
+
+<P>Do While...Loop (Never executes loop):</P>
+
+<PRE><B>  <FONT COLOR="#23238E">Dim</FONT> a as Byte
+
+  a = 1
+  <FONT COLOR="#23238E">Do While</FONT> a > 10
+    a = a - 1
+  <FONT COLOR="#23238E">Loop</FONT>
+</B></PRE>
+
+<P>Do While...Loop (Example which will execute loop):</P>
+
+<PRE><B>  <FONT COLOR="#23238E">Dim</FONT> a as Byte
+
+  a = 20
+  <FONT COLOR="#23238E">Do While</FONT> a > 10
+    a = a - 1
+  <FONT COLOR="#23238E">Loop</FONT>
+</B></PRE>
+
+<BR>
+<A NAME="do-until"><H3>Do Until...Loop</H3></A>
+
+<P>This loop, like the previous &#145;Do While...Loop&#146; type, tests the condition at the beginning of the loop. However, whereas the previous loop repeated <I>while</I> the condition was true, the &#145;Do Until...Loop&#146; repeats <I>until</I> the condition is true. The milkman simulation, discussed above, could be re-coded to use a &#145;Do Until...Loop&#146; as follows:</P>
+
+<PRE><B>  intHouseNumber = 1
+  <FONT COLOR="#23238E">Do Until intHouseNumber > 20</FONT>
+    <FONT COLOR="green">' Check the order
+    ' Fetch correct order
+    ' Carry back empties</FONT>
+    intHouseNumber = intHouseNumber + 1
+  <FONT COLOR="#23238E">Loop</FONT>
+</B></PRE>
+
+<BR>
+<A NAME="for-next"><H3>For...Next</H3></A>
+
+<P>All the loops discussed so far have been <B>non-deterministic</B>, that is the number of times the loop will execute is <I>unknown</I>. However, there is one type of loop where the number of times it will execute is already known, this is known as a <B>deterministic</B> loop. The &#145;For...Next&#146; loop can be used in any situation where the number of times it will repeat is known and fixed. For example, in the milkman situation it is known that there are 20 houses. In other situation it is known that there are so many miles between two towns, 7 days in a week, 10 floors in a particular office block, etc.</P>
+
+<PRE><B>  <FONT COLOR="#23238E">Dim</FONT> intHouseNumber <FONT COLOR="#23238E">As Integer</FONT>
+
+  <FONT COLOR="#23238E">For</FONT> intHouseNumber = 1 <FONT COLOR="#23238E">To</FONT> 20
+    <FONT COLOR="green">' Check the order
+    ' Fetch correct order
+    ' Carry back empties</FONT>
+  <FONT COLOR="#23238E">Next</FONT>
+</B></PRE>
+
+<P>If this &#145;For...Next&#146; loop is compared with the other non-deterministic loops then one omission becomes apparent - a statement adding one to the house number is missing. This line is no longer needed because this type of loop automatically increments the value of its condition variable.</P>
+
+<P>The &#145;For...Next&#146; loop condition variable does not always have to be incremented by one. Larger increments can be set by using the &#145;Step&#146; parameter. Using this the milkman simulation could be changed so that he walks up one side of the street first (odd numbered houses), stops at number 19, crosses over the street to number 20, and works his way back down the even numbered houses. &#145;Print&#146; statements have been added so that the order of houses visited can be seen.</P>
+
+<PRE><B>  <FONT COLOR="#23238E">Dim</FONT> intHouseNumber <FONT COLOR="#23238E">As Integer</FONT>
+
+  <FONT COLOR="#23238E">For</FONT> intHouseNumber = 1 <FONT COLOR="#23238E">To</FONT> 19 <FONT COLOR="#23238E">Step</FONT> 2
+    <FONT COLOR="green">' Check the order
+    ' Fetch correct order
+    ' Carry back empties</FONT>
+    <FONT COLOR="#23238E">Print</FONT> intHouseNumber
+  <FONT COLOR="#23238E">Next</FONT> intHouseNumber
+
+  <FONT COLOR="#23238E">For</FONT> intHouseNumber = 20 <FONT COLOR="#23238E">To</FONT> 2 <FONT COLOR="#23238E">Step</FONT> -2
+    <FONT COLOR="green">' Check the order
+    ' Fetch correct order
+    ' Carry back empties</FONT>
+    <FONT COLOR="#23238E">Print</FONT> intHouseNumber
+  <FONT COLOR="#23238E">Next</FONT> intHouseNumber
+</B></PRE>
+
+<BR>
+<A NAME="while-wend"><H3>While...Wend</H3></A>
+
+<P>The &#145;While...Wend&#146; loop is functionally equivalent to the &#145;Do While...Loop&#146; discussed above. Once again this type of repeating structure should be used in situations where the loop will execute at least once. For example, a program which checks ban PIN numbers would always execute at least once:</P>
+
+<PRE><B>  <FONT COLOR="#23238E">Private Sub</FONT> Form_Activate()
+    <FONT COLOR="#23238E">Dim</FONT> intEntered_PIN <FONT COLOR="#23238E">As Integer</FONT>
+    <FONT COLOR="#23238E">Const</FONT> intCorrect_PIN = 1927
+  
+    <FONT COLOR="#23238E">While</FONT> intEntered_PIN <> intCorrect_PIN
+      intEntered_PIN = InputBox("Please enter your PIN:", "PIN", "")
+    <FONT COLOR="#23238E">Wend</FONT>
+  <FONT COLOR="#23238E">End Sub</FONT>
+</B></PRE>
+
+<P><B>Note:</B> In reality an InputBox would not be used since the typed PIN can be seen on the screen and also the correct PIN would not be held in a constant but instead retrieved from an encrypted file, but as an example it demonstrates the potential of &#145;While...Wend&#146; loops.</P>
+
+<BR>
+<H3>Nesting loops</H3>
+
+<P>In the milkman example above the milkman performs the basic 4 steps at each of the 20 houses he serves. However, consider the more complex problem of simulating the pouring of cups of tea at a Church meeting. The problem is more complex because the tea pot holds only 5 cups of tea and there are 100 to serve. To do solve this problem two loops can be used, one inside another (nested):</P>
+
+<PRE><B>  <FONT COLOR="#23238E">Dim</FONT> cups_filled as Byte
+
+  bytCupsFilled = 0
+  <FONT COLOR="#23238E">Do</FONT>
+    <FONT COLOR="green">' boil water
+    ' add tea bags to pot
+    ' fill pot with boiling water</FONT>
+    <FONT COLOR="#23238E">For</FONT> bytPour = 1 to 5
+      <FONT COLOR="green">' pour tea into cup
+      ' move to next cup</FONT>
+      bytCupsFilled = bytCupsFilled + 1
+    <FONT COLOR="#23238E">Next</FONT> bytPour
+  <FONT COLOR="#23238E">Loop Until</FONT> bytCupsFilled = 100
+</B></PRE>
+
+<P><B>Note:</B> Different types of loops can be nested inside one another. In the above example the &#145;For...Next&#146; loop is nested within a &#145;Do...Loop Until&#146; structure.</P>
+
+<P>
+</P>
+<HR NOSHADE SIZE="1">
+<BR>
+
+<BR>
+<A HREF="dvbhome.html">
+<IMG ALIGN="MIDDLE" SRC="left.gif" BORDER=0>
+Menu</A>
+</BODY>
+
+</HTML>

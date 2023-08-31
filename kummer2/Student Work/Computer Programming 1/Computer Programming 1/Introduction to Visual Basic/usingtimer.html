@@ -1,0 +1,72 @@
+<HTML>
+
+<HEAD>
+<TITLE>Using Timer events in Visual Basic </TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#C0C0C0">
+<IMG ALIGN=RIGHT SRC="kprog copy.gif" >
+<BR>
+<H1>Using Timing events in Visual Basic</H1>
+<P><img src="commline.gif"></P>
+
+<BR>
+<P>Visual Basic is not an ideal environment in which to do accurate timing. One thing to make sure of when trying to take measurements, is that <I>no other processes are running</I>. Close down all applications other than your program.</P>
+
+<P>Visual Basic provides several time-related facilities. If timings accurate to plus or minus 1 second are satisfactory the <TT><B>Timer</B></TT> function can be used. This returns the number of seconds that have elapsed since 12 midnight. Before using this function, check, and if necessary set,  the system time on your PC (this is done by typing <TT><B>time</B></TT> at the DOS prompt). If working late at night, remember that your results will be affected if midnight strikes during a timing experiment!</P> 
+
+<P>Below is a simple example of using <TT><B>Timer</B></TT>. The elapsed time since midnight is stored when the start button is clicked and again when the stop button is clicked. Elapsed time between clicking on start and clicking on stop is displayed in the text box. Start and Finish are long (i.e. numeric) private module variables declared in the &#145;(General) (Declarations)&#146; section of a module.</P>
+
+<TABLE BORDER=0 CELLPADDING=8>
+<TR>
+<TD><IMG SRC="timer_1.gif"></TD>
+<TD><B><PRE><FONT COLOR="#23238E">Private</FONT> <FONT COLOR="#23238E">start As Long</FONT>
+<FONT COLOR="#23238E">Private</FONT> finish <FONT COLOR="#23238E">As Long</FONT>
+
+<FONT COLOR="#23238E">Private Sub</FONT> cmdStart_Click <FONT COLOR="#23238E">()</FONT>
+  start <FONT COLOR="#23238E">= Timer</FONT>
+<FONT COLOR="#23238E">End Sub</FONT>
+
+<FONT COLOR="#23238E">Private Sub</FONT> cmdStop_Click <FONT COLOR="#23238E">()</FONT>
+  finish <FONT COLOR="#23238E">= Timer</FONT>
+  text1.Text <FONT COLOR="#23238E">=</FONT> finish - start
+<FONT COLOR="#23238E">End Sub</FONT></PRE></B></TD>
+</TR>
+</TABLE>
+
+<P>Sometimes, for example if trying to record mouse selection speeds, intervals of less than one second will occur. These cannot be accurately handled in VB, but a good enough approximation can be obtained using the Timer control, which can be found on the ToolBox - it looks like a stop watch <IMG SRC="timer.gif">.</P>
+
+<P>Place a <TT><B>Timer control</B></TT> on your form (it will not be visible at run time). Set its interval property to 100 (the interval is measured in milliseconds, so this means than any code behind the timer event will be executed every tenth of second). Below are two screens, the left one shows the Timer control at design time and the right screen shows how the window appears at run time. This program measures the elapsed time in tenths of a second from clicking on the &#145;Go&#146; button to clicking on the rectangle (a PictureBox).</P>
+
+<IMG SRC="timer_2.gif">
+<IMG SRC="timer_3.gif">
+
+<B><PRE>
+<FONT COLOR="#23238E">Private</FONT> elapsed <FONT COLOR="#23238E">As Long</FONT>      <FONT COLOR="green">' Private module variable</FONT>
+
+<FONT COLOR="#23238E">Private Sub</FONT> cmdGo_Click <FONT COLOR="#23238E">()</FONT>
+  elapsed <FONT COLOR="#23238E">=</FONT> 0
+  timer1.Enabled <FONT COLOR="#23238E">= True</FONT>
+<FONT COLOR="#23238E">End Sub
+
+Private Sub</FONT> Timer1_Timer <FONT COLOR="#23238E">()</FONT>
+  elapsed <FONT COLOR="#23238E">=</FONT> elapsed + 1
+<FONT COLOR="#23238E">End Sub
+
+Private Sub</FONT> Picture1_Click <FONT COLOR="#23238E">()</FONT>
+  timer1.Enabled <FONT COLOR="#23238E">= False</FONT>
+  text1.Text <FONT COLOR="#23238E">=</FONT> elapsed
+<FONT COLOR="#23238E">End Sub</FONT>
+</PRE></B>
+
+<P>The timer control is particularly useful when you want to do time-related things that do not require absolute precision. For example, in a public walk-up-and-use system you might want to trigger automatically back to the welcome screen if there has been no interaction for about 2 minutes. In a computer-based learning program you might want to offer some sort of help if a user has been looking at a self-assessment question for some time, but has made no response. In interactive games, timers are used to selectively change aspects of the screen, for example to maintain an illusion of animation in a &#145;living&#146; book.</P>
+
+<BR>
+<HR NOSHADE SIZE="1">
+<BR>
+<A HREF="dvbhome.html"><IMG BORDER=0 ALIGN="MIDDLE" SRC="left.gif">
+Menu</A><BR>
+</BODY>
+
+</HTML>
+

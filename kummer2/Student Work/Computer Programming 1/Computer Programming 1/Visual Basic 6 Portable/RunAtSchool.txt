@@ -1,0 +1,4 @@
+If you're having trouble running it at school, try a batch file with the following:
+
+@echo off
+start %cd%\autorun.exe

@@ -1,0 +1,87 @@
+/**
+ * The stylesheet for outlines
+ *
+ * @author  David Bernstein
+ * @version 1.0
+ */
+
+
+/*
+
+TABLE.outline {
+    font-size: 11pt;
+    margin-left: 2em; 
+    margin-right: 2em;
+    margin-right: 0;
+    margin-left: 0;
+    min-width: 100%;
+}
+
+
+TD.date {
+    padding-left: 20pt;
+    vertical-align: top;
+    width: 6em;
+}
+
+TD.subject {
+    vertical-align: top;
+}
+
+TD.reading {
+    font-size: 9pt;
+    vertical-align: top;
+    width: 10em;
+}
+
+
+
+TR.lab {
+
+    font-size: 7pt;
+    vertical-align: top;
+}
+
+*/
+
+
+
+/* To prevent cell phones from adjusting the size of text */
+* {
+    text-size-adjust: none;
+}
+
+
+table.outline {
+    font-size: 11pt;
+    margin-left: 2em; 
+    margin-right: 2em;
+    margin-right: 0;
+    margin-left: 0;
+    min-width: 100%;
+}
+
+
+td.date {
+    padding-left: 20pt;
+    vertical-align: top;
+    width: 6em;
+}
+
+td.subject {
+    vertical-align: top;
+}
+
+td.reading {
+    font-size: 9pt;
+    vertical-align: top;
+    width: 10em;
+}
+
+
+
+tr.lab {
+
+    font-size: 7pt;
+    vertical-align: top;
+}

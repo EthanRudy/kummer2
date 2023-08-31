@@ -1,0 +1,257 @@
+<!doctype html public "-//IETF//DTD HTML//EN">
+<HTML>
+
+<HEAD>
+<TITLE>Introduction to Visual Basic 5.0 Programming</TITLE>
+<META NAME="keywords" CONTENT="Visual Basic, VB, Programming, Windows development">
+<META NAME="description" CONTENT="Designed to teach beginners Visual Basic 5.0, this web site provides reference material, weekly tutorials, downloadable example projects, and links to further sites.">
+<META NAME="language" content="English">
+<META NAME="author" content="Simon Wilkinson">
+</HEAD>
+
+<BODY BGCOLOR="#C0C0C0">
+
+<IMG ALIGN=RIGHT SRC="graphics/vb_logo.gif" ALT="VB Logo">
+<BR>
+<H1>Introduction to Visual Basic 5.0 Programming</H1>
+<P><img src="graphics/line_rainbow.gif"></P>
+
+<P>&#147;<I>Anybody who can master a telephone can certainly program.</I>&#148;<BR>
+Bob Frankston</P>
+
+<DIV ALIGN="CENTER">
+<TABLE BORDER=0>
+<TR>
+<TD ALIGN=CENTER WIDTH=95><A HREF="#notes"><IMG BORDER=0 SRC="graphics/notes.gif"></A></TD>
+<TD ALIGN=CENTER VALIGN=TOP WIDTH=95><A HREF="#tutorials"><IMG BORDER=0 SRC="graphics/tutorial.gif"></A></TD>
+<TD ALIGN=CENTER VALIGN=TOP WIDTH=95><A HREF="#assignments"><IMG ALIGN=TOP BORDER=0 SRC="graphics/assignments.gif"></A></TD>
+<TD ALIGN=CENTER WIDTH=95><A HREF="#download"><IMG BORDER=0 SRC="graphics/download.gif"></A></TD>
+<TD ALIGN=CENTER WIDTH=95><A HREF="#reading"><IMG BORDER=0 SRC="graphics/reading.gif"></A></TD>
+<TD ALIGN=CENTER WIDTH=95><A HREF="#internet"><IMG BORDER=0 SRC="graphics/internet.gif"></A></TD>
+</TR>
+<TR>
+<TD ALIGN=CENTER WIDTH=95><A HREF="#notes"><FONT FACE="ARIAL" SIZE=-1>Reference<BR> notes</FONT></A></TD>
+<TD ALIGN=CENTER VALIGN=TOP WIDTH=95><A HREF="#tutorials"><FONT FACE="ARIAL" SIZE=-1>Tutorials</FONT></A></TD>
+<TD ALIGN=CENTER VALIGN=TOP WIDTH=95><A HREF="#assignments"><FONT FACE="ARIAL" SIZE=-1>Assignments</FONT></A></TD>
+<TD ALIGN=CENTER WIDTH=95><FONT FACE="ARIAL" SIZE=-1><A HREF="#downloads">Downloads</A><BR>(inc. whole site)</FONT></TD>
+<TD ALIGN=CENTER WIDTH=95><A HREF="#reading"><FONT FACE="ARIAL" SIZE=-1>Further<BR>reading</FONT></A></TD>
+<TD ALIGN=CENTER WIDTH=95><A HREF="#internet"><FONT FACE="ARIAL" SIZE=-1>Internet<BR>resources</FONT></A></TD>
+</TR>
+</TABLE>
+</DIV>
+
+<BR>&nbsp;<BR>
+
+<A NAME="notes">
+<TABLE BORDER=0 WIDTH=100% CELLSPACING=0>
+<TR><TD BGCOLOR="#808080"><IMG SRC="graphics/notes.gif"></TD>
+<TD BGCOLOR="#808080" WIDTH=100%><FONT SIZE=+3 COLOR="white"><B>&nbsp;&nbsp;Reference Notes</B></FONT>
+</TD></TR>
+</TABLE>
+</A>
+<BR>
+<UL>
+<LI><A HREF="HTML/create_app.html">Creating a Visual Basic Application</A>
+<LI><A HREF="HTML/data_structures.html">Data Structures</A>
+<LI><A HREF="HTML/debugging.html">Debugging VB Programs</A>
+<LI><A HREF="HTML/error_trapping.html">Error Trapping</A>
+<LI><A HREF="HTML/functions.html">Functions</A>
+<LI><A HREF="HTML/hints_tips.html">Hints & Tips</A>
+<LI><A HREF="HTML/interrupt.html">Interrupting Events</A>
+<LI><A HREF="HTML/managing_projects.html">Managing Projects</A>
+<LI><A HREF="HTML/program_control.html">Program Control</A>
+<LI><A HREF="HTML/programming_style.html">Programming Style</A>
+<LI><A HREF="HTML/menus.html">Pull Down and Popup Menus</A>
+<LI><A HREF="HTML/resolution.html">Resolution & Graphics</A>
+<LI><A HREF="HTML/timer.html">Timing events in Visual Basic</A>
+<LI><A HREF="HTML/scope.html">Variable Scope</A>
+</UL>
+
+<BR>&nbsp;<BR>
+
+<A NAME="tutorials">
+<TABLE BORDER=0 WIDTH=100% CELLSPACING=0>
+<TR><TD BGCOLOR="#808080"><IMG SRC="graphics/tutorial.gif"></TD>
+<TD BGCOLOR="#808080" WIDTH=100%><FONT SIZE=+3 COLOR="white"><B>&nbsp;&nbsp;Tutorials</B></FONT>
+</TD></TR>
+</TABLE>
+</A>
+
+<H3>Core Skills</H3>
+<UL>
+<LI>Week 1 - <A HREF="HTML/tutorial_1.html">Exploring the Visual Basic Environment</A>
+<LI>Week 2 - <A HREF="HTML/tutorial_2.html">Understanding Events</A>
+<LI>Week 3 - <A HREF="HTML/tutorial_3.html">Command Buttons, Option Buttons and Check Boxes</A>
+<LI>Week 4 - <A HREF="HTML/tutorial_4.html">List Boxes and Combo Boxes</A>
+<LI>Week 5 - <A HREF="HTML/tutorial_5.html">Menus and List manipulation</A>
+<LI>Week 6 - <A HREF="HTML/tutorial_6.html">Creating and Using Arrays of Controls</A>
+<LI>Week 7 - <A HREF="HTML/tutorial_7.html">Vertical & Horizontal Scroll Bars</A>
+<LI>Week 8 - <A HREF="HTML/tutorial_8.html">Animation and Graphics</A>
+<LI>Week 9 - <A HREF="HTML/tutorial_9.html">Working with Multiple Forms</A>
+<LI>Week 10 - <A HREF="HTML/tutorial_10.html">Using the Grid Control</A>
+<LI>Week 11 - <A HREF="HTML/tutorial_11.html">Working with Files</A>
+<LI>Week 12 - <A HREF="HTML/tutorial_12.html">Working with Access 97 Databases</A>
+</UL>
+
+<H3>Advanced</H3>
+<UL>
+<LI>Week 13 - <A HREF="HTML/tutorial_13.html">Using Crystal Reports with VB</A>&nbsp;&nbsp;<IMG SRC="graphics/new.gif">
+<LI>Week 14 - <A HREF="HTML/tutorial_14.html">Multiple Document Interface (MDI)</A>
+<LI>Week 15 - <A HREF="HTML/tutorial_15.html">Incorporating Sound</A>
+<LI>Week 16 - <A HREF="HTML/tutorial_16.html">Creating a Windows Help file</A>
+<LI>Week 17 - <A HREF="HTML/tutorial_17.html"> The ActiveX Files</A>
+</UL>
+
+<BR>&nbsp;<BR>
+
+<A NAME="assignments">
+<TABLE BORDER=0 WIDTH=100% CELLSPACING=0>
+<TR><TD BGCOLOR="#808080"><IMG SRC="graphics/assignments.gif"></TD>
+<TD BGCOLOR="#808080" WIDTH=100%><FONT SIZE=+3 COLOR="white"><B>&nbsp;&nbsp;Assignments</B></FONT>
+</TD></TR>
+</TABLE>
+</A>
+
+<UL>
+<LI>HND2 - <A HREF="http://www.dcs.napier.ac.uk/~michael/tut1.htm">1st Tutorial</A>
+</UL>
+
+<BR>&nbsp;<BR>
+
+<A NAME="downloads">
+<TABLE BORDER=0 WIDTH=100% CELLSPACING=0>
+<TR><TD BGCOLOR="#808080"><IMG SRC="graphics/download.gif"></TD>
+<TD BGCOLOR="#808080" WIDTH=100%><FONT SIZE=+3 COLOR="white"><B>&nbsp;&nbsp;Downloads</B></FONT>
+</TD></TR>
+</TABLE>
+</A>
+
+<P>You are free to download these files and use them &#145;as is&#146; or alter them in any way (copyright free). To use these files with Visual Basic 5.0 you should click on the appropriate file title, specify a file name in the dialog box that appears and then exit the web browser and unzip the file. If you do not have any decompression software then jump to <A HREF="http://www.winzip.com">www.winzip.com</A>.</P>
+
+<H3>Visual Basic 5.0 Projects:</H3>
+<UL>
+<LI><P><B><A HREF="ftp://ftp.dcs.napier.ac.uk/pub/s.wilkinson/VB50/database.zip">Access 97 Databases</A></B> (22K)<BR>
+Writing a Visual Basic front-end to an Access 97 database.</P>
+
+<LI><P><B><A HREF="ftp://ftp.dcs.napier.ac.uk/pub/s.wilkinson/VB50/activex.zip">ActiveX</A></B> (18K)<BR>
+Code used in the ActiveX example from week 17.</P>
+
+<LI><P><B><A HREF="ftp://ftp.dcs.napier.ac.uk/pub/s.wilkinson/VB50/animate.zip">Animation</A></B> (58K)<BR>
+How to incorporate graphics on a form and to use animation.</P>
+
+<LI><P><B><A HREF="ftp://ftp.dcs.napier.ac.uk/pub/s.wilkinson/VB50/crystal_reports.zip">Crystal Report</A></B> (24K)&nbsp;&nbsp;<IMG SRC="graphics/new.gif"><BR>
+Exactly the same example as &#145;Access 97 Databases&#146; above but with the addition of a Crystal Report which lists book details sorted by publisher.</P>
+
+<LI><P><B><A HREF="ftp://ftp.dcs.napier.ac.uk/pub/s.wilkinson/VB50/graph.zip">Graphs</A></B> (3K)<BR>
+An example which shows how to alter the values of various points on a graph and how to control the type of graph (e.g. bar chart, line graph, polar, etc.).</P>
+
+<LI><P><B><A HREF="ftp://ftp.dcs.napier.ac.uk/pub/s.wilkinson/VB50/flexgrid.zip">FlexGrid</A></B> (4K)<BR>
+An example which shows a spreadsheet-like computer inventory which allows products to be added or deleted.</P>
+
+<LI><P><B><A HREF="ftp://ftp.dcs.napier.ac.uk/pub/s.wilkinson/VB50/mdi.zip">MDI Interface</A></B> (3K)<BR>
+A basic example of how to create an MDI text editor. This example also includes basic clipboard functionality to copy and paste text.</P>
+
+<LI><P><B><A HREF="ftp://ftp.dcs.napier.ac.uk/pub/s.wilkinson/VB50/mensa.zip">Mensa Problem</A></B> (2K)<BR>
+The solution of a Mensa problem using the brute force of three nested loops.</P>
+
+<LI><P><B><A HREF="ftp://ftp.dcs.napier.ac.uk/pub/s.wilkinson/VB50/sound.zip">MMControl</A></B> (259K)<BR>
+An example demonstrating how wave and midi sounds can be played using the MMControl.</P>
+
+<LI><P><B><A HREF="ftp://ftp.dcs.napier.ac.uk/pub/s.wilkinson/VB50/map.zip">Pocket Map of Europe</A></B> (117K)&nbsp;&nbsp;<IMG SRC="graphics/new.gif"><BR>
+This example demonstrates how the <I>PictureClip</I> and <I>Picture</I> controls can be used together to scroll around a large image.</P>
+
+<LI><P><B><A HREF="ftp://ftp.dcs.napier.ac.uk/pub/s.wilkinson/VB50/theatre.zip">Theatre Booking System</A></B> (18K)<BR>
+An example which uses two separate option button groups (using frames) and a spin button linked to a text box.</P>
+
+<LI><P><B><A HREF="ftp://ftp.dcs.napier.ac.uk/pub/s.wilkinson/VB50/tictactoe.zip">Tic Tac Toe</A></B> (3K)<BR>
+This game is used to demonstrate drag & drop, control arrays and programmer-defined functons.</P>
+</UL>
+
+<H3>Other:</H3>
+<UL>
+<LI><P><B><A HREF="ftp://ftp.dcs.napier.ac.uk/pub/s.wilkinson/VB50/vb_site.zip">Visual Basic 5.0 Web Site</A></B> (868K)<BR>
+For those students who would like to utilise information from this site then a ZIP file of it can be downloaded. This can be useful for saving expensive connection charges and also for accessing the site even with no Internet access. All you need is an HTML browser (e.g. <A HREF="http://home.netscape.com/download/index.html">Netscape Navigator</A> or <A HREF="http://www.microsoft.com/ie/default.asp">Internet Explorer</A>) running locally on your home computer and the above file dezipped. Please note that all HTML pages and graphics from the site are included but the sample projects listed above must be downloaded separately.</P>
+
+<LI><P><B><A HREF="ftp://ftp.dcs.napier.ac.uk/pub/s.wilkinson/VB50/tictactoe_help.zip">Windows Help File</A></B> (3K)<BR>
+The help file and RTF source code to complement the Tic Tac Toe example above.</P>
+
+<LI><P><B><A HREF="ftp://ftp.dcs.napier.ac.uk/pub/s.wilkinson/VB50/icohlic3.zip">Icoholic 3</A></B> (788K)<BR>
+A collection of 1,500 icons suitable for use in Windows and Visual Basic.</P>
+</UL>
+
+<BR>&nbsp;<BR>
+
+<A NAME="reading">
+<TABLE BORDER=0 WIDTH=100% CELLSPACING=0>
+<TR><TD BGCOLOR="#808080"><IMG SRC="graphics/reading.gif"></TD>
+<TD BGCOLOR="#808080" WIDTH=100%><FONT SIZE=+3 COLOR="white"><B>&nbsp;&nbsp;Further Reading</B></FONT>
+</TD></TR>
+</TABLE>
+</A>
+
+<UL>
+<LI><A HREF="HTML/read.html#books">Books</A>
+<LI><A HREF="HTML/read.html#articles">Articles</A>
+</UL>
+
+<BR>&nbsp;<BR>
+
+<A NAME="internet">
+<TABLE BORDER=0 WIDTH=100% CELLSPACING=0>
+<TR><TD BGCOLOR="#808080"><IMG SRC="graphics/internet.gif"></TD>
+<TD BGCOLOR="#808080" WIDTH=100%><FONT SIZE=+3 COLOR="white"><B>&nbsp;&nbsp;Internet Resources</B></FONT>
+</TD></TR>
+</TABLE>
+</A>
+
+<H3>VB Web Sites:</H3>
+
+<UL>
+<LI><A HREF="http://www.cgvb.com/">Carl & Gary&#146;s Visual Basic Home Page</A>
+
+
+<LI><A HREF="http://www.oden.se/~daniel/vb/">Daniel Wiman&#146;s Visual Basic page</A> - questions & answers, files, code, news, mailing lists, etc.
+
+<LI><A HREF="http://www.op.net/~jstrollo/vblinks.html">The Most Comprehensive VB List on the Net</A> - links to a wide variety of VB sites
+
+<LI><A HREF="http://msdn.microsoft.com/vbasic/default.asp">Visual Basic Home</A> at Microsoft
+
+<LI><A HREF="http://www.vbonline.com/vb-mag/">Visual Basic Online</A> - an online magazine for the Visual Basic programmer
+
+<LI><A HREF="http://www.vb-web-directory.com/">Visual Basic Web Directory</A> - links to just about every web site concerned with VB programming
+
+<LI><A HREF="http://www.class-solutions.com/whatis.htm">What is the Year 2000 Problem and How does it affect VB?</A>
+</UL>
+
+<H3>Other Web Sites:</H3>
+<UL>
+<LI><A HREF="http://www.activex.com">activex.com</A> - a large online library of ActiveX components.
+
+<LI><A HREF="http://www.cpsc.ucalgary.ca/projects/grouplab/481/index.html">CPSC 481: Foundations and Principles of Human Computer Interaction</A> - An on-line HCI course run by The University of Calgary.
+
+<LI><A HREF="http://www.iarchitect.com/mshame.htm">Interface Hall of Shame</A> by Isys Information Architects Inc.
+</UL>
+
+<H3>Newsgroups:</H3>
+<UL>
+<LI>VB 3rdparty - <A HREF="news:comp.lang.basic.visual.3rdparty">
+comp.lang.basic.visual.3rdparty</A>
+<LI>VB Announce - <A HREF="news:comp.lang.basic.visual.announce">
+comp.lang.basic.visual.announce</A>
+<LI>VB Database - <A HREF="news:comp.lang.basic.visual.database">
+comp.lang.basic.visual.database</A>
+<LI>VB Misc - <A HREF="news:comp.lang.basic.visual.misc">
+comp.land.basic.visual.misc</A>
+<LI>Creating on-line help files - <A HREF="news:comp.os.ms-windows.programmer.winhelp">
+comp.os.ms-windows.programmer.winhelp</A>
+<LI>Human-Factors - <A HREF="news:comp.human-factors">
+comp.human-factors</A>
+</UL>
+
+<BR>&nbsp;<BR>
+
+<HR NOSHADE SIZE="1">
+<P><I>Last Updated: 23rd February, 1999</I>
+</P>
+</BODY>
+</HTML>

@@ -1,0 +1,333 @@
+[Root]
+Most Recent Package=Standard Setup Package 2
+
+
+[Package|Standard Setup Package 1|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=D:\VB6 Projects\BlackJack\Package
+
+[Package|Standard Setup Package 1|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Standard Setup Package 1|Files Found]
+
+[Package|Standard Setup Package 1|Files Released]
+
+[Package|Standard Setup Package 1|Missing Dependency Information]
+
+[Package|Standard Setup Package 1|Out-of-Date Dependency Information]
+C:\WINDOWS\system32\scrrun.dll=
+
+[Package|Standard Setup Package 1|Files Added]
+D:\VB6 Projects\BlackJack\MSSCCPRJ.SCC=
+D:\VB6 Projects\BlackJack\StandDown.gif=
+D:\VB6 Projects\BlackJack\StandUp.gif=
+D:\VB6 Projects\BlackJack\Table.jpg=
+D:\VB6 Projects\BlackJack\BetDown.gif=
+D:\VB6 Projects\BlackJack\BetUp.gif=
+D:\VB6 Projects\BlackJack\CardBack.dat=
+D:\VB6 Projects\BlackJack\Chip05.gif=
+D:\VB6 Projects\BlackJack\Chip10.gif=
+D:\VB6 Projects\BlackJack\Chip20.gif=
+D:\VB6 Projects\BlackJack\ChipTotal.gif=
+D:\VB6 Projects\BlackJack\DoubleDown.gif=
+D:\VB6 Projects\BlackJack\DoubleUp.gif=
+D:\VB6 Projects\BlackJack\frmCardBacks.frm=
+D:\VB6 Projects\BlackJack\HitmeDown.gif=
+D:\VB6 Projects\BlackJack\HitmeUp.gif=
+D:\VB6 Projects\BlackJack\Johnny Cash.jpg=
+D:\VB6 Projects\BlackJack\Mickey Mouse Finger.jpg=
+
+[Package|Standard Setup Package 1|Files Removed]
+d:\vb6 projects\blackjack\mickey mouse finger.jpg=
+d:\vb6 projects\blackjack\johnny cash.jpg=
+
+[Package|Standard Setup Package 1|Files In Project]
+D:\VB6 Projects\BlackJack\BlackJack.exe=Yes
+C:\WINDOWS\system32\msvbvm60.dll=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINDOWS\system32\scrrun.dll=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT.DLL=Yes
+D:\Downloads\Blackjack 1.2\VBCards.ocx=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\system32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+D:\VB6 Projects\BlackJack\MSSCCPRJ.SCC=Yes
+D:\VB6 Projects\BlackJack\StandDown.gif=Yes
+D:\VB6 Projects\BlackJack\StandUp.gif=Yes
+D:\VB6 Projects\BlackJack\Table.jpg=Yes
+D:\VB6 Projects\BlackJack\BetDown.gif=Yes
+D:\VB6 Projects\BlackJack\BetUp.gif=Yes
+D:\VB6 Projects\BlackJack\CardBack.dat=Yes
+D:\VB6 Projects\BlackJack\Chip05.gif=Yes
+D:\VB6 Projects\BlackJack\Chip10.gif=Yes
+D:\VB6 Projects\BlackJack\Chip20.gif=Yes
+D:\VB6 Projects\BlackJack\ChipTotal.gif=Yes
+D:\VB6 Projects\BlackJack\DoubleDown.gif=Yes
+D:\VB6 Projects\BlackJack\DoubleUp.gif=Yes
+D:\VB6 Projects\BlackJack\frmCardBacks.frm=Yes
+D:\VB6 Projects\BlackJack\HitmeDown.gif=Yes
+D:\VB6 Projects\BlackJack\HitmeUp.gif=Yes
+D:\VB6 Projects\BlackJack\Johnny Cash.jpg=No
+D:\VB6 Projects\BlackJack\Mickey Mouse Finger.jpg=No
+
+[Package|Standard Setup Package 1|Configure Registry Files]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure Remote Servers]
+Applicable=No
+
+[Package|Standard Setup Package 1|Install Locations]
+D:\VB6 Projects\BlackJack\BlackJack.exe=$(AppPath)
+C:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\scrrun.dll=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT.DLL=$(WinSysPathSysFile)
+D:\Downloads\Blackjack 1.2\VBCards.ocx=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+D:\VB6 Projects\BlackJack\MSSCCPRJ.SCC=$(AppPath)
+D:\VB6 Projects\BlackJack\StandDown.gif=$(AppPath)
+D:\VB6 Projects\BlackJack\StandUp.gif=$(AppPath)
+D:\VB6 Projects\BlackJack\Table.jpg=$(AppPath)
+D:\VB6 Projects\BlackJack\BetDown.gif=$(AppPath)
+D:\VB6 Projects\BlackJack\BetUp.gif=$(AppPath)
+D:\VB6 Projects\BlackJack\CardBack.dat=$(AppPath)
+D:\VB6 Projects\BlackJack\Chip05.gif=$(AppPath)
+D:\VB6 Projects\BlackJack\Chip10.gif=$(AppPath)
+D:\VB6 Projects\BlackJack\Chip20.gif=$(AppPath)
+D:\VB6 Projects\BlackJack\ChipTotal.gif=$(AppPath)
+D:\VB6 Projects\BlackJack\DoubleDown.gif=$(AppPath)
+D:\VB6 Projects\BlackJack\DoubleUp.gif=$(AppPath)
+D:\VB6 Projects\BlackJack\frmCardBacks.frm=$(AppPath)
+D:\VB6 Projects\BlackJack\HitmeDown.gif=$(AppPath)
+D:\VB6 Projects\BlackJack\HitmeUp.gif=$(AppPath)
+
+[Package|Standard Setup Package 1|Configure Shared Files]
+Applicable=Yes
+D:\VB6 Projects\BlackJack\BlackJack.exe=No
+D:\VB6 Projects\BlackJack\MSSCCPRJ.SCC=No
+D:\VB6 Projects\BlackJack\StandDown.gif=No
+D:\VB6 Projects\BlackJack\StandUp.gif=No
+D:\VB6 Projects\BlackJack\Table.jpg=No
+D:\VB6 Projects\BlackJack\BetDown.gif=No
+D:\VB6 Projects\BlackJack\BetUp.gif=No
+D:\VB6 Projects\BlackJack\CardBack.dat=No
+D:\VB6 Projects\BlackJack\Chip05.gif=No
+D:\VB6 Projects\BlackJack\Chip10.gif=No
+D:\VB6 Projects\BlackJack\Chip20.gif=No
+D:\VB6 Projects\BlackJack\ChipTotal.gif=No
+D:\VB6 Projects\BlackJack\DoubleDown.gif=No
+D:\VB6 Projects\BlackJack\DoubleUp.gif=No
+D:\VB6 Projects\BlackJack\frmCardBacks.frm=No
+D:\VB6 Projects\BlackJack\HitmeDown.gif=No
+D:\VB6 Projects\BlackJack\HitmeUp.gif=No
+
+[Package|Standard Setup Package 1|Distribution]
+Type=single
+Size=
+Title=BlackJack
+
+[Package|Standard Setup Package 1|IconGroups]
+Group0=BlackJack
+PrivateGroup0=-1
+Parent0=$(Programs)
+
+[Package|Standard Setup Package 1|BlackJack]
+Icon1=BlackJack.exe
+Title1=BlackJack
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Standard Setup Package 1|Package]
+PackageFolder=D:\VB6 Projects\BlackJack\Package
+ProjectFolder=D:\VB6 Projects\BlackJack
+ServerSideCab=
+File1=D:\VB6 Projects\BlackJack\Package\setup.exe
+File2=D:\VB6 Projects\BlackJack\Package\Setup.Lst
+File3=D:\VB6 Projects\BlackJack\Package\BlackJack.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+
+[Package|Standard Setup Package 2|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=D:\VB6 Projects\BlackJack\Package
+
+[Package|Standard Setup Package 2|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Standard Setup Package 2|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Standard Setup Package 2|Files Found]
+
+[Package|Standard Setup Package 2|Files Released]
+
+[Package|Standard Setup Package 2|Missing Dependency Information]
+D:\VB6 Projects\BlackJack\vbalProgBar6.ocx=
+
+[Package|Standard Setup Package 2|Out-of-Date Dependency Information]
+C:\WINDOWS\system32\scrrun.dll=
+
+[Package|Standard Setup Package 2|Files Added]
+D:\VB6 Projects\BlackJack\Chip10.gif=
+D:\VB6 Projects\BlackJack\Chip20.gif=
+D:\VB6 Projects\BlackJack\ChipTotal2.gif=
+D:\VB6 Projects\BlackJack\ChipTotal.gif=
+D:\VB6 Projects\BlackJack\DoubleDown.gif=
+D:\VB6 Projects\BlackJack\DoubleUp.gif=
+D:\VB6 Projects\BlackJack\HitmeDown.gif=
+D:\VB6 Projects\BlackJack\HitmeUp.gif=
+D:\VB6 Projects\BlackJack\Opening Page.avi=
+D:\VB6 Projects\BlackJack\StandDown.gif=
+D:\VB6 Projects\BlackJack\StandUp.gif=
+D:\VB6 Projects\BlackJack\StartHeader.gif=
+D:\VB6 Projects\BlackJack\Table.jpg=
+D:\VB6 Projects\BlackJack\BetDown.gif=
+D:\VB6 Projects\BlackJack\BetUp.gif=
+D:\VB6 Projects\BlackJack\BlackJack.INI=
+D:\VB6 Projects\BlackJack\Chip05.gif=
+
+[Package|Standard Setup Package 2|Files Removed]
+
+[Package|Standard Setup Package 2|Files In Project]
+D:\VB6 Projects\BlackJack\BlackJack.exe=Yes
+C:\WINDOWS\system32\msvbvm60.dll=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINDOWS\system32\scrrun.dll=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT.DLL=Yes
+D:\VB6 Projects\BlackJack\VBCards.ocx=Yes
+C:\WINDOWS\system32\MSCOMCT2.OCX=Yes
+C:\WINDOWS\system32\COMCTL32.OCX=Yes
+D:\VB6 Projects\BlackJack\vbalProgBar6.ocx=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\system32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+D:\VB6 Projects\BlackJack\Chip10.gif=Yes
+D:\VB6 Projects\BlackJack\Chip20.gif=Yes
+D:\VB6 Projects\BlackJack\ChipTotal2.gif=Yes
+D:\VB6 Projects\BlackJack\ChipTotal.gif=Yes
+D:\VB6 Projects\BlackJack\DoubleDown.gif=Yes
+D:\VB6 Projects\BlackJack\DoubleUp.gif=Yes
+D:\VB6 Projects\BlackJack\HitmeDown.gif=Yes
+D:\VB6 Projects\BlackJack\HitmeUp.gif=Yes
+D:\VB6 Projects\BlackJack\Opening Page.avi=Yes
+D:\VB6 Projects\BlackJack\StandDown.gif=Yes
+D:\VB6 Projects\BlackJack\StandUp.gif=Yes
+D:\VB6 Projects\BlackJack\StartHeader.gif=Yes
+D:\VB6 Projects\BlackJack\Table.jpg=Yes
+D:\VB6 Projects\BlackJack\BetDown.gif=Yes
+D:\VB6 Projects\BlackJack\BetUp.gif=Yes
+D:\VB6 Projects\BlackJack\BlackJack.INI=Yes
+D:\VB6 Projects\BlackJack\Chip05.gif=Yes
+
+[Package|Standard Setup Package 2|Configure Registry Files]
+Applicable=No
+
+[Package|Standard Setup Package 2|Configure Remote Servers]
+Applicable=No
+
+[Package|Standard Setup Package 2|Install Locations]
+D:\VB6 Projects\BlackJack\BlackJack.exe=$(AppPath)
+C:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\scrrun.dll=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT.DLL=$(WinSysPathSysFile)
+D:\VB6 Projects\BlackJack\VBCards.ocx=$(WinSysPath)
+C:\WINDOWS\system32\MSCOMCT2.OCX=$(WinSysPath)
+C:\WINDOWS\system32\COMCTL32.OCX=$(WinSysPath)
+D:\VB6 Projects\BlackJack\vbalProgBar6.ocx=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+D:\VB6 Projects\BlackJack\Chip10.gif=$(AppPath)
+D:\VB6 Projects\BlackJack\Chip20.gif=$(AppPath)
+D:\VB6 Projects\BlackJack\ChipTotal2.gif=$(AppPath)
+D:\VB6 Projects\BlackJack\ChipTotal.gif=$(AppPath)
+D:\VB6 Projects\BlackJack\DoubleDown.gif=$(AppPath)
+D:\VB6 Projects\BlackJack\DoubleUp.gif=$(AppPath)
+D:\VB6 Projects\BlackJack\HitmeDown.gif=$(AppPath)
+D:\VB6 Projects\BlackJack\HitmeUp.gif=$(AppPath)
+D:\VB6 Projects\BlackJack\Opening Page.avi=$(AppPath)
+D:\VB6 Projects\BlackJack\StandDown.gif=$(AppPath)
+D:\VB6 Projects\BlackJack\StandUp.gif=$(AppPath)
+D:\VB6 Projects\BlackJack\StartHeader.gif=$(AppPath)
+D:\VB6 Projects\BlackJack\Table.jpg=$(AppPath)
+D:\VB6 Projects\BlackJack\BetDown.gif=$(AppPath)
+D:\VB6 Projects\BlackJack\BetUp.gif=$(AppPath)
+D:\VB6 Projects\BlackJack\BlackJack.INI=$(AppPath)
+D:\VB6 Projects\BlackJack\Chip05.gif=$(AppPath)
+
+[Package|Standard Setup Package 2|Configure Shared Files]
+Applicable=Yes
+D:\VB6 Projects\BlackJack\BlackJack.exe=No
+D:\VB6 Projects\BlackJack\Chip10.gif=No
+D:\VB6 Projects\BlackJack\Chip20.gif=No
+D:\VB6 Projects\BlackJack\ChipTotal2.gif=No
+D:\VB6 Projects\BlackJack\ChipTotal.gif=No
+D:\VB6 Projects\BlackJack\DoubleDown.gif=No
+D:\VB6 Projects\BlackJack\DoubleUp.gif=No
+D:\VB6 Projects\BlackJack\HitmeDown.gif=No
+D:\VB6 Projects\BlackJack\HitmeUp.gif=No
+D:\VB6 Projects\BlackJack\Opening Page.avi=No
+D:\VB6 Projects\BlackJack\StandDown.gif=No
+D:\VB6 Projects\BlackJack\StandUp.gif=No
+D:\VB6 Projects\BlackJack\StartHeader.gif=No
+D:\VB6 Projects\BlackJack\Table.jpg=No
+D:\VB6 Projects\BlackJack\BetDown.gif=No
+D:\VB6 Projects\BlackJack\BetUp.gif=No
+D:\VB6 Projects\BlackJack\BlackJack.INI=No
+D:\VB6 Projects\BlackJack\Chip05.gif=No
+
+[Package|Standard Setup Package 2|Distribution]
+Type=single
+Size=
+Title=BlackJack
+
+[Package|Standard Setup Package 2|IconGroups]
+Group0=BlackJack
+PrivateGroup0=-1
+Parent0=$(Programs)
+
+[Package|Standard Setup Package 2|BlackJack]
+Icon1=BlackJack.exe
+Title1=BlackJack
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Standard Setup Package 2|Package]
+PackageFolder=D:\VB6 Projects\BlackJack\Package
+ProjectFolder=D:\VB6 Projects\BlackJack
+ServerSideCab=
+File1=D:\VB6 Projects\BlackJack\Package\setup.exe
+File2=D:\VB6 Projects\BlackJack\Package\Setup.Lst
+File3=D:\VB6 Projects\BlackJack\Package\BlackJack.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz

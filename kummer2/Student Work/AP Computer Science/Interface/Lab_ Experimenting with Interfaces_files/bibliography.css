@@ -1,0 +1,21 @@
+/**
+ * The stylesheet for bibliographies
+ *
+ * @author  David Bernstein
+ * @version 1.0
+ */
+
+/*
+P.reference {
+    margin-left: 3em;
+    text-indent: -2em; 
+}
+*/
+
+
+
+p.reference {
+    margin-left: 3em;
+    text-indent: -2em; 
+}
+

@@ -1,0 +1,215 @@
+/**
+ * The stylesheet for on-line course pages
+ *
+ * @author  David Bernstein
+ * @version 1.0
+*/
+
+
+/*
+A {
+    text-decoration: none;
+}
+
+
+A:link {
+    color: #450084; 
+    cursor: pointer;
+}
+
+A:visited {
+    color: #450084; 
+    cursor: pointer;
+}
+
+
+A:hover {
+    background-color: #FFFF00; 
+    color: #450084;
+}
+
+
+A.button {
+
+	border-style: solid;
+	border-width: 1px;
+	border-color: #CCCCCC;
+
+	background: #CCCCCC;
+	font-family: sans-serif; 
+    	font-size: 8pt;
+    	font-weight: bold;
+	margin: 2px;
+	padding: 1px;
+}
+
+A.button:hover {
+
+	background: #CCCCCC;
+	border-top-color:#FFFFFF; 
+	border-left-color:#FFFFFF; 
+	border-bottom-color:#999999; 
+	border-right-color:#999999; 
+}
+
+
+DIV.body {
+
+	margin: 40px;
+}
+
+
+DIV.footer {
+
+	border-style: double; 
+	border-width: 3px; 
+	border-left-style: none; 
+	border-right-style: none; 
+	padding-top:12pt; 
+	padding-bottom: 12pt;
+}
+
+
+DIV.header {
+
+	border-bottom-color: #000000; 
+	border-bottom-style: double; 
+	border-bottom-width: 3px;
+	height: 50px;
+	padding-bottom: 0px;
+	width: 100%; 
+}
+
+
+SPAN.buttonbar {
+
+	background: #CCCCCC;
+	border: 0px;
+	margin-bottom: 3px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding: 2px;
+	height: auto;
+	width: auto;
+}
+
+
+
+@media print { 
+
+    SPAN.buttonbar {
+        display: none;
+     }
+
+}
+
+*/
+
+
+a {
+    text-decoration: none;
+}
+
+
+a:link {
+    color: #450084; 
+    cursor: pointer;
+}
+
+a:visited {
+    color: #450084; 
+    cursor: pointer;
+}
+
+
+a:hover {
+    background-color: #FFFF00; 
+    color: #450084;
+}
+
+
+a.button {
+
+	border-style: solid;
+	border-width: 1px;
+	border-color: #CCCCCC;
+
+	background: #CCCCCC;
+	font-family: sans-serif; 
+    	font-size: 8pt;
+    	font-weight: bold;
+	margin: 2px;
+	padding: 1px;
+}
+
+a.button:hover {
+
+	background: #CCCCCC;
+	border-top-color:#FFFFFF; 
+	border-left-color:#FFFFFF; 
+	border-bottom-color:#999999; 
+	border-right-color:#999999; 
+}
+
+
+div.body {
+
+	margin: 40px;
+}
+
+
+div.footer {
+
+	border-style: double; 
+	border-width: 3px; 
+	border-left-style: none; 
+	border-right-style: none; 
+	padding-top:12pt; 
+	padding-bottom: 12pt;
+}
+
+
+div.header {
+
+	border-bottom-color: #000000; 
+	border-bottom-style: double; 
+	border-bottom-width: 3px;
+	height: 50px;
+	padding-bottom: 0px;
+	width: 100%; 
+}
+
+
+div.semester {
+
+	font-family: sans-serif;
+	font-size: 8pt;
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: left;
+}
+
+
+span.buttonbar {
+
+	background: #CCCCCC;
+	border: 0px;
+	margin-bottom: 3px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding: 2px;
+	height: auto;
+	width: auto;
+}
+
+
+
+@media print { 
+
+    span.buttonbar {
+        display: none;
+     }
+
+}

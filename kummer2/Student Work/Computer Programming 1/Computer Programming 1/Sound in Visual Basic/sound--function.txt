@@ -1,0 +1,9 @@
+--Function -- general
+
+
+Private Declare Function PlaySound Lib "winmm.dll" Alias "PlaySoundA" _
+(ByVal lpszName As String, ByVal hModule As Long, _
+ByVal dwFlags As Long) As Long
+
+Use this to play a sound;
+Retval = PlaySound("G:\School\Computer Programming 1\Blocks\sound\blip3.WAV", 0, 1)

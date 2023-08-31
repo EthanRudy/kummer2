@@ -1,0 +1,79 @@
+<HTML>
+
+<HEAD>
+<TITLE>Tutorial 1</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#C0C0C0">
+<IMG ALIGN=RIGHT SRC="kprog copy.gif">
+<BR>
+<H1>Tutorial: Discovering the Visual Basic Environment</H1>
+<P><img src="commline.gif"></P>
+
+<BR>
+<P><B>The objective of this tutorial is to become familiar with the VB environment. At the end of this tutorial you should be able to:</B></P>
+
+<UL>
+<LI>Locate and run an existing VB application.
+<P>
+<LI>Explore the forms and the code behind an existing application from the project window in design mode.
+<P>
+<LI>Recognise and understand the function of the main components of the VB environment (toolbar, toolbox,  project window, properties window, form, code window).
+<P>
+<LI>Interactively design a simple interface by selecting, placing and sizing screen objects from the toolbox.
+<P>
+<LI>Alter the appearance of an interface by adding colour, captions, labels and different fonts.
+<P>
+<LI>Save your work and load it in again from hard disk or floppy disk.
+</UL>
+<P>
+<HR NOSHADE SIZE="1">
+<P>
+<OL>
+<LI><P>Microsoft have included a number of sample applications with VB.  These have been provided to illustrate many of the features of the product. The forms and the code are accessible and may be used and modified. Modifying existing projects is a good way to learn.</P>
+
+<P><B>But remember, if you alter a Microsoft project and want to keep a copy of the changed project use the <TT>Save Project As</TT> option on the File menu - this will prompt you for a new project name. Note that the <TT>Save Project</TT> option will overwrite the original Files unless they are write protected.</B></P>
+
+<P>The sample projects are located in the subdirectory <TT>C:\PROGRAM FILES\VB\SAMPLES\</TT>. Choose &#145;Open Project&#146; from the &#145;File&#146; menu. Double click on the samples folder icon to inspect the contents. Double click on any project to load it.</P>
+ 
+<LI><P>Once an application is loaded it can be run by clicking on the <IMG ALIGN=BOTTOM SRC="run.gif" ALT="">  icon from the toolbar, paused using <IMG ALIGN=BOTTOM SRC="pause.gif" ALT="">  and terminated using <IMG ALIGN=BOTTOM SRC="stop.gif" ALT="">.</P>
+
+<LI><P>Once a project is loaded, the name of the form(s) that it contains is displayed in the project window. To view a form in design mode, select the form required by single clicking with the mouse to highlight its name, then clicking on the <TT>View Form</TT> button.</P>
+
+<DIV ALIGN="CENTER"><IMG SRC="tut_2_1.gif"></DIV>
+
+<P>In this example, the <TT>MDINOTE.VBP</TT> project has been loaded and the <TT>FIND.FRM</TT> has been selected for viewing. This MDI example file uses three different forms and two modules.</P>
+
+<P>In design mode, when a form is viewed, the code attached to any screen object may be inspected by double clicking on that object. The screen shots below show the interface of the Calculator example (&#147;<TT>...\samples\PGuide\calc\Calc.vbp</TT>&#148;) and the code which has been written for the &#145;%&#146; button. To dislay the code window either double click on the relevant control on the interface (i.e. the percent key on the calculator), or alternatively select the view code icon <IMG SRC="view_code.gif"> from the project window (see above).</P>
+
+<IMG SRC="tut_2_2.gif">&nbsp;<IMG SRC="tut_2_3.gif">
+<BR><BR>
+
+<LI><P>Explore some of the applications provided. Alter the interface of the calculator a little by moving the controls around, changing their size and providing background colour. Observe that provided you have deleted no controls, the calculator still functions as before. The appearance of the interface is independent of the functionality.</P>
+
+<LI><P>Study the code behind the controls. A lot can be learned from observation and experimentation. Inspect the code behind the digits, it is very compact (see <A HREF="tut6.html">Control Arrays</A> covered later). Pay attention to the colour coding (green for comments, blue for reserved words) it is a great aid to understanding. The example code in Help is invaluable, this gives both syntax and VB naming conventions.</P>
+
+<LI><P>Now it is time to design your own interface from scratch. Choose &#145;New Project&#146; from the &#145;File&#146; menu. Use the blank form1 to design a simple interface for a student database. Suppose that the lecturers want a simple graphical system that they can interrogate to find out the following details about students taking their course: name, address, date of birth, appearance (photo is to be stored), previous computing experience (yes or no). Create a form that has your own details on it.</P>
+
+<P>VB provides an extensive icon library in <TT>C:\Program Files\DevStudio\Vb\graphics\icons\</TT>. Use any icon to represent a photo of yourself. First create a picture box on form1. Then enter code for a click event so that the icon of your choice is displayed in response to a mouse click. The syntax of the LoadPicture command is given below.</P>
+
+<DIV ALIGN="CENTER"><IMG SRC="tut_2_4.gif"></DIV>
+<BR>
+
+<P>Run your application to test out the icon display code.</P>
+
+<P>Experiment with your interface to make it look as professional as possible. Try creating frames to gather together related information. Add a title to the display such as &#147;Napier University Student database&#148; and include the University Logo.</P>
+
+<LI><P>Save your work to disk. Use the Windows Explorer or any desktop windows to check that all files have been saved. There should be one Visual Basic Project (.VBP) file and separate Form (.FRM) and Module (.BAS) files for each form and module used in the current project.</P>
+</OL>
+
+<HR NOSHADE SIZE="1">
+<BR>
+<A HREF="dvbhome.html"><img border=0 align="middle" src="left.gif">
+Menu</A><BR>
+<A HREF="tut2.html"><IMG BORDER=0 ALIGN="MIDDLE" SRC="down.gif">
+Tutorial 2</A> (Understanding Events)<BR>
+
+</BODY>
+
+</HTML>

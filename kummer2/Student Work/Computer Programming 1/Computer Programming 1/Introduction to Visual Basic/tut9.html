@@ -1,0 +1,144 @@
+<HTML>
+
+<HEAD>
+<TITLE>Tutorial 9</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#C0C0C0">
+<IMG ALIGN=RIGHT SRC="kprog copy.gif" ALT="VB Logo"><BR><H1>Tutorial: Working with Files</H1><P><img src="commline.gif"></P><BR>
+<P><B>The objective of this tutorial is to learn what the differences between the different file types are and how to use files. At the end of this tutorial you should be able to:</B></P>
+
+<UL>
+<LI><P>Select an appropriate file type for any situation.</P>
+ 
+<LI><P>Open a file for input or output.</P>
+ 
+<LI><P>Read or write to a file.</P>
+
+<LI><P>Close a file correctly.</P>
+</UL>
+<BR>
+<H2><I>File Types</I></H2>
+
+<P>Visual Basic has three built-in ways of accessing files (excluding the Data control which accesses databases):</P>
+<OL>
+<LI><P><B>Sequential access</B> to files reads and writes data line by line. Storage is efficient but accessing data at different sections of the file is harder because of its sequential access mechanisms.</P>
+
+<LI><P><B>Random access</B> reads and writes data record by record to any location within the file. This type of access is convenient when the file contains homogeneous type data. However, storage is less efficient because padding is inserted to make up field lengths.</P>
+
+<LI><P><B>Binary access</B> to files reads and writes data byte by byte to any location within the file. This type of access if efficient in terms of storage, but is the hardest to program.</P>
+</OL>
+<BR>
+<HR NOSHADE SIZE="1">
+<H2><I>Task 1 (Sequential Access)</I></H2>
+
+<P>Often in an application there are various features of the software which can be altered and set by the user. Because these alterations are made a run-time, and not design-time, they will be lost when the application is terminated. Thus, to make these changes persist the application must store the information about these alteration somewhere outside itself. One way is to use a sequential access file which is created when the application terminates, and is read in when the application starts the next time. Into this file can be put all information relating to font sizes, colours, window positions, states (maximised, minimised, etc.).</P>
+
+<OL>
+<LI><P>Add the ability to store settings to the &#145;Language Tutor&#146; application created as part of the <A HREF="tutorial_5.html">Menus and List Manipulation</A> tutorial.</P>
+ 
+<LI><P>Using the &#145;Form_Unload&#146; event write a routine to open a suitably named file and store all the current settings.</P>
+<B><PRE> 
+  <FONT COLOR="#23238E">Dim</FONT> intFileNum <FONT COLOR="#23238E">As Integer</FONT>
+ 
+  intFileNum = FreeFile
+  <FONT COLOR="#23238E">Open</FONT> "A:\SETTINGS.DAT" <FONT COLOR="#23238E">For Output As</FONT> intFileNum
+    <FONT COLOR="#23238E">Print</FONT> #intFileNum, lstEnglish.FontName
+    <FONT COLOR="#23238E">Print</FONT> #intFileNum, lstEnglish.BackColor
+    ...
+  <FONT COLOR="#23238E">Close</FONT> intFileNum         <FONT COLOR="GREEN">' Important to close the file</FONT>
+</PRE></B>
+ 
+<LI><P>Add to the &#145;<TT>Form_Load</TT>&#146; event a routine to open the same file created in 2, read the contents, then reset the values of different controls where necessary to restore the previous state of the application.</P>
+<B><PRE> 
+  <FONT COLOR="#23238E">Dim</FONT> intFileNum <FONT COLOR="#23238E">As Integer</FONT>
+  <FONT COLOR="#23238E">Dim</FONT> vntFileLine          <FONT COLOR="green">' declare as a variant to handle different types of data</FONT>
+ 
+  FileNum = FreeFile
+  <FONT COLOR="#23238E">Open</FONT> "A:\SETTINGS.DAT" <FONT COLOR="#23238E">For Input As</FONT> intFileNum
+    Input #FileNum vntFileLine        <FONT COLOR="green">' read first line in file</FONT>
+    lstEnglish.FontName = vntFileLine
+    Input #FileNum vntFileLine        <FONT COLOR="green">' read next line in file</FONT>
+    lstEnglish.BackColor = vntFileLine
+    ...
+  <FONT COLOR="#23238E">Close</FONT> intFileNum         <FONT COLOR="GREEN">' Important to close the file</FONT>
+</PRE></B>
+ 
+<P><B>Note:</B> the variable &#145;temp&#146; is used because control properties cannot be used directly with an input statement. Thus, each line from the file is read into &#145;temp&#146; and then &#145;temp&#146; is assigned in the usual way to the control property.</P>
+</OL>
+
+<BR>
+<HR NOSHADE SIZE="1">
+<H2><I>Task 2 (Random Access)</I></H2>
+
+<P>The disadvantage with sequential access files is to get to line 20, for example, the program has to read lines 1 to 19 first. This problem does not occur with random access files. The program can read or write directly to any part of the file at random. However, creating a file the programmer needs to do a bit more work. The structure of the data must be explicitly specified before using a random access file. In this second task we will create a small database of information holding information about names, phone numbers, ages, and space for comments.</P>
+
+<OL>
+<LI><P>Define the structure of the random access file. Place the following code in a code module (<TT>MODULE1.BAS</TT>):</P>
+<B><PRE> 
+  <FONT COLOR="#23238E">Option Explicit
+
+  Type</FONT> PersonData
+    FirstName <FONT COLOR="#23238E">As String</FONT> * 20
+    LastName <FONT COLOR="#23238E">As String</FONT> * 25
+    PhoneNo <FONT COLOR="#23238E">As String</FONT> * 14
+    Age <FONT COLOR="#23238E">As Integer</FONT>
+    Comments <FONT COLOR="#23238E">As String</FONT> * 100
+  <FONT COLOR="#23238E">End Type</FONT>
+</PRE></B>
+ 
+<P><B>Note:</B> The variables of type String are followed by &#145;*&#146; and a number to show their assign length measured in characters.</P>
+ 
+<LI><P>The above code defines a new data type called &#145;<TT>PersonData</TT>&#146; which can then be used to declare instances of that type. To do this place the following code in the general declarations section of the main form:</P>
+<B><PRE> 
+  <FONT COLOR="#23238E">Option Explicit
+  Dim</FONT> udtPerson <FONT COLOR="#23238E">As</FONT> PersonData
+</PRE></B> 
+
+<P>This creates a new variable called &#145;<TT>Person</TT>&#146;. However, it is not of the usual types, such as String, Integer, Long, etc, it is of a new type called <TT>PersonData</TT>.</P>
+ 
+<LI><P>Create suitable label and text controls on the main form so that the user can edit information about each person in the database.</P>
+ 
+<LI><P>To assign the data held in the newly created controls to the variable Person the following lines can be used:</P>
+<B><PRE>  udtPerson.FirstName = txtFirstName.Text
+  udtPerson.LastName = txtLastName.Text
+  udtPerson.PhoneNo = txtPhoneNo.Text
+</PRE></B>
+ 
+<P><B>Note:</B> the variable Person is followed by a &#145;.&#146; and then a field name which matches the same names that were used in the <TT>Type</TT> command in <TT>MODULE1.BAS</TT>. It should be remembered that <TT>Person</TT> is not a simple variable type like a String, it is a composite variable made up of 5 different basic data types.</P>
+ 
+<LI><P>To save the data a file must first be opened. However, unlike sequential files, we now need to tell VB the length in characters of each record. Errors made here will have peculiar consequences! For the personal details database the length is (20 + 25 + 14 + 2 + 100). This is the length of the strings added together plus 2 which is the number of characters an Integer requires. If you are unsure about the exact length of a record type, the command &#145;Len&#146; can be used to automatically do the calculation (see code below):</P>
+
+<B><PRE>  <FONT COLOR="#23238E">Dim</FONT> intFileNum <FONT COLOR="#23238E">As Integer</FONT>
+  <FONT COLOR="#23238E">Dim</FONT> intPosition <FONT COLOR="#23238E">As Integer</FONT>
+ 
+  intFileNum = FreeFile
+  intPosition = 1       <FONT COLOR="GREEN">' Determines which record will be accessed</FONT>
+ 
+  <FONT COLOR="#23238E">Open</FONT> "A:\PERSONAL.DAT" <FONT COLOR="#23238E">For Random As</FONT> intFileNum <FONT COLOR="#23238E">Len</FONT> = Len(udtPerson)
+    <FONT COLOR="#23238E">Put</FONT> #intFileNum, intPosition, udtPerson
+  <FONT COLOR="#23238E">Close</FONT> #intFileNum
+</PRE></B>
+ 
+<P>To write data to the other records in the file change the value of the variable &#145;<TT>Position</TT>&#146;. If a file contains 5 records and then a new one is added at position 7 garbage data will pad out record 6!</P>
+ 
+<LI><P>To read in data from a random access file and assign it to various controls use the following lines after having opened the file:</P>
+<B><PRE>  <FONT COLOR="#23238E">Open</FONT> "A:\PERSONAL.DAT" <FONT COLOR="#23238E">For Random As</FONT> intFileNum <FONT COLOR="#23238E">Len</FONT> = Len(udtPerson)    <FONT COLOR="#23238E">Get</FONT> #intFileNum, intPosition, udtPerson
+    txtFirstName.Text = udtPerson.FirstName
+    txtLastName.Text = udtPerson.LastName
+    ...
+  <FONT COLOR="#23238E">Close</FONT> #intFileNum</PRE></B><P>To determine how many records there are in a file the following line can be used:</P><P><PRE><B>  intRecordNumber = FileLen("A:\PERSONAL.DAT") / Len(udtPerson)</B></PRE><p></P><P>This code works by dividing the total size of the file in bytes by the record size.</P>
+ </OL>
+
+<HR NOSHADE SIZE="1">
+<BR>
+<A HREF="tut8.html"><img border=0 align="middle" src="up.gif">
+Tutorial 8</A>(Working with Multiple Forms)<BR>
+<A HREF="dvbhome.html"><img border=0 align="middle" src="left.gif">
+Menu</A><BR>
+<A HREF="tut8b.html"><img border=0 align="middle" src="down.gif">
+Tutorial 10</A>  (Animation and Graphics)<BR>
+<BR>
+
+</BODY>
+</HTML>

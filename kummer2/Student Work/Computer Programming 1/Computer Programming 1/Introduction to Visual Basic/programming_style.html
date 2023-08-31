@@ -1,0 +1,385 @@
+<HTML>
+<HEAD><TITLE>Programming Style-Discovering Visual Basic</TITLE>
+</HEAD>
+<BODY bgColor=#c0c0c0><IMG   
+src="kprog copy.gif" align=right> <BR>
+<H1>Programming Style </H1>
+<P><IMG 
+src="commline.gif"></P>
+
+
+<BR>
+<P>Each programmer has their own style of writing. Good programming style makes the code easy to understand, not only for other people but also the programmer himself. There are several components of good style:</P>
+
+<UL>
+<LI><A HREF="#Names">Naming Conventions</A> (variables, controls, and subroutine names)
+<LI><A HREF="#Indent">Indented and properly spaced code</A>
+<LI><A HREF="#Document">Documented code</A>
+<LI><A HREF="#Cohesion">Cohesive Modules</A>
+<LI><A HREF="#Coupling">Minimum Coupling</A>
+<LI><A HREF="#DataScope">Minimize data scope where possible</A>
+</UL>
+<BR>
+
+<A NAME="Names"></a>
+<H2><I>Naming Conventions</I></H2>
+
+<P>By default, when placing new controls on a form, Visual Basic will name them Commmand1, Command2, Command3... (or label1, text1, etc). A large application might need to use more than 30 different command buttons in total, but without meaningful names it is difficult for the programmer to remember what command28 is for. Thus, as soon as a new control is added to a project it is good practice to rename it. As well as controls, variables and subroutines should also be given names which the programmer can identify easily. Not only are meaningful names encouraged, but also Microsoft encourages programmers to use various <I>prefixes</I> to identify the type of object. The first table below lists the prefixes for variable data types and the second table lists prefixes for control types.</P>
+
+<DIV ALIGN="CENTER">
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0>
+<TR><TD BGCOLOR="#808080">
+<TABLE BORDER=0 CELLSPACING=1 CELLPADDING=2>
+<TR>
+<TH WIDTH=180 BGCOLOR="#808080"><FONT COLOR="#FFFFFF">Variable Data Type</FONT></TH>
+<TH WIDTH=80 BGCOLOR="#808080"><FONT COLOR="#FFFFFF">Prefix</FONT></TH>
+<TH WIDTH=160 BGCOLOR="#808080"><FONT COLOR="#FFFFFF">Example</FONT></TH>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">Boolean</TD>
+<TD BGCOLOR="#FFFFFF">bln</TD>
+<TD BGCOLOR="#FFFFFF">blnFull</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">Byte</TD>
+<TD BGCOLOR="#FFFFFF">byt</TD>
+<TD BGCOLOR="#FFFFFF">bytDaysInMonth</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">Currency</TD>
+<TD BGCOLOR="#FFFFFF">cur</TD>
+<TD BGCOLOR="#FFFFFF">curPoundsSterling</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">Date (Time)</TD>
+<TD BGCOLOR="#FFFFFF">dtm</TD>
+<TD BGCOLOR="#FFFFFF">dtmStart</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">Double</TD>
+<TD BGCOLOR="#FFFFFF">dbl</TD>
+<TD BGCOLOR="#FFFFFF">dblAstronomicalDistances</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">Integer</TD>
+<TD BGCOLOR="#FFFFFF">int</TD>
+<TD BGCOLOR="#FFFFFF">intNumberOfEmployees</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">Long</TD>
+<TD BGCOLOR="#FFFFFF">lng</TD>
+<TD BGCOLOR="#FFFFFF">lngProfits</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">Single</TD>
+<TD BGCOLOR="#FFFFFF">sgl</TD>
+<TD BGCOLOR="#FFFFFF">sgl</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">String</TD>
+<TD BGCOLOR="#FFFFFF">str</TD>
+<TD BGCOLOR="#FFFFFF">strSurname</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">User-Defined Type</TD>
+<TD BGCOLOR="#FFFFFF">udt</TD>
+<TD BGCOLOR="#FFFFFF">udtStaffDetails</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">Variant</TD>
+<TD BGCOLOR="#FFFFFF">vnt</TD>
+<TD BGCOLOR="#FFFFFF">vntChartData</TD>
+</TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+</DIV>
+
+<BR>
+
+<DIV ALIGN="CENTER">
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0>
+<TR><TD BGCOLOR="#808080">
+<TABLE BORDER=0 CELLSPACING=1 CELLPADDING=2>
+<TR> <!-- this is the start of the heading row -->
+<TH WIDTH=180 BGCOLOR="#808080"><FONT COLOR="#FFFFFF">Control Type</FONT></TH>
+<TH WIDTH=80 BGCOLOR="#808080"><FONT COLOR="#FFFFFF">Prefix</FONT></TH>
+<TH WIDTH=160 BGCOLOR="#808080"><FONT COLOR="#FFFFFF">Example</FONT></TH>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">Animated button</TD>
+<TD BGCOLOR="#FFFFFF">ani</TD>
+<TD BGCOLOR="#FFFFFF">aniEmptying</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">Check box</TD>
+<TD BGCOLOR="#FFFFFF">chk</TD>
+<TD BGCOLOR="#FFFFFF">chkWriteOnly</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">Combo box</TD>
+<TD BGCOLOR="#FFFFFF">cbo</TD>
+<TD BGCOLOR="#FFFFFF">cboLanguage</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">Command button</TD>
+<TD BGCOLOR="#FFFFFF">cmd</TD>
+<TD BGCOLOR="#FFFFFF">cmdCancel</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">Common Dialog</TD>
+<TD BGCOLOR="#FFFFFF">dlg</TD>
+<TD BGCOLOR="#FFFFFF">dlgSave</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">Data Contol</TD>
+<TD BGCOLOR="#FFFFFF">dat</TD>
+<TD BGCOLOR="#FFFFFF">datStock</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">Data-bound Combo</TD>
+<TD BGCOLOR="#FFFFFF">dbcbo</TD>
+<TD BGCOLOR="#FFFFFF">dbcboActicleType</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">Data-bound Grid</TD>
+<TD BGCOLOR="#FFFFFF">dbgrd</TD>
+<TD BGCOLOR="#FFFFFF">dbgrdStockItems</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">Data-bound List box</TD>
+<TD BGCOLOR="#FFFFFF">dblst</TD>
+<TD BGCOLOR="#FFFFFF">dblstAccountCodes</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">Directory list box</TD>
+<TD BGCOLOR="#FFFFFF">dir</TD>
+<TD BGCOLOR="#FFFFFF">dirTarget</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">Drive list box</TD>
+<TD BGCOLOR="#FFFFFF">drv</TD>
+<TD BGCOLOR="#FFFFFF">drvSource</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">File list box</TD>
+<TD BGCOLOR="#FFFFFF">fil</TD>
+<TD BGCOLOR="#FFFFFF">filPick</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">Form</TD>
+<TD BGCOLOR="#FFFFFF">frm</TD>
+<TD BGCOLOR="#FFFFFF">frmMainMenu</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">Frame</TD>
+<TD BGCOLOR="#FFFFFF">fra</TD>
+<TD BGCOLOR="#FFFFFF">frmPrinters</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">Graph</TD>
+<TD BGCOLOR="#FFFFFF">gra</TD>
+<TD BGCOLOR="#FFFFFF">graSharePrices</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">Grid</TD>
+<TD BGCOLOR="#FFFFFF">grd</TD>
+<TD BGCOLOR="#FFFFFF">grdQuantities</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">Horizontal Scroll Bar</TD>
+<TD BGCOLOR="#FFFFFF">hsb</TD>
+<TD BGCOLOR="#FFFFFF">hsbHueColor</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">Image</TD>
+<TD BGCOLOR="#FFFFFF">img</TD>
+<TD BGCOLOR="#FFFFFF">imgBitMap</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">Label</TD>
+<TD BGCOLOR="#FFFFFF">lbl</TD>
+<TD BGCOLOR="#FFFFFF">lblHelpUser</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">List Box</TD>
+<TD BGCOLOR="#FFFFFF">lst</TD>
+<TD BGCOLOR="#FFFFFF">lstColorCodes</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">MCI</TD>
+<TD BGCOLOR="#FFFFFF">mci</TD>
+<TD BGCOLOR="#FFFFFF">mciSoundEffects</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">MDI Child Form</TD>
+<TD BGCOLOR="#FFFFFF">mdi</TD>
+<TD BGCOLOR="#FFFFFF">mdiJuly</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">Menu</TD>
+<TD BGCOLOR="#FFFFFF">mnu</TD>
+<TD BGCOLOR="#FFFFFF">mnuFileOpen</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">MS Tab</TD>
+<TD BGCOLOR="#FFFFFF">mst</TD>
+<TD BGCOLOR="#FFFFFF">mstDays</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">OLE</TD>
+<TD BGCOLOR="#FFFFFF">ole</TD>
+<TD BGCOLOR="#FFFFFF">oleExcel</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">Picture Box</TD>
+<TD BGCOLOR="#FFFFFF">pic</TD>
+<TD BGCOLOR="#FFFFFF">picMemoryLeft</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">ProgressBar</TD>
+<TD BGCOLOR="#FFFFFF">prg</TD>
+<TD BGCOLOR="#FFFFFF">prgConverting</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">Report</TD>
+<TD BGCOLOR="#FFFFFF">rpt</TD>
+<TD BGCOLOR="#FFFFFF">rptEndofYear</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">RichTextBox</TD>
+<TD BGCOLOR="#FFFFFF">rtf</TD>
+<TD BGCOLOR="#FFFFFF">rtfDiary</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">Shape</TD>
+<TD BGCOLOR="#FFFFFF">shp</TD>
+<TD BGCOLOR="#FFFFFF">shpSquare</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">Slider</TD>
+<TD BGCOLOR="#FFFFFF">sld</TD>
+<TD BGCOLOR="#FFFFFF">sldWindSpeed</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">Spin button</TD>
+<TD BGCOLOR="#FFFFFF">spn</TD>
+<TD BGCOLOR="#FFFFFF">spnTicketsRequired</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">StatusBar</TD>
+<TD BGCOLOR="#FFFFFF">sta</TD>
+<TD BGCOLOR="#FFFFFF">staInformation</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">Text Box</TD>
+<TD BGCOLOR="#FFFFFF">txt</TD>
+<TD BGCOLOR="#FFFFFF">txtInputText</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">Timer</TD>
+<TD BGCOLOR="#FFFFFF">tmr</TD>
+<TD BGCOLOR="#FFFFFF">tmrStartAlarmCount</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">Vertical Scroll Bar</TD>
+<TD BGCOLOR="#FFFFFF">vsb</TD>
+<TD BGCOLOR="#FFFFFF">vsbRatios</TD>
+</TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+</DIV>
+
+<BR>
+<P><B>Note:</B> Control names are used for referring to specific controls at run time, do not confuse these with control <I>properties</I> such as &#145;<TT>text</TT>&#146; and &#145;<TT>caption</TT>&#146;.</P>
+
+<BR>
+<A NAME="Indent"><H2><I>Indented and properly spaced code</I></H2></A>
+
+<P>Indenting is used to visually improve the layout of a program. Indenting shows which lines are subordinate to other lines. For example, all the lines which make up the body of a loop should be indented. In the following example there is a nested repeating structure (one inside another). Everything inside the first FOR loop (<TT>week_no</TT>) is indented and then everything inside the second loop (<TT>day_no</TT>) is indented further. Again each CASE statement is indented between the containing <TT>Select Case</TT> and <TT>End Select</TT> keywords.</P>
+
+<PRE>
+  <B><FONT COLOR="#23238E">For</FONT> bytWeekNo <FONT COLOR="#23238E">=</FONT> 1 <FONT COLOR="#23238E">To</FONT> 52
+    <FONT COLOR="#23238E">Print</FONT> "Week #"; bytWeekNo
+    <FONT COLOR="#23238E">For</FONT> bytDayNo <FONT COLOR="#23238E">=</FONT> 1 <FONT COLOR="#23238E">To</FONT> 7
+      <FONT COLOR="#23238E">Select Case</FONT> bytDayNo
+        <FONT COLOR="#23238E">Case</FONT> 1
+          <FONT COLOR="#23238E">Print</FONT> "Sunday"
+        <FONT COLOR="#23238E">Case</FONT> 2
+          <FONT COLOR="#23238E">Print</FONT> "Monday"
+        <FONT COLOR="#23238E">Case</FONT> 3
+          <FONT COLOR="#23238E">Print</FONT> "Tuesday"
+        <FONT COLOR="#23238E">Case</FONT> 4
+          <FONT COLOR="#23238E">Print</FONT> "Wednesday"
+        <FONT COLOR="#23238E">Case</FONT> 5
+          <FONT COLOR="#23238E">Print</FONT> "Thursday"
+        <FONT COLOR="#23238E">Case</FONT> 6
+          <FONT COLOR="#23238E">Print</FONT> "Friday"
+        <FONT COLOR="#23238E">Case</FONT> 7
+          <FONT COLOR="#23238E">Print</FONT> "Saturday"
+      <FONT COLOR="#23238E">End Select</FONT>
+    <FONT COLOR="#23238E">Next</FONT> bytDayNo
+  <FONT COLOR="#23238E">Next</FONT> bytWeekNo</B>
+</PRE>
+
+<P>Blank lines can also be inserted between lines of code to break a procedure up into smaller blocks of code.</P>
+
+<BR>
+<A NAME="Document"><H2><I>Documented Code</I></H2></A>
+
+<P>The first comments to be entered into a Visual Basic program should be a section describing the overall features of the
+current application. The <TT><B>(general) (declarations)</B></TT> section on the first or main form is a good place for these comments. Information such as the author, date written, any known bugs and the purpose of the application should be listed. This makes the job of any other programmers looking at your code so much easier.</P>
+
+<P>Example:</P>
+<FONT COLOR="GREEN"><B><PRE>
+  ' Author     : Simon Wilkinson
+  ' Date       : 14.04.1998
+  ' Version    : 1.1
+  ' Language   : MS Visual Basic 5.0
+  ' Purpose    : Demonstrates how to create a grid, set fixed
+  '              rows and columns, set individual cells, and
+  '              add and delete rows.
+  ' Known Bugs : N/A
+</PRE></B></FONT>
+
+<P>The above example documents the Grid program example which can be downloaded from the <A HREF="dvbhome.html">menu</A>. It should be noted that the &#145;Language&#146; line is useful not only to document which version of Visual Basic is being used, but also so that the documentation for all programs (written in any language) can be standardised.</P>
+
+<P>As well as a main comment block at the start of a program, comments should also document complicated or unusual sections of code. Ideally each variable and array should be commented where it is defined so that its function can be easily understood later. There are two ways to document code in VB, the Rem statement and the '. Remarks (Rem) must be on a separate line, but a ' followed by some text can be added to the end of any line. The ' tells VB to ignore all words from this point to the end of the line.</P>
+
+<P>Example:</P>
+<PRE>
+  <B><FONT COLOR="#23238E">Dim</FONT> intSheepNo <FONT COLOR="#23238E">As Integer</FONT>    <FONT COLOR="GREEN"> ' Holds the number of black-face sheep</FONT></B>
+</PRE>
+
+<P>Example:</P>
+<PRE>
+  <B><FONT COLOR="green">Rem Centralise the form.</FONT>
+  frmCurrent.Left <FONT COLOR="#23238E">=</FONT> (Screen.Width <FONT COLOR="#23238E">/</FONT> 2) <FONT COLOR="#23238E">-</FONT> (frmCurrent.Width <FONT COLOR="#23238E">/</FONT> 2)
+  frmCurrent.Top <FONT COLOR="#23238E">=</FONT> (Screen.Height <FONT COLOR="#23238E">/</FONT> 2) <FONT COLOR="#23238E">-</FONT> (frmCurrent.Height <FONT COLOR="#23238E">/</FONT> 2)</B>
+</PRE>
+
+<BR>
+<A NAME="Cohesion"><H2><I>Cohesive Proceedures</I></H2></A>
+
+<P>Each procedure should be designed to complete a single task. If a procedure handles too many tasks then its logic can be hard to comprehend and bugs can easily occur.</P>
+
+<BR>
+<A NAME="Coupling"><H2><I>Minimize Coupling</I></H2></A>
+
+<P>Parameter passing is good programming practice, but too many parameters and the code again becomes difficult to manage. Proceedures with many parameters are highly coupled, they have lots of links to other procedures. Where possible try to minimize these links. However, global variables should not be used instead!</P>
+
+<BR>
+<A NAME="DataScope"><H2><I>Minimize data scope where possible</I></H2></A>
+
+<P>Varaibles and arrays can be accessed by code in different parts of the program. Accessable anywhere is Global. This sounds ideal, but without care strange side effects can occur where code in other parts of a program &#145;mess about with&#146; the contents of a variable by mistake. Restricting the access range, or scope, of a variable or array can solve this problem. An intermediate scope is access to a variable throughout a single module. This means any procedure in the module can access the variable, but procedures in other modules are denied access. And the most restricted scope is local. These are variables and arrays which can <U>only</U> be accessed from within the subroutine in which they were defined; even other subroutines within the same module cannot access these variables.</P>
+
+<P>Where possible limit scope as much as possible. For more information about this please read <A HREF="scope.html">variable scope</A>.</P>
+
+<HR NOSHADE SIZE="1">
+<BR>
+<A HREF="dvbhome.html"><img border=0 align=middle src="left.gif">
+Menu</A>
+
+</BODY>
+</HTML>

@@ -1,0 +1,73 @@
+    /*
+    ** Setup (i.e., hide or display) collapsible SPAN elements
+    */
+    function setupCollapsibleSpanElements(state)
+    {
+        var coll, i;
+
+        // Workaround for incompatibilities in IE
+        if (document.all) coll = document.all;
+	else              coll = document.getElementsByTagName("*");
+
+
+        for (i=0; i<coll.length; i++) {
+
+            if (state == "before") {
+
+                if (coll[i].className == "collapsedspan"){
+
+                     toggleCollapsibleSpan(coll[i]);
+                }
+
+            } else {
+
+                if (coll[i].className == "expandedspan"){
+
+                     toggleCollapsibleSpan(coll[i]);
+                }
+            }
+        }
+    }
+
+
+
+
+    /*
+    ** Toggles the state of a collapsible SPAN
+    */
+    function toggleCollapsibleSpan(d)
+    {
+        var coll, i;
+
+
+        // Workaround for incompatibilities in IE
+        if (d.all) coll = d.all;
+	else       coll = d.getElementsByTagName("*");
+
+
+        for (i=0; i<coll.length; i++) {
+
+            if (coll[i].style.display == "inline") {
+
+                coll[i].style.display = "none";
+
+            } else if (coll[i].style.display == "none") {
+
+                coll[i].style.display = "inline";
+            }
+        }
+        if (d.style.cursor == "n-resize") d.style.cursor = "s-resize";
+        else if (d.style.cursor == "s-resize") d.style.cursor = "n-resize";
+
+        if (d.className == "expandedspan") {
+
+            d.className = "collapsedspan";
+	    d.style.cursor = "s-resize";
+
+        } else if (d.className == "collapsedspan") {
+
+            d.className = "expandedspan";
+            d.style.cursor = "n-resize";
+        }
+    }
+

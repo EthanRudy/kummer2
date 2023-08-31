@@ -1,0 +1,76 @@
+<HTML>
+
+<HEAD>
+<TITLE>Tutorial 11</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#C0C0C0">
+<IMG ALIGN=RIGHT SRC="kprog copy.gif">
+<BR>
+<H1>Tutorial: Icorporating Sound</H1>
+<P><img src="commline.gif"></P>
+<BR>
+
+<CENTER><IMG SRC="snd_card.gif"></CENTER>
+<BR>
+
+<BR>
+<P><B>The objective of this tutorial is to learn how to incorporate basic sound effects into VB applications. At the end of this tutorial you should be able to:</B></P>
+
+<UL>
+<LI><P>Locate and add the MMControl VBX to a Visual Basic project.</P>
+<LI><P>Add a MMControl to a form and control it through code.</P>
+<LI><P>Play simple .WAV files included with Windows or Windows 95.</P>
+</UL>
+
+<HR NOSHADE SIZE="1">
+<H2><I>Task</I></H2>
+
+<OL>
+<LI><P>Before incorporating any sound into a VB application, the MMControl <IMG SRC="mci.gif"> must be loaded into the toolbox. If it is not there already there are two ways to obtain it: 1) start a new project making sure to select <TT><B>VB Professional Edition Controls</B></TT>, or 2) if working with an existing project goto <TT><B>Project/Components...</B></TT>, look down the list for <TT><B>Microsoft Multimedia Control 5.0</B></TT> and select it.</P>
+
+<LI><P>Select the MMControl from the toolbox and place it on a form (a short wide rectangle). Now go to the Properties window and set PlayEnabled, PlayVisible, StopEnabled, StopVisible, PauseEnabled, PauseVisible, PrevEnabled and PrevVisible all to <TT><B>True</B></TT>. For the current example we will not need any of the other settings on the MMControl. Your control should now look like:</P>
+
+<CENTER><IMG SRC="tut_15_1.gif"></CENTER>
+<BR>
+
+<LI><P>Assign the MMControl a suitable name and enter as the Filename <TT><B>C:\WINDOWS\MEDIA\CHORD.WAV</B></TT>. Also, set the DeviceType to <TT><B>WaveAudio</B></TT>.</P>
+
+<LI><P>Even though we have now assigned the control a filename to play (one of the WAV files which comes as standard with Windows), we still need to do a little more before we run the program. The first thing is to double click on the form to bring up a code window. Then in the <TT><B>Load</B></TT> event enter the following code:</P>
+
+<B><PRE>
+<FONT COLOR="#23238E">Private Sub</FONT> Form_Load ()
+  MMControl1.Notify = <FONT COLOR="#23238E">False</FONT>
+  MMControl1.Wait = <FONT COLOR="#23238E">False</FONT>
+  MMControl1.Shareable = <FONT COLOR="#23238E">False</FONT>
+  MMControl1.Command = "Open"
+<FONT COLOR="#23238E">End Sub</FONT>
+</PRE></B>
+
+<P>An extra line in the form <TT><B>Unload</B></TT> event is also needed:</P>
+
+<B><PRE>
+<FONT COLOR="#23238E">Private Sub</FONT> Form_Unload (Cancel <FONT COLOR="#23238E">As Integer</FONT>)
+  MMControl1.Command = "Close"
+<FONT COLOR="#23238E">End Sub</FONT>
+</PRE></B>
+
+<LI><P>Try running the program now. To actually hear the .WAV file click on the play button. The Stop and Pause buttons work in a similar way to a tape recorder. Remember that after hearing a file you have to rewind it before you play it again.</P>
+</OL>
+<HR NOSHADE SIZE="1">
+
+<P><B>Note:</B> If you want to play .MID files you must change the DeviceType of the MMControl to <TT><B>Sequencer</B></TT>. Or if you want to play Audio CD tracks then you must change the DeviceType to <TT><B>CDAudio</B></TT>.</P>
+
+<HR NOSHADE SIZE="1">
+<BR>
+
+<BR>
+<A HREF="tut8b.html"><img border=0 align="middle" src="up.gif">
+Tutorial 10</A> ( Animation and Graphics )<BR>
+<A HREF="dvbhome.html"><img border=0 align="middle" src="left.gif">
+Menu</A><BR>
+
+
+</BODY>
+
+</HTML>

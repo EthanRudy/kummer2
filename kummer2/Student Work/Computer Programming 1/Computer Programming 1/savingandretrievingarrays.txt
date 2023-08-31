@@ -1,0 +1,33 @@
+Dim i As Integer
+Dim path As String
+
+Private Sub mnucreate_Click()
+numitems = 20
+Randomize
+For i = 1 To 20
+    arrnums(i) = Int(Rnd * 51) + 50
+    List1.AddItem Str(i) + "-" + Str(arrnums(i))
+Next i
+End Sub
+
+Private Sub mnuopen_Click()
+path = "D:\bob.dat"
+Open path For Binary Access Read As #1
+Get #1, , numitems
+For i = 1 To 20
+    Get #1, , arrnums(i)
+    List1.AddItem Str(i) + "-" + Str(arrnums(i))
+Next i
+Close #1
+End Sub
+
+Private Sub mnusave_Click()
+path = "D:\bob.dat"
+Open path For Binary Access Write As #1
+Put #1, , numitems
+For i = 1 To 20
+    Put #1, , arrnums(i)
+Next i
+Close #1
+
+End Sub

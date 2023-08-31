@@ -1,0 +1,150 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0057)http://www.dcs.napier.ac.uk/hci/VB50/HTML/tutorial_3.html -->
+<HTML><HEAD><TITLE>Tutorial 3</TITLE>
+<META content="text/html; charset=windows-1252" http-equiv=Content-Type>
+<META content="MSHTML 5.00.2314.1000" name=GENERATOR></HEAD>
+<BODY bgColor=#c0c0c0><IMG align=right alt="VB Logo" 
+src="Tutorial 3_files/vb_logo.gif"> <BR>
+<H1>Tutorial: Command Buttons, Option Buttons and Check Boxes</H1>
+<P><IMG src="Tutorial 3_files/line_rainbow.gif"></P><BR>
+<P><B>The objective of this tutorial is to learn the distinctive features of 
+command buttons, option buttons and check boxes and to be able to use each of 
+these within a VB program. At the end of this tutorial you should be able 
+to:</B></P>
+<UL>
+  <LI>
+  <P>Create each of these control types from the toolbox and arrange them on a 
+  form.</P>
+  <LI>
+  <P>Add appropriate captions to the controls.</P>
+  <LI>
+  <P>Provide simple code to make the controls respond to a click event.</P>
+  <LI>
+  <P>Group controls using a frame.</P>
+  <LI>
+  <P>Make a simple alteration to the interface, such as changing background 
+  colour, at run time.</P></LI></UL><BR>
+<P>In the last tutorial you selected an icon from the VB icon library, found in 
+<B><TT>...\Vb\Graphics\icons\</TT></B>, and loaded it in to a picture box. This 
+technique will be used again, but instead of simply loading one icon, we will 
+explore how to give the user a choice and load one or more of a selection of 
+icons. The syntax of the <TT>LoadPicture</TT> command is given again 
+below.</P><B><PRE>  Picture1 = LoadPicture("C:\Program Files\DevStudio\Vb\Graphics\icons\Win95\Mycomp.ico")
+</PRE></B>
+<P>This statement loads the icon specified in the path between the quotation 
+marks, into the picture box called <TT>Picture1</TT>.</P>
+<HR noShade SIZE=1>
+
+<H2><I>Task</I></H2>
+<P>Use VB on-line help to complete the following exercises.</P>
+<OL><B>
+  <LI>
+  <P>Option Buttons</P></B>
+  <P>Create an application which operates like the screen shots below.</P>
+  <CENTER><IMG src="Tutorial 3_files/tut_3_1.gif">&nbsp;<IMG 
+  src="Tutorial 3_files/tut_3_2.gif"></CENTER>
+  <P>All the icons required can be found in the icon library. To view the 
+  contents of the icons sub-directories, click on the picture property of your 
+  picture box in the properties window, then on the <TT>...</TT> button to the 
+  right of the settings box (see below). Many of the icons have meaningful names 
+  such as <TT>bicycle.ico</TT>, others (such as <TT>mac01.ico</TT>) must be 
+  loaded into the picture box to see exactly what they contain.</P>
+  <CENTER><IMG src="Tutorial 3_files/tut_3_3.gif"></CENTER>
+  <P>A welcome addition to Windows 95 and NT is the ability to preview icons and 
+  cursors in the ‘Open Picture’ dialog box as shown below.</P>
+  <CENTER><IMG src="Tutorial 3_files/tut_3_3b.gif"></CENTER>
+  <P><B>Note:</B> If you create the frame first and then add the option buttons 
+  by single clicking on the toolbox and dragging the cross hair cursor on the 
+  frame to create the controls, they will be attached to the frame and will move 
+  with it if you decide to re-position the frame. Notice, however, that if you 
+  create the frame first and double click the screen controls, then drag them 
+  from the centre of the form on to the frame, they will not be attached to it 
+  and will be left behind when you try to move the frame. Try this out.</P>
+  <P>Notice that when you run your application the same icon is loaded first 
+  (probably the clipboard, if you created that option button first). You can 
+  alter the option that has the focus first, by selecting one of the other 
+  option buttons and setting its property tabindex to 1.</P><BR><B>
+  <LI>
+  <P>‘Exit’ command button</P></B>
+  <P>At present the application has no quit mechanism, you have to stop it by 
+  selecting <IMG src="Tutorial 3_files/stop.gif"> from the toolbar. Add a 
+  command button to provide a user-activated means of stopping the program. All 
+  you need to do it put the statement ‘<TT>end</TT>’ in the command button’s 
+  click event</P>
+  <CENTER><IMG src="Tutorial 3_files/tut_3_4.gif"></CENTER><BR><BR><B>
+  <LI>
+  <P>Check Boxes</P></B>
+  <P>Option buttons are mutually exclusive, they only allow one option to be 
+  selected. Supposing we want to present a user with a number of options one or 
+  more of which can be chosen. In this case check boxes are appropriate. Create 
+  an application like the one pictured below. The user chooses the items he/she 
+  needs by clicking on the check boxes. Icons are displayed for selected items. 
+  Clicking on a de-selected check box selects it, clicking on a selected check 
+  box (one containing a cross) de-selects it. The check box property 
+  <TT>value</TT> is set to 1 by a selection and 0 by a de-selection.</P>
+  <CENTER><IMG src="Tutorial 3_files/tut_3_5.gif">&nbsp;<IMG 
+  src="Tutorial 3_files/tut_3_6.gif"></CENTER><BR>
+  <P>This application requires the insertion of some program code behind the 
+  click event for each check box to say ‘if the check box is selected, display 
+  the appropriate icon, otherwise blank out the picture box’. This logic is 
+  achieved in VB by a conditional statement (an if statement) that tests the 
+  status of the checkbox property value. Specimen code for the first check box 
+  is given below. Study the code to work out what it does. Enter this code for 
+  check box 1 (remembering to change the drive in the icon path statement). This 
+  code can be cut and pasted into the click events of the other check boxes, 
+  then modified to refer to check2.value and picture2 and so on for check3 and 
+  check4.</P><B><PRE>  <FONT color=#23238e>Private Sub</FONT> Check1_Click ()
+    <FONT color=#23238e>If</FONT> Check1.Value = 1 <FONT color=#23238e>Then</FONT>
+      Picture1 = LoadPicture("C:\VBP\ICONS\COMPUTER\DISK02.ICO")
+    <FONT color=#23238e>Else</FONT>
+      Picture1 = LoadPicture()
+    <FONT color=#23238e>End If</FONT>
+  <FONT color=#23238e>End Sub</FONT>
+</PRE></B>
+  <P>If you created your program by loading in the icons direct from the 
+  properties window, when you run the program all the icons will be displayed, 
+  though the check boxes are all, as yet, de-selected. To fix this and make sure 
+  that all the picture boxes are blank at the start of the program, go into the 
+  code window for Form1’s Load event. This is done by double clicking on the 
+  form in design mode. From the code you have already used for check box click 
+  events, you should be able to work out what is needed here.</P>
+  <P>Finally, try giving the picture boxes a background colour set at runtime. 
+  Consult VB Help under function QBColor (the most straightforward colour 
+  function) to find out how to set colours. QBColor takes a single parameter 
+  between 0 (black) and 15 (white). In the code below a background colour 
+  statement has been added to the previous code before display of the icon. A 
+  second statement has been added to change the background back to white before 
+  loading of the null picture (i.e. blank out the picture box). Alternatively, 
+  colours can also be set by copying the hexidecimal number displayed in the 
+  ‘Properties’ window and pasting it into the code where necessary.</P><B><PRE>  <FONT color=#23238e>Private Sub</FONT> Check1_Click ()
+    <FONT color=#23238e>If</FONT> Check1.Value = 1 <FONT color=#23238e>Then</FONT>
+      Picture1.BackColor = QBColor(10)
+      Picture1 = LoadPicture("C:\VBP\ICONS\COMPUTER\DISK02.ICO")
+    <FONT color=#23238e>Else</FONT>
+      Picture1.BackColour = QBColor(15)
+      Picture1 = LoadPicture()
+    <FONT color=#23238e>End If</FONT>
+  <FONT color=#23238e>End Sub</FONT>
+</PRE></B><BR><B>
+  <LI>
+  <P>Second Command Button</P></B>
+  <P>Add a second command button to the interface a shown below. The function of 
+  the Rerun button is simply to set all the checkbox value properties to 0. The 
+  code behind it therefore consists of just four statements, the first of which 
+  is check1.value=0. Add the code for the Rerun button then run the application 
+  again. Are you surprised that clicking the Rerun button appears to blank out 
+  the picture boxes as well as de-select the check boxes? How does this happen 
+  and what does it tell you about how VB works?</P>
+  <CENTER><IMG src="Tutorial 3_files/tut_3_7.gif"></CENTER><BR></LI></OL>
+<HR noShade SIZE=1>
+<BR><A href="ftp://ftp.dcs.napier.ac.uk/pub/s.wilkinson/VB50/theatre.zip"><IMG 
+align=left border=0 src="Tutorial 3_files/download.gif"> Download ‘Theatre 
+Booking System’ example</A><BR>(option buttons)<BR><BR><A 
+href="http://www.dcs.napier.ac.uk/hci/VB50/HTML/tutorial_2.html"><IMG 
+align=middle border=0 src="Tutorial 3_files/up.gif"> Tutorial 2</A> 
+(Understanding Events)<BR><A 
+href="http://www.dcs.napier.ac.uk/hci/VB50/home.html"><IMG align=middle border=0 
+src="Tutorial 3_files/left.gif"> Menu</A><BR><A 
+href="http://www.dcs.napier.ac.uk/hci/VB50/HTML/tutorial_4.html"><IMG 
+align=middle border=0 src="Tutorial 3_files/down.gif"> Tutorial 4</A> (List 
+Boxes and Combo Boxes)<BR></BODY></HTML>

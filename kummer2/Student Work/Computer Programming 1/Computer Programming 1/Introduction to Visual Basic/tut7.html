@@ -1,0 +1,84 @@
+<HTML>
+
+<HEAD>
+<TITLE>Tutorial 7</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#C0C0C0">
+<IMG ALIGN=RIGHT SRC="kprog copy.gif"><BR><H1>Tutorial: Vertical & Horizontal Scroll Bars</H1><P><img src="commline.gif"></P><BR>
+<P><B>The objective of this tutorial is to learn how to use vertical and horizontal scroll bars. At the end of this tutorial you should be able to:</B></P>
+
+<UL>
+<LI><P>Create each of these control types from the toolbox and arrange them on a form.</P>
+
+<LI><P>Set their min and max values at design time.</P>
+
+<LI><P>Provide simple code to use the current values of the scroll bars at run time.</P>
+</UL>
+<BR>
+<HR NOSHADE SIZE="1"><H2><I>Introduction</I></H2>
+
+<P>Scroll bars can be useful in a number of ways. Vertical scroll bars are commonly seen as a means of manipulating text, where all the text to be viewed cannot be displayed simultaneously. However, both types of scroll bars can be used for purposes other than traditional scrolling, for example, they may be used as an interactive means of setting values such as mouse tracking speed, volume level, temperature or speed.</P>
+
+<P>Use VB Help to find out more about these controls (select one of the controls from the toolbox and press F1; F1 gives context sensitive help).</P>
+<BR>
+
+<HR NOSHADE SIZE="1"><H2><I>Task</I></H2>
+<OL>
+<LI><B></b><P>Write a simple application as follows:</P>
+
+<H3>Interface:</H3>
+
+<CENTER><IMG BORDER=0 SRC="tut_7_1.gif"></CENTER>
+<BR>
+
+<H3>Behaviour:</H3>
+
+<P>Labels at either end of the scroll bars show their minimum and maximum values (set at design time).</P>
+
+<P>A status bar at the bottom of the form to display current height and speed. The values in the status bar will be updated when the two scroll bars change.</P>
+
+<P><B>Hint:</B> This was the code behind the horizontal scroll bar. The &#145;&&#146; is a concatenation operator which allows us to &#145;glue&#146; string elements together. Notice that the constant parts of the composite string appear between double quotation marks, such a portion is known as a string literal (it will be displayed exactly as it appears). Variables such as <TT>hsbSpeed.Value</TT> (the current value of the horizontal scroll bar) can be included in a string - these are evaluated by VB and the result inserted.</P>
+<B><PRE>
+  <FONT COLOR="#23238E">Private Sub</FONT> hsbSpeed_Change ()
+      StatusBar1.Panels(2).Text = "Speed:" & hsbSpeed.Value
+  <FONT COLOR="#23238E">End Sub</FONT>
+</PRE></B>
+<BR>
+
+<LI><B></b><P>Use scroll bars to manipulate screen objects, in this example shapes are used.</P>
+
+<P>Experiment with the shape control <IMG ALIGN="BOTTOM" SRC="shapes.gif">. Find out how to change the shape through the properties window.</P>
+
+<H3>Interface:</H3>
+
+<CENTER><IMG BORDER=0 SRC="tut_7_2.gif"></CENTER>
+
+<H3>Behaviour:</H3>
+
+<P>The three command buttons are used to change the shape of the object displayed.</P>
+
+<P>The vertical scroll bar controls the height of the object and the horizontal scroll bar controls its width.</P>
+
+<P>When you create the shape, experiment with width and height to determine sensible maximum values. The minimum values of the scroll bars should be set to the same value as the starting height and width of the object.</P>
+
+<P><B>Note:</B> the circle, of course, will not change height and width independently.</P>
+
+<P><B>Hint:</B> This application only has <B>ONE</B> line of code behind each of the five interactive controls!</P>
+
+<P>Of course you can interactively alter the properties (such as <TT>size</TT>) of screen objects in other ways, for example via menus, command buttons, check boxes etc. - do some experiments to change <TT>color</TT> and <TT>fontsize</TT> by different methods.</P>
+<BR>
+
+</OL>
+
+<HR NOSHADE SIZE="1">
+<BR>
+<A HREF="tut6.html"><img border=0 align="middle" src="up.gif">
+Tutorial 6</A> (Creating and Using Arrays of Controls)<BR>
+<A HREF="dvbhome.html"><img border=0 align="middle" src="left.gif">
+Menu</A><BR>
+<A HREF="tut8.html"><img border=0 align="middle" src="down.gif">
+Tutorial 8</A> (Working with Multiple Forms)<BR>
+
+</BODY>
+</HTML>

@@ -1,0 +1,175 @@
+<HTML>
+
+<HEAD>
+<TITLE>Tutorial 6</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#C0C0C0">
+<IMG ALIGN=RIGHT SRC="kprog copy.gif">
+
+<BR>
+
+<H1>Tutorial: Creating and using Arrays of Controls</H1>
+
+<P><img src="commline.gif"></P>
+
+
+
+<BR>
+<P>Often it is useful to create a set of controls that can be referred to by the
+control name plus index. In this way it is possible to:</P>
+
+<UL>
+<LI><P><B>Have a number of controls share the same code.</B><BR>For example, we might have a set of text boxes on the screen and want to highlight whichever one the mouse is over. This can be done by creating the text boxes as an array and programming the MouseMove event to highlight the current one (and de-highlight the previously selected one). With a control array, all the objects in the array respond to the programmed events, only one piece of code is needed to cover them all, thus avoiding the need to duplicate the code behind every individual control.</P>
+
+<LI><P><B>Have a set of controls do something where the function of each is related to its position in the array.</B><BR>For example, in the VB calculator application the command buttons representing the numbers 0-9 were created as a control array. The index position of each command button in the array corresponded to the number on its caption. Clicking any of these buttons executed the same piece of code, and the index of the button clicked was used to display the appropriate character &#145;0&#146;-&#145;9&#146; in the readout text box.</P>
+</UL>
+
+<HR NOSHADE SIZE="1">
+<H2><I>How to create a control array</I></H2>
+
+<P>This is easy to do. Select a control, of the type you want the control array to be, from the toolbox and place it on a form in the normal way. Select this control by clicking on it and then choose &#145;Copy&#146; from the &#145;Edit&#146; menu. Next select &#145;Paste&#146; from the same menu and you should see the following alert box displayed:</P>
+
+
+
+<DIV ALIGN="CENTER"><IMG BORDER=0 SRC="tut_6_1.gif"></DIV>
+
+
+
+<P>Click on &#145;Yes&#146; to start a control array. Selecting &#145;No&#146; will copy the control but will rename it and not start a control array. By this stage there should now be two controls on the form. Both will have the same name, but the first one created will be assigned the array index 0 and the second one array index 1. Keep selecting &#145;Paste&#146; as many times as needed until you have the desired number of controls in your array.</P>
+
+
+
+<HR NOSHADE SIZE="1">
+
+<H2><I>Task #1</I></H2>
+
+
+<P>The important thing to remember when referring to array elements is the index. Just to get the hang of using control arrays this task will change the background colour of all 5 text boxes in the array after clicking on a button.</P>
+
+
+
+<P>First create a form and place on it a set of five text boxes (see screenshot below) which are all part of the same control array. Now, set the &#145;forecolor&#146; property of all the text boxes to yellow. This can be done by clicking and dragging (starting just top left of the first box and finishing just bottom right of the last one) to select all the boxes, then setting the colour as usual from the properties window.</P>
+
+<DIV ALIGN="CENTER"><IMG BORDER=0 SRC="tut_6_2.gif"></DIV>
+<BR>
+
+<P>Add a command button to the form and place the following code behind the &#145;click&#146; event.</P>
+
+
+<B><PRE>
+  <FONT COLOR="#23238E">Private Sub</FONT> cmdGo_Click ()
+    <FONT COLOR="#23238E">Dim</FONT> i <FONT COLOR="#23238E">As Integer</FONT>
+
+    <FONT COLOR="#23238E">For</FONT> i = 0 <FONT COLOR="#23238E">To</FONT> 4
+      text1(i).BackColor = QBColor(i)
+      text1(i).Text = i
+    <FONT COLOR="#23238E">Next</FONT> i
+  <FONT COLOR="#23238E">End Sub</FONT>
+</PRE></B>
+
+<P>Run the program and make sure that you thoroughly understand what it does.</P>
+
+<HR NOSHADE SIZE="1">
+<H2><I>Task #2</I></H2>
+
+
+<P>Keep the same interface as Task #1 above, but remove the command button. Next create a status bar <IMG SRC="status_bar.gif"> at the bottom of the form and set its &#145;Style&#146; property to <TT>sbrSimple</TT>. Program the &#145;MouseMove&#146; event of <TT>Text1()</TT> so that:</P>
+
+
+<OL>
+<LI><P>As the mouse moves over the text boxes, the backcolor of the current one turns deep red and all the others are gray.</P> 
+
+<LI><P>The status bar lists which text box the mouse is currently on, e.g. &#147;The mouse is now over Text1(3)&#148;.</P>
+</OL>
+
+
+
+<DIV ALIGN="CENTER"><IMG SRC="tut_6_3.gif"></DIV>
+
+
+<P>The first parameter (&#145;index&#146;) of the &#145;MouseMove&#146; event subroutine is an integer holding the element number of the textbox control currently being moved over. This parameter variable is used in the code listed below. The subroutine works by using a for loop which goes round each element of the control array and checks whether it is the same number as the &#145;index&#146; parameter. If it is then it sets the background colour to deep red, but if not it sets it to dark grey.</P>
+
+
+
+<B><PRE>  <FONT COLOR="#23238E">Private Sub</FONT> Text1_MouseMove <FONT COLOR="#23238E">(</FONT>index <FONT COLOR="#23238E">As Integer</FONT>, Button <FONT COLOR="#23238E">As Integer</FONT>, Shift <FONT COLOR="#23238E">As Integer</FONT>, X <FONT COLOR="#23238E">As Single</FONT>, Y <FONT COLOR="#23238E">As Single)</FONT>
+    <FONT COLOR="#23238E">Dim</FONT> i <FONT COLOR="#23238E">As Integer</FONT>      <FONT COLOR="GREEN">' declare a variable to use as a counter</FONT>
+
+    <FONT COLOR="#23238E">For</FONT> i = 0 <FONT COLOR="#23238E">To</FONT> 4        <FONT COLOR="GREEN">' because there are five text boxes</FONT>
+      <FONT COLOR="#23238E">If</FONT> i = index <FONT COLOR="#23238E">Then</FONT>   <FONT COLOR="GREEN">' this is the one to highlight</FONT>
+        text1(i).BackColor = QBColor(4)   <FONT COLOR="GREEN">' deep red</FONT>
+      <FONT COLOR="#23238E">Else</FONT>
+        text1(i).BackColor = QBColor(8)   <FONT COLOR="GREEN">' dark grey</FONT>
+      <FONT COLOR="#23238E">End If</FONT>
+    <FONT COLOR="#23238E">Next</FONT> i
+
+    StatusBar1.SimpleText = "The mouse is now over Text1(" & Index & ")"
+
+  <FONT COLOR="#23238E">End Sub</FONT>
+</PRE></B>
+
+
+
+<HR NOSHADE SIZE="1">
+
+<H2><I>Task #3</I></H2>
+
+
+<P>The code used in Task #2 solves the problem but is a bit inefficient. For example, every time the mouse moves <I>all</I> textbox backgrounds are reset. In practice only <I>two</I> textboxes can change at any one time: the textbox under the mouse (change to deep red), and the old textbox which was under the mouse which now needs to be turned back to dark grey once again. Because Task #2 sets all textboxes on every move, regardless of whether they need to be changed or not, the textboxes can seem to flicker a bit when the program is run.</P>
+
+
+
+<P>This inefficiency problem can be solved by modifying the Task #2 code so that only the new and previous textbox backgrounds are ever altered. The code to do this could look somthing like:</P>
+
+
+
+<B><PRE>  <FONT COLOR="#23238E">Private Sub</FONT> Text1_MouseMove (index <FONT COLOR="#23238E">As Integer</FONT>, Button <FONT COLOR="#23238E">As Integer</FONT>, Shift <FONT COLOR="#23238E">As Integer</FONT>, X <FONT COLOR="#23238E">As Single</FONT>, Y <FONT COLOR="#23238E">As Single</FONT>)
+
+    <FONT COLOR="#23238E">Static</FONT> bytPrevious <FONT COLOR="#23238E">as Byte</FONT>
+
+
+
+    <FONT COLOR="#23238E">If</FONT> Index <> bytPrevious <FONT COLOR="#23238E">Then</FONT>
+
+      Text1(Index).BackColor = QBColor(4)       <FONT COLOR="green">' set new to deep red</FONT>
+
+      Text1(bytPrevious).BackColor = QBColor(8) <FONT COLOR="green">' set previous to dark grey</FONT>
+
+      bytPrevious = Index                       <FONT COLOR="green">' store current index in prev</FONT>
+
+
+
+      StatusBar1.SimpleText = "The mouse is now over Text1(" & Index & ")"
+
+    <FONT COLOR="#23238E">End If</FONT>
+
+
+
+  <FONT COLOR="#23238E">End Sub</FONT>
+
+</PRE></B>
+
+
+
+<P>The variable &#145;bytPrevious&#146; is declared as a local variable because this is the only subroutine in the whole program which needs access to it. However, it has been declared with the &#145;Static&#146; keyword instead of &#145;Dim&#146; so that its value is preserved after the subroutine finishes. Standard (Dim) local variables are always destroyed after the subroutine in which they are declared terminates.</P>
+
+<BR>
+
+
+
+<HR NOSHADE SIZE="1">
+<BR>
+<A HREF="ftp://ftp.dcs.napier.ac.uk/pub/s.wilkinson/VB50/tictactoe.zip"><IMG BORDER=0 ALIGN="middle" SRC="download.gif"></A>&nbsp;The <A HREF="ftp://ftp.dcs.napier.ac.uk/pub/s.wilkinson/VB50/tictactoe.zip">Tic Tac Toe example</A> uses a control array<BR>
+
+<BR>
+
+<A HREF="tut5.html"><img border=0 align="middle" src="up.gif">
+Tutorial 5</A> (Menus and List Manipulation)<BR>
+<A HREF="dvbhome.html"><img border=0 align="middle" src="left.gif">
+Menu</A><BR>
+<A HREF="tut7.html"><img border=0 align="middle" src="down.gif">
+Tutorial 7</A> (Vertical & Horizontal Scroll Bars and Animation)<BR>
+
+</BODY>
+</HTML>
+

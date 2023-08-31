@@ -1,0 +1,195 @@
+
+<HTML>
+<HEAD><TITLE>Functions-Discovering Visual Basic</TITLE>
+</HEAD>
+<BODY bgColor=#c0c0c0><IMG   
+src="kprog copy.gif" align=right> <BR>
+<H1>Functions </H1>
+<P><IMG 
+src="commline.gif"></P>
+
+<BR>
+<CENTER>
+[ <A HREF="#What are functions">What are functions and how do I use them?</A> ]<BR>
+[ <A HREF="#File">File</A> | <A HREF="#Number">Number</A> | <A HREF="#String">String</A> | <A HREF="#TimeDate">Time/Date</A> | <A HREF="#Variable">Variable Conversion</A> ]
+</CENTER>
+
+<A NAME="What are functions">
+<H2><I>What are functions and how do I use them?</I></H2>
+</A>
+
+<P>Functions are similar to procedures but always return a value of some sort. If a procedure does not return a value then it can just be called, but with functions the value passed back must be handled some how.</P>
+<BR>
+
+<H3>Example 1: (No Parameters)</H3>
+
+<P>A useful function to start with is <TT><B>Time</B></TT>. This role of this function is to return the current system clock time; it does not take any parameters. To try this function out create a new label control on a suitable form. Next place a Timer control on the form as well and set its <TT><B>Interval</B></TT> to <TT><B>1000</B></TT>. Double click on the Timer control and enter the line <TT><B>Label1.Caption = Time</B></TT>. When you run the program you should see the label control showing the time updated every second.</P> 
+<BR>
+
+<H3>Example 2: (A Single Parameter)</H3>
+
+<P>The above Time function is simple to use because it does not require any parameters. However, most functions require parameters to supply key information to the module in order for it to work out the return value. The Time function does not require a parameter because all it needs to do is interogate the system clock. The function <TT><B>UCase</B></TT> is a simple function requiring only one parameter to be passed. To pass variables and constants as parameters they must be enclosed in brackets after the function name. Multiple parameters must be separated by commas. Create a text control on a form and then in the <TT><B>KeyPress</B></TT> event write: <TT><B>If KeyAscii = 13 then Text1.Text = UCase(Text1.Text)</B></TT>. Run the program, enter some text and press RETURN. The result should be that the text in the text box turns to upper-case.</P>
+<BR>
+
+<H3>Example 3: (Multiple Parameters)</H3>
+
+<P>In example 2 the function returned different text depending on the string sent to it in the parameter. Other functions require additional parameters to tell it how to handle the other parameters. For example, the function <TT><B>Mid$</B></TT> takes one parameter to pass in the text to be used, one parameter to set the starting point (measured in characters), and then a third and optional parameter to specify how many characters to return. We can use this Mid$ function to return the word 'University' out of the string 'Napier University, Edinburgh'. In the <TT><B>Form Activate</B></TT> event enter the following code: <TT><B>Label1.Caption = Mid$("Napier University, Edinburgh", 8, 10)</B></TT>. When run all that will be displayed in Label1 will be the word 'University'. Try leaving out the last parameter which is optional and see what happens.</P>
+<BR>
+
+<H3>Example 4: (Using Functions as Parameters)</H3>
+
+<P>Can the returning value of one function be used as the input parameter for another? The answer is yes, the example below does just that.</P>
+
+<P>Suppose we need to build an input text box on a form to enter a person's name but later in the program we do not want to use the full name just the surname. An easy (or perhaps lazy) solution would be to use two separate text box controls, one for the first name and the other for the surname. However, this uses up more screen real estate and could be slower to enter. Where possible it is better to get the computer to do the hard work instead of the user. To do this we are going to create only one text input box and use a label control to output the result of the function. In the <TT><B>KeyPress</B></TT> event of the text box place the following code:</P>
+<B><PRE>
+<FONT COLOR="#23238E">Private Sub</FONT> Text1_KeyPress <FONT COLOR="#23238E">(</FONT>KeyAscii <FONT COLOR="#23238E">As Integer)</FONT>
+  <FONT COLOR="#23238E">Dim</FONT> strFullName, strSurname <FONT COLOR="#23238E">As String</FONT>
+  
+  <FONT COLOR="#23238E">If</FONT> KeyAscii <FONT COLOR="#23238E">=</FONT> 13 <FONT COLOR="#23238E">Then</FONT>
+    strFullName <FONT COLOR="#23238E">=</FONT> Text1.Text
+    strSurname <FONT COLOR="#23238E">= Mid$(</FONT>strFullName, <FONT COLOR="#23238E">InStr(</FONT>1, strFullName, " "<FONT COLOR="#23238E">) +</FONT> 1<FONT COLOR="#23238E">)</FONT>
+    Label1.Caption <FONT COLOR="#23238E">=</FONT> "Surname = " <FONT COLOR="#23238E">+ UCase(</FONT>strSurname<FONT COLOR="#23238E">)</FONT>
+  <FONT COLOR="#23238E">End If
+
+End Sub</FONT>
+</PRE></B>
+
+<P>This example uses three of Visual Basic's built in functions: Mid$, InStr, and UCase. The function <TT><B>Mid$</B></TT> in this case is using two parameters (the option third parameter is not being used). However, the second parameter which sets the starting character has been replaced by the function <TT><B>InStr</B></TT> which is used to return the position of located characters. In this case InStr is looking for the first occurrance of the character " " (space). We will use this to determine where the first name ends and the surname begins. One is added to this returning value because we do not want to return the space, we want to start one letter after the space. In Visual Basic an functions that return values that will be used as input parameters to other functions are evaluated first. The example above uses two local varaibles to try and make the code look less complicated and make it easier to read. However, it could be rewritten so that the the result from the Mid$ function is used as the input to UCase:</P>
+
+<B><PRE>
+<FONT COLOR="#23238E">Private Sub</FONT> Text1_KeyPress <FONT COLOR="#23238E">(</FONT>KeyAscii <FONT COLOR="#23238E">As Integer)</FONT>
+  
+  <FONT COLOR="#23238E">If</FONT> KeyAscii <FONT COLOR="#23238E">=</FONT> 13 <FONT COLOR="#23238E">Then</FONT> Label1.Caption <FONT COLOR="#23238E">= UCase(Mid$(</FONT>Text1.Text, <FONT COLOR="#23238E">InStr(</FONT>1, Text1.Text, " "<FONT COLOR="#23238E">) +</FONT> 1<FONT COLOR="#23238E">))
+
+End Sub</FONT>
+</PRE></B>
+
+<P>This shortened example will do exactly the same as the previous example except the label will not show 'Surname = ' before displaying the name. It should be noted that although both examples perform the same job the first is much more readable and thus less prone to bugs. When too many functions are used on a single line it is difficult matching closing brackets. If you find you are using too many functions on a single line split them up over several lines with the help of some temporary local varaibles.</P>
+<BR>
+
+<H3>Example 5: (Making your own)</H3>
+
+<P>If Visual Basic does not have a suitable built in function then it is possible to build your own. To create a user defined function open up a code window and move the cursor down to the bottom past the last <TT><B>End Sub</B></TT> statement. Here, enter <TT><B>Function <I>function_name</I> ()</B></TT>. Replace the word 'function_name' with the exact name you wish to call the function. After pressing RETURN the code window should clear and display the new function on its own with the added line <TT><B>End Function</B></TT> at the end.</P>
+
+<P>In this example we will write our own function to return the current time in New York. We will create a new form with a label control and a command button control on it (see below).</P>
+
+<CENTER><IMG SRC="vb_fun_1.gif"></CENTER>
+
+<P>Using the method outlined above create a new function with the code shown below:</P>
+<B><PRE>
+<FONT COLOR="#23238E">Function</FONT> NY_time <FONT COLOR="#23238E">()</FONT>
+  <FONT COLOR="#23238E">Dim</FONT> strTempTime <FONT COLOR="#23238E">As String</FONT>
+  <FONT COLOR="#23238E">Dim</FONT> intNY_hour <FONT COLOR="#23238E">As Integer</FONT>
+
+  strTempTime <FONT COLOR="#23238E">= Time$</FONT>
+  intNY_hour <FONT COLOR="#23238E">= Val(Left$(</FONT>strTempTime, 2<FONT COLOR="#23238E">)) -</FONT> 5
+
+  <FONT COLOR="#23238E">Rem</FONT> <FONT COLOR="GREEN">Correct for passing back over a day</FONT>
+  <FONT COLOR="#23238E">If</FONT> intNY_hour <FONT COLOR="#23238E">&lt</FONT> 0 <FONT COLOR="#23238E">Then</FONT> intNY_hour <FONT COLOR="#23238E">=</FONT> intNY_hour <FONT COLOR="#23238E">+</FONT> 24
+
+  intNY_time <FONT COLOR="#23238E">= Str(</FONT>intNY_hour<FONT COLOR="#23238E">) + Right$(</FONT>strTempTime, 6<FONT COLOR="#23238E">)
+End Function</FONT>
+</PRE></B>
+
+<P>Next double click on the command button and enter the following code:</P>
+<B><PRE>
+<FONT COLOR="#23238E">Private Sub</FONT> cmdGetTime_Click <FONT COLOR="#23238E">()</FONT>
+  lblTime.Caption <FONT COLOR="#23238E">=</FONT> "Time in New York is " <FONT COLOR="#23238E">+</FONT> intNY_time()
+
+<FONT COLOR="#23238E">End Sub</FONT>
+</PRE></B>
+
+<P>This function is quite simple it just reads the system clock and takes five hours off the hour. A check to see if the hour is less than zero is require in case the time in New York is the evening before.</P>
+
+<P><B>Exercise:</B> Try expanding this function to make it more generalisable. Create a parameter to pass in the time zone difference (in hours) from Greenwich.</P>
+
+<HR NOSHADE SIZE="1">
+
+<P>Below are listed some of the more important functions in Visual Basic. To find out exactly how many parameters each function requires and what type of data the parameter should be use the online help within Visual Basic.</P>
+
+<A NAME="File">
+<H2><I>File</I></H2>
+</A>
+
+<UL>
+<li><B>FileAttr</B> - Returns file mode or operating system file information about an open file.
+<li><B>FileDateTime</B> - Returns a String that indicates the date and time a specified file was created or last modified.
+<li><B>FileLen</B> - Returns a Long integer that indicates the length of a file in bytes.
+<li><B>FreeFile</B> - Returns the next valid unused file number.
+<li><B>GetAttr</B> - Returns an integer that indicates a file, directory, or volume label's attributes.
+<li><B>Loc</B> - Returns the current position within an open file.
+<li><B>LOF</B> - Returns the size of an open file in bytes.
+<li><B>Seek</B> - Returns the current file position.
+</UL>
+
+<HR NOSHADE SIZE="1">
+<A NAME="Number">
+<H2><I>Number</I></H2>
+</A>
+
+<UL>
+<li><B>Abs</B> - Returns the absolute value of a number.
+<li><B>Atn</B> - Returns the arctangent of a number.
+<li><B>Cos</B> - Returns the cosine of an angle (angle in radians).
+<li><B>Sin</B> - Returns the sine of an angle (angle in radians).
+</UL>
+
+<HR NOSHADE SIZE="1">
+<A NAME="String">
+<H2><I>String</I></H2>
+</A>
+
+<UL>
+<li><B>InStr</B> - Returns the position of the first occurrence of one string within another string.
+<li><B>LCase, LCase$</B> - Returns a string in which all letters of an argument have been converted to lowercase.
+<li><B>Left, Left$</B> - Returns the leftmost n characters of a string argument.
+<li><B>Len</B> - Returns the number of characters in a string expression or the number of bytes required to store a variable.
+<li><B>LTrim, LTrim$</B> - Returns a copy of a string with leading spaces removed.
+<li><B>Mid, Mid$</B> - Returns a string that is part of some other string.
+<li><B>Right, Right$</B> - Returns the rightmost n characters of a string argument.
+<li><B>RTrim, RTrim$</B> - Returns a copy of a string with trailing (rightmost) spaces removed.
+<li><B>Space, Space$</B> - Returns a string consisting of a specified number of spaces.
+<li><B>Trim, Trim$</B> - Returns a copy of a string with both leading and trailing spaces removed.
+<li><B>UCase, UCase$</B> - Returns a string with all letters of the argument converted to uppercase.
+</UL>
+
+<HR NOSHADE SIZE="1">
+<A NAME="TimeDate">
+<H2><I>Time/Date</I></H2>
+</A>
+
+<UL>
+<li><B>Date, Date$</B> - Returns the current date.
+<li><B>IsDate</B> - Returns a value indicating whether of not a Variant argument can be converted to a date.
+<li><B>Minute</B> - Returns an integer between 0 and 59, inclusive, that represents the minute of the hour corresponding to the time provided as an argument.
+<li><B>Month</B> - Returns an integer between 1 and 12, inclusive, that represents the month of the year for a date argument.
+<li><B>Now</B> - Returns a date that represents the current date and time according to the setting of the computer's system date and time.
+<li><B>Time, Time$</B> - Returns the current system time.
+<li><B>Timer</B> - Returns the number of seconds that have elapsed since 12:00 a.m. (midnight).
+<li><B>Weekday</B> - Returns an integer between 1 (Sunday) and 7 (Saturday) that represents the day of the week for a date argument.
+<li><B>Year</B> - Returns an integer between 100 and 9999, inclusive, that represents the year of a date argument.
+</UL>
+
+<HR NOSHADE SIZE="1">
+<A NAME="Variable">
+<H2><I>Variable Conversion</I></H2>
+</A>
+
+<UL>
+<li><B>CCur</B> - Explicitly converts expressions to the Currency data type.
+<li><B>CDbl</B> - Explicitly converts expressions to the Double data type.
+<li><B>CInt</B> - Explicitly converts expressions to the Integer data type.
+<li><B>CLng</B> - Explicitly converts expressions to the Long data type.
+<li><B>CSnd</B> - Explicitly converts expressions to the Single data type.
+<li><B>CStr</B> - Explicitly converts expressions to the String data type.
+<li><B>CVar</B> - Explicitly converts expressions to the Variant data type.
+<li><B>CVDate</B> - Converts an expression to a Variant of VarType 7 (Date).
+</UL>
+
+<HR NOSHADE SIZE="1">
+<BR>
+<A HREF="dvbhome.html"><img border=0 align="middle" src="left.gif">
+Menu</A>
+</BODY>
+
+</HTML>

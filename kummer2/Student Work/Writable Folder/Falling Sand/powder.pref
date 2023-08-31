@@ -1,0 +1,42 @@
+{
+	"Powder Toy Preferences" : "Don't modify this file unless you know what you're doing. P.S: editing the admin/mod fields in your user info doesn't give you magical powers",
+	"version" : {
+		"major" : 78,
+		"minor" : 1,
+		"build" : 163,
+		"update" : false
+	},
+	"graphics" : {
+		"colour" : 0,
+		"display" : [
+			16
+		],
+		"render" : [
+			16774017,
+			62345,
+			62341,
+			-16715152
+		]
+	},
+	"proxy" : "",
+	"scale" : 1,
+	"User" : null,
+	"Renderer" : {
+		"ColourMode" : "0",
+		"DisplayModes" : [],
+		"RenderModes" : [
+			"f381"
+		],
+		"GravityField" : false,
+		"Decorations" : true
+	},
+	"Simulation" : {
+		"EdgeMode" : "0"
+	},
+	"Decoration" : {
+		"Red" : "c8",
+		"Green" : "64",
+		"Blue" : "32",
+		"Alpha" : "ff"
+	}
+}

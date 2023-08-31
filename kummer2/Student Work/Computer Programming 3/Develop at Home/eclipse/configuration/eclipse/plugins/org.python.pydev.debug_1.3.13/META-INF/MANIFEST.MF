@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.0
+Created-By: 1.5.0_10-b03 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+Bundle-Name: Pydev debug
+Bundle-SymbolicName: org.python.pydev.debug; singleton:=true
+Bundle-Version: 1.3.13
+Bundle-ClassPath: pydev-debug.jar,retroweaver-rt.jar
+Bundle-Activator: org.python.pydev.debug.core.PydevDebugPlugin
+Bundle-Vendor: Fabio Zadrozny / Aleks Totic
+Bundle-Localization: plugin
+Require-Bundle: org.junit;resolution:=optional,org.eclipse.ui,org.ecli
+ pse.ui.ide,org.eclipse.core.runtime,org.eclipse.core.resources,org.ec
+ lipse.jface.text,org.eclipse.ui.editors,org.eclipse.ui.views,org.ecli
+ pse.debug.core;bundle-version="3.2.0",org.eclipse.debug.ui,org.eclips
+ e.ui.workbench.texteditor,org.eclipse.core.variables,org.eclipse.ui.c
+ onsole,org.python.pydev.core,org.python.pydev.ast,org.python.pydev.pa
+ rser,org.python.pydev,org.eclipse.core.expressions
+Eclipse-LazyStart: true
+Export-Package: org.python.pydev.debug.codecoverage,org.python.pydev.d
+ ebug.core,org.python.pydev.debug.model,org.python.pydev.debug.model.r
+ emote,org.python.pydev.debug.ui,org.python.pydev.debug.ui.actions,org
+ .python.pydev.debug.ui.launching,org.python.pydev.debug.unittest
+

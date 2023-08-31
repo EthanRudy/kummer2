@@ -1,0 +1,261 @@
+<HTML>
+
+<HEAD>
+<TITLE>Getting User Information</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#C0C0C0">
+
+<IMG ALIGN=RIGHT SRC="kprog copy.gif" >
+<BR>
+<H1>Getting User Information</H1>
+<P><img src="COMMLINE.GIF"></P>
+
+<CENTER>[ <A HREF="#Variables">Variables</A> | <A HREF="#Static Variables">Static Variables</A> | <A HREF="#Constants">Constants</A> | <A HREF="#Arrays">Arrays</A> | <A HREF="#Dynamic Arrays">Dynamic Arrays</A> ]</CENTER>
+<BR>
+
+<HR>
+<A NAME="Variables">
+<H2><I>Variables</I></H2></A>
+
+<P>Variables are data structures which are used to store information. There are two main types of information which can be stored: numbers and text. Before using a variable it must first be created:</P>
+<B><PRE>
+  Dim</B> <I>variable_name</I> <B>As <I>Type</I>
+</PRE></B>
+Example:<B>
+<PRE>
+  <FONT COLOR="#23238E">Dim</FONT> price <FONT COLOR="#23238E">As Long</FONT>
+  <FONT COLOR="#23238E">Dim</FONT> registration_plate <FONT COLOR="#23238E">As String</FONT>
+
+</PRE></B>
+<DIV ALIGN="CENTER">
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0>
+<TR><TD BGCOLOR="#808080">
+<TABLE BORDER=0 WIDTH=600 CELLSPACING=1 CELLPADDING=4>
+<TR>
+<TH BGCOLOR="#808080"><FONT COLOR="#FFFFFF">Type</FONT></TH>
+<TH BGCOLOR="#808080"><FONT COLOR="#FFFFFF">Size</FONT></TH>
+<TH BGCOLOR="#808080"><FONT COLOR="#FFFFFF">Allowable Ranges</FONT></TH>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF"><B>Boolean</B></TD>
+<TD BGCOLOR="#FFFFFF">2 bytes</TD>
+<TD BGCOLOR="#FFFFFF">TRUE or FALSE</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF"><B>Byte</B></TD>
+<TD BGCOLOR="#FFFFFF">1 byte</TD>
+<TD BGCOLOR="#FFFFFF">0 to 255</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF"><B>Currency</B></TD>
+<TD BGCOLOR="#FFFFFF">8 bytes</TD>
+<TD BGCOLOR="#FFFFFF">-922337203685477.5808 to 922337203685477.5807</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF"><B>Date</B></TD>
+<TD BGCOLOR="#FFFFFF">8 bytes</TD>
+<TD BGCOLOR="#FFFFFF">January 1, 100 to December 31, 9999</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF"><B>Decimal</B></TD>
+<TD BGCOLOR="#FFFFFF">14 bytes</TD>
+<TD BGCOLOR="#FFFFFF">+/-79,228,162,514,264,337,593,543,950,335 with no decimal point;<BR>
++/-7.9228162514264337593543950335 with 28 places to the right of the decimal; smallest non-zero number is<BR> 
++/-0.0000000000000000000000000001</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF"><B>Double</B></TD>
+<TD BGCOLOR="#FFFFFF">8 bytes</TD>
+<TD BGCOLOR="#FFFFFF">-1.79769313486232D308 to -4.94065645841247D-324<BR>
+4.94065645841247D-324 to 1.79769313486232D308</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF"><B>Integer</B></TD>
+<TD BGCOLOR="#FFFFFF">2 bytes</TD>
+<TD BGCOLOR="#FFFFFF">-32,768 to 32,767</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF"><B>Long</B></TD>
+<TD BGCOLOR="#FFFFFF">4 bytes</TD>
+<TD BGCOLOR="#FFFFFF">-2,147,483,648 to 2,147,483,647</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF"><B>Single</B></TD>
+<TD BGCOLOR="#FFFFFF">4 bytes</TD>
+<TD BGCOLOR="#FFFFFF">-3.402823D38 to -1.401298D-45<BR>
+1.401298E-45 to 3.402823E38</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF"><B>String</B></TD>
+<TD BGCOLOR="#FFFFFF">10 bytes + string length</TD>
+<TD BGCOLOR="#FFFFFF">0 to 65,000 bytes</TD>
+</TR>
+<TR>
+<TD ROWSPAN="3" BGCOLOR="#FFFFFF"><B>Variant</B></TD>
+<TD BGCOLOR="#FFFFFF">16 bytes</TD>
+<TD BGCOLOR="#FFFFFF">Numeric: same as Double</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">22 bytes + string length</TD>
+<TD BGCOLOR="#FFFFFF">String: same as String</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">Number required by elements</TD>
+<TD BGCOLOR="#FFFFFF">User defined type</TD>
+</TR>
+<TR>
+<TD COLSPAN="3" BGCOLOR="#FFFFFF"><I>If a new variable is declared without specifying a type then by default it will be
+made type Variant.</I></TD>
+</TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+</DIV>
+
+<BR>
+<P>Once a new variable has been created a value can be assigned to it for storage. To do this the &#145;=&#146; operator is used. The first example assigns a constant to a variable, while the second assigns the contents of another variable multiplied by ten.</P>
+
+Example 1: <B><TT>price <FONT COLOR="#23238E">=</FONT> 29.95</TT></B><BR>
+Example 2: <B><TT>total_price <FONT COLOR="#23238E">=</FONT> price <FONT COLOR="#23238E">*</FONT> 10</TT></B>
+
+<P>The <I>scope</I> of a variable is defined as its operating range. There are three types of varible scope:</P>
+<OL>
+<LI><B>Local</B> - Variable can only be used in the current procedure (use <TT>Dim</TT> within the required procedure).
+<LI><B>Module</B> - Variable can only be accessed in any procedure in the current form of module (use <TT>Private </TT> within the <I>Declarations</I> section on a form or module).
+<LI><B>Public</B> - Can be accessed in any procedure in any module (use <TT>Public</TT> within the <I>Declarations</I> section of a module).
+</OL>
+<BR>
+
+<HR>
+<A NAME="Static Variables">
+<H2><I>Static Variables</I></H2></A>
+
+<P>Declaring variables and arrays (<A HREF="#Arrays">see below</A>) as <I>local</I> to the current procedure/function is useful because it minimises strange side-effects which can occur with <I>public</I> variables. However, when using a local variable in a procedure VB creates memory space to hold the variable&#146;s contents when it reads the <TT>Dim</TT> statement, but when it gets to the end of the procedure (<TT>End Sub</TT>) it frees the space allocated to the local variable. Add the following code to a command button and see what values are printed:</P>
+
+<B><PRE>
+  <FONT COLOR="#23238E">Private Sub</FONT> Command1_Click ()
+    <FONT COLOR="#23238E">Dim</FONT> number <FONT COLOR="#23238E">As Integer</FONT>           <FONT COLOR="GREEN">' Create a normal local variable</FONT>
+
+    number = number + 1
+    <FONT COLOR="#23238E">Print</FONT> number
+  <FONT COLOR="#23238E">End Sub</FONT>
+</PRE></B>
+
+<P>After clicking on the command button a few times you should see a whole column of 1&#146;s down the left hand side of the form. The value never gets above 1 even though 1 is added to the variable each time. This is because each time the procedure is called, by clicking on the command button, VB is working with a different variable. It has exactly the same name in the program but it is a completely different variable. To stop this happening enter the keyword <I>Static</I> instead of <I>Dim</I>:</P>
+
+<B><PRE>
+  <FONT COLOR="#23238E">Private Sub</FONT> Command1_Click ()
+    <FONT COLOR="#23238E">Static</FONT> number <FONT COLOR="#23238E">As Integer</FONT>           <FONT COLOR="GREEN">' Create a static local variable</FONT>
+
+    number = number + 1
+    <FONT COLOR="#23238E">Print</FONT> number
+  <FONT COLOR="#23238E">End Sub</FONT>
+</PRE></B>
+
+<P>This time instead of the local variable being destroyed when the procedure terminates its value remains until the whole program ends. Thus, we can now see a list of numbers being incremented by 1 every time the command button is clicked.</P>
+
+<P><B>Note:</B> The new static variable is still local in scope, if any other procedure tries to access this variable it will be unable to do so. Add a second command button, which will add a new &#145;<TT>Click</TT>&#146; procedure, and try amending or printing the value of the static variable.</P>
+
+<P>The contents of local arrays can also be preserved while the program is still running. To do this add the &#145;<TT>Static</TT>&#146; keyword instead of &#145;<TT>Dim</TT>&#146; just like the variable example above.</P>
+
+<B><PRE>
+  <FONT COLOR="#23238E">Static</FONT> salaries(199) <FONT COLOR="#23238E">As Long</FONT>
+</PRE></B>
+<BR>
+
+<HR>
+<A NAME="Constants">
+<H2><I>Constants</I></H2></A>
+
+<P>Constants are similar to variables but only have a single value throughout the execution of a program. The contents of variables can change as often as necessary. So why use a constant if it can only hold one value? Well often in a program it is neccassary to use the same number or string repeatedly. For example, in a program to calculate end of year accounts there will be several parts of the program refering to the current value of V.A.T. We could hard code the value into the program everywhere it is used, but it would be tedious to change if the government altered the rate. Alternatively we could use a standard variable called &#145;VAT&#146; to hold the value and set it on the <TT>Form_Load</TT> event. However, what happens if there is a bug in the program and the contents of this variable is changed accidentally to something else.</P>
+
+<P>One solution which solves the above two problems is to use a constant. In the following example a constant named &#145;VAT&#146; is declared and assigned the value 1.175. It is used in the <TT>Print</TT> statement with the variable <TT>bill_total</TT> to calculate the total bill amount. Notice that instead of writing 1.175 in the formula we refer to the constant by name.</P>
+
+<P>Example:</P><B>
+<PRE>
+  <FONT COLOR="#23238E">Const</FONT> VAT = 1.175            <FONT COLOR="GREEN">' Declare and set the value of the constant</FONT>
+  <FONT COLOR="#23238E">Dim</FONT> bill_total <FONT COLOR="#23238E">As Currency</FONT>   <FONT COLOR="GREEN">' Declare a local variable to hold bill total</FONT>
+
+  bill_total = 560.95
+
+  <FONT COLOR="#23238E">Print</FONT> "Total = "; bill_total * VAT
+</PRE></B>
+
+<P>Like variables, constants also have scoping rules. There are public constants available to any module or unit in the current project, module wide constants available to any unit within the current module, and local constants accessable only within the current unit (procedure/function).<P>
+
+<OL>
+<LI><B>Local</B> - use &#145;<TT>Const</TT>&#146; within the required procedure.
+<LI><B>Module</B> - use &#145;<TT>Private Const</TT>&#146; within the <I>Declarations</I> section on a form or module.
+<LI><B>Public</B> - use &#145;<TT>Public Const</TT>&#146; within the <I>Declarations</I> section of a module (e.g. Module1.bas).
+</OL>
+
+<HR>
+
+<A NAME="Arrays">
+<H2><I>Arrays</I></H2></A>
+
+<P>Variables are useful for storing small pieces of information, but not good for large amounts of very similar information. For example, to hold the salaries of two hundred employees would require 200 different variable names. A much
+more efficient way is to use a data structure called an <I>array</I>.</P>
+
+<P>An array is similar to a row of pigeon-holes. The whole array has one name, and each pigeon-hole has an <I>address</I>. For the above salaries problem we need an array which has 200 <I>elements</I> (pigeon-holes). To do this we use the <TT>Dim</TT> command that we used to create new variables. However, a size is also allocated.</P>
+
+<PRE>
+  Dim <I>array_name</I> (<I>size</I>) [As <I>Type</I>]
+</PRE>
+<P>Example: <B><TT><FONT COLOR="#23238E">Dim</FONT> salaries(199) <FONT COLOR="#23238E">As Long</FONT></TT></B></P>
+
+<P>The above example creates an array with 200 elements. The size is set to 199 because by default VB starts numbering from 0.</P>
+
+<P>If we know that &#145;Fred&#146; is employee number 24 and has a salary of 25,000 then we can enter this amount into the array using:</P>
+
+<B><PRE>
+  salaries(23) <FONT COLOR="#23238E">=</FONT> 25000
+</PRE></B>
+
+<P>Conversely, if we want to know how much employee 189 earns then we can use:</P>
+
+<B><PRE>
+  lblEarnings.Caption <FONT COLOR="#23238E">=</FONT> salaries(188)
+</PRE></B>
+
+<P><B>Note:</B> The above two examples both access the element one below the required number. This is because VB numbers the array from 0, not 1. However, VB can be forced to start at 1 by entering the statement &#145;<TT>Option Base 1</TT>&#146; in the declarations section of a form or a module.</P>
+
+<HR>
+<A NAME="Dynamic Arrays">
+<H2><I>Dynamic Arrays</I></H2></A>
+
+<P>There may be times when writing an application, however, when a program needs to change the size of the array. To do this a &#145;dynamic&#146; array can be used. First the array must be declared in the same way but without a number of elements specified:</P>
+
+<B><PRE>
+  <FONT COLOR="#23238E">Dim</FONT> books() <FONT COLOR="#23238E">As String</FONT>
+</PRE></B>
+
+<P>To change the size of this array use the &#145;<TT>ReDim</TT>&#146; command and a specific number of elements:</P>
+
+<B><PRE>
+  <FONT COLOR="#23238E">ReDim</FONT> books(99)
+</PRE></B>
+
+<P>Normally the contents of an array is erased when redimensioning, however to stop this use:</P>
+
+<B><PRE>
+  <FONT COLOR="#23238E">ReDim Preserve</FONT> books(99)
+</PRE></B>
+
+<P>Like variables, arrays can also have different scopes:</P>
+<OL>
+<LI><B>Public</B> - available to <U>any form or module</U> contained in the project.
+<LI><B>Module</B> - available to <U>any procedure</U> on the form on which it is placed.
+<LI><B>Procedure</B> - available <U>only within the procedure</U> in which it is declared.
+</OL>
+<BR>
+
+<HR>
+<BR>
+<A HREF="dvbhome.html"><img border=0 align="middle" src="left.gif">
+Menu</A>
+
+</BODY>
+</HTML>
+

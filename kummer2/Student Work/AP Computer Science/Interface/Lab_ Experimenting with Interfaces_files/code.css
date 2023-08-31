@@ -1,0 +1,134 @@
+/**
+ * The stylesheet for code
+ *
+ * @author  David Bernstein
+ * @version 1.0
+ */
+
+div.collapsiblecode {
+    background-color: #EEEEEE; 
+    border-color: #EEEEEE;
+    border-style: solid; 
+    border-width: 0.1pt;
+    font-family: monospace; 
+    margin-left: 2em; 
+    margin-top: 1em; 
+    padding: 6px;
+}
+
+
+font.cin {
+    color: #009900;;
+}
+
+
+font.code {
+    font-size: 9pt;
+}
+
+
+img.expandable {
+    cursor: s-resize; 
+    margin-left: 2em;
+}
+
+
+
+pre.code {
+    background-color: #EEEEEE; 
+    border-color: #EEEEEE;
+    border-style: solid; 
+    border-width: thin;
+    font-family: monospace; 
+    font-size: 9pt;
+    margin-left: 1em; 
+    margin-top: 1em; 
+    margin-bottom: 1em; 
+    padding: 1px;
+}
+
+
+pre.output {
+    background-color: #FFFFCC; 
+    border-color: #FFFFCC;
+    border-style: solid; 
+    border-width: thin;
+    font-family: monospace; 
+    font-size: 8pt;
+    margin-left: 0em; 
+    margin-top: 1em; 
+    margin-bottom: 1em; 
+    padding: 1px;
+}
+
+
+@media print { 
+
+     pre.code {
+        background-color: #FFFFFF; 
+        border-color: #000000;
+        border-style: solid; 
+        border-width: thin;
+        font-family: monospace; 
+        font-size: 9pt;
+        margin-left: 1em; 
+        margin-top: 0em; 
+        margin-bottom: 1em; 
+        padding: 1px;  
+    }
+
+
+     pre.output {
+        background-color: #FFFFFF; 
+        font-family: monospace; 
+        font-size: 8pt;
+        margin-left: 0em; 
+        margin-top: 1em; 
+        border-color: #000000;
+        border-style: solid; 
+        border-width: thin;
+        margin-bottom: 1em; 
+        padding: 1px;  
+     }
+
+}
+
+
+
+@media (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2), (min-resolution: 2dppx) { 
+
+
+  font.code {
+    font-size: 18pt;
+  }
+
+  pre.code {
+    background-color: #EEEEEE; 
+    border-color: #EEEEEE;
+    border-style: solid; 
+    border-width: thin;
+    font-family: monospace; 
+    font-size: 18pt;
+    margin-left: 1em; 
+    margin-top: 1em; 
+    margin-bottom: 1em; 
+    padding: 1px;
+  }
+
+
+  pre.output {
+    background-color: #FFFFCC; 
+    border-color: #FFFFCC;
+    border-style: solid; 
+    border-width: thin;
+    font-family: monospace; 
+    font-size: 16pt;
+    margin-left: 0em; 
+    margin-top: 1em; 
+    margin-bottom: 1em; 
+    padding: 1px;
+  }
+
+}
+
+

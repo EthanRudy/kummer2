@@ -1,0 +1,169 @@
+<HTML>
+
+<HEAD>
+<TITLE>Creating a Visual Basic Application</TITLE>
+
+</HEAD>
+
+<BODY BGCOLOR="#C0C0C0">
+
+<IMG ALIGN=RIGHT SRC="kprog copy.gif">
+<BR>
+<H1>Creating a Visual Basic Application</H1>
+<P><img src="commline.gif"></P>
+
+<H2><I>Getting Started!</I></H2>
+
+<P>Before any programming can begin Visual Basic itself must be located and run. There are two ways to do this:</P>
+
+<OL>
+<LI><P><B>Using &#145;Start&#146; button Shortcut:</B><BR>Click on &#145;Start&#146;<BR>Microsoft<BR>Microsoft Visual Basic 5.0<BR>Visual Basic 5.0</P>
+<LI><P><B>Directly from the Network:</B><BR>Change directory to N:\Msoft\DevStudio\VB5<BR>Then double-click VB5.EXE<BR>
+</OL>
+<BR>
+
+<P>If VB has been sucessfully started a dialog box like the one below should be seen. At this point select either &#145;Standard EXE&#146; or &#145;VB Professional Edition Controls&#146;. The professional option contains a wider variety of controls in the toolbox.</P>
+
+<CENTER><P><IMG SRC="vb_env_0.gif"></P></CENTER>
+
+<HR>
+
+<H2><I>Creating a program is as simple as 1, 2, 3:</I></H2>
+<OL>
+<LI><P>Designing the interface. This is done interactively without the need to program. Screen objects (or controls) are selected from the toolbox, placed and sized using the mouse.</P>
+
+<LI><P>Setting the properties of the screen objects to change such things as colours and labels.</P> 
+ 
+<LI><P>Writing program code to specify what will happen as users interact with the screen objects. This step is often described as providing the &#145;functionality&#146;.</P>
+</OL>
+<BR>
+
+<P>Before setting out to write a program, one must have a task in mind. One must also understand the characteristics of the various screen objects in order to make good choices for the interface. VB Help gives a brief description of each toolbox icon (click on the &#145;search&#146; button then enter &#145;tool&#146;, double click on &#145;toolbox&#146; in the lower window), refer to this if unsure about which item to choose.</P>
+
+<BR>
+<H2><I>1.  Designing the interface</I></H2>
+
+<P>When you launch VB the environment is in design mode (see title bar). This means that the system is ready for you to start to build an application. You may also load an application that has been previously saved, run it, or continue to work on it. In design mode VB presents a blank form, labelled <TT>Form1</TT>. This is where the interface (or the first screen of the interface) is constructed.</P>
+
+<P>To place a control on <TT>Form1</TT>, double click on a toolbox icon. That object appears in the centre of the form. From here the object may be dragged into place using the mouse. Clicking on the object reveals sizing handles as shown around the horizontal scroll bar below:</P>
+
+<CENTER><IMG SRC="vb_env_5.gif"></CENTER>
+
+<P>Moving the mouse over a sizing handle changes the cursor to a double headed arrow. Clicking and dragging on sizing handles allows the object to be sized horizontally and/or vertically.</P>
+
+<P>Here is the interface for the calculator that is supplied as a sample application in <TT>...\VB\samples\PGuide\calc\Calc.vbp</TT>. The familiar buttons are created using command buttons and the readout appears in a label.</P>
+
+<CENTER><IMG SRC="vb_env_6.gif"></CENTER>
+
+<BR>
+<H2><I>2.  Setting Properties</I></H2>
+
+<P>Properties are set using the properties window. If this is not visible use the Windows menu to invoke it. In the calculator example above, the command buttons have been given captions corresponding to symbols such as &#145;1&#146;, &#145;2&#146;, &#145;%&#146;, &#145;=&#146;.</P>
+
+<P>To set the properties of a screen object. Click on the object. The object box (under the properties title bar) then displays the name of the object.
+This is a list box that can be used to select any of the objects on the current form. Just below the object box is the settings box. This displays the current value of the property selected from the properties list underneath it. When the property value you want appears in the settings box it can be edited. This done by typing, or by selecting from a pre-defined list of possible values (obtained by clicking on the down arrow to the right of the settings list - if this is activated).</P>
+
+<P>In the VB sample application, the calculator readout background colour is yellow. This was achieved by selecting the label object. Selecting the property <TT>BackColor</TT>, dropping down the colour palette and selecting the required colour cell.</P>
+
+<CENTER><IMG SRC="vb_env_8.gif"></CENTER>
+
+<BR>
+<H2><I>3.  Writing program code</I></H2>
+
+<P>The final step is writing the code that activates the application, or makes it run. The screen shot below shows a window displaying code for the &#145;CE&#146; command button (CancelEntry).</P>
+
+<CENTER><IMG SRC="vb_env_9.gif"></CENTER>
+
+<P>Once the correct control object has been selected the next step is to choose which event the control is going to respond to. Any event for the current control can be selected by using the right hand drop-down menu. In the example below the window is currently showing code associated with the &#145;<TT>Click</TT>&#146; event of the &#145;<TT>CancelEntry_Click</TT>&#146; control object.</P>
+
+<CENTER><IMG SRC="vb_env_10.gif"></CENTER>
+
+<P><B>Note:</B> Since version 4 of VB the code window can display multiple procedures. The horizontal line drawn half way down the window signifies a division between two different subroutines. The top one is &#145;CancelEntry_Click&#146; and the bottom is &#145;Decimal_Click&#146;.</P>
+
+<P>Below is a list of all Visual Basic events. It should be noted than each control only uses a <B>subset</B> of events. The top right combo box in the code window will display all relevant events for the current control object.</P>
+
+<DIV ALIGN="CENTER">
+<TT>
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0>
+<TR><TD BGCOLOR="#808080">
+<TABLE BORDER=0 CELLSPACING=1 CELLPADDING=2>
+<TR>
+<TD WIDTH=120 BGCOLOR="#FFFFFF">Activate</TD>
+<TD WIDTH=120 BGCOLOR="#FFFFFF">KeyUp</TD>
+<TD WIDTH=120 BGCOLOR="#FFFFFF">PathChange</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">Change</TD>
+<TD BGCOLOR="#FFFFFF">LinkClose</TD>
+<TD BGCOLOR="#FFFFFF">PatternChange</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">Click</TD>
+<TD BGCOLOR="#FFFFFF">LinkError</TD>
+<TD BGCOLOR="#FFFFFF">QueryUnload</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">DblClick</TD>
+<TD BGCOLOR="#FFFFFF">LinkExecute</TD>
+<TD BGCOLOR="#FFFFFF">Reposition</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">Deactivate</TD>
+<TD BGCOLOR="#FFFFFF">LinkNotify</TD>
+<TD BGCOLOR="#FFFFFF">Resize</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">DragDrop</TD>
+<TD BGCOLOR="#FFFFFF">LinkOpen</TD>
+<TD BGCOLOR="#FFFFFF">RowColChange</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">DragOver</TD>
+<TD BGCOLOR="#FFFFFF">Load</TD>
+<TD BGCOLOR="#FFFFFF">Scroll</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">DropDown</TD>
+<TD BGCOLOR="#FFFFFF">LostFocus</TD>
+<TD BGCOLOR="#FFFFFF">SelChange</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">Error</TD>
+<TD BGCOLOR="#FFFFFF">MouseDown</TD>
+<TD BGCOLOR="#FFFFFF">Timer</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">GotFocus</TD>
+<TD BGCOLOR="#FFFFFF">MouseMove</TD>
+<TD BGCOLOR="#FFFFFF">Unload</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">KeyDown</TD>
+<TD BGCOLOR="#FFFFFF">MouseUp</TD>
+<TD BGCOLOR="#FFFFFF">Updated</TD>
+</TR>
+<TR>
+<TD BGCOLOR="#FFFFFF">KeyPress</TD>
+<TD BGCOLOR="#FFFFFF">Paint</TD>
+<TD BGCOLOR="#FFFFFF">Validate</TD>
+</TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+</TT>
+</DIV>
+
+<P>After completing the above three steps (design interface, set properties, and write code), the application can be
+run by clicking on <IMG SRC="run.gif">. When you have finished running the application you can
+terminate its execution by clicking on <IMG SRC="stop.gif">. After stopping an application you
+will be returned back to <I>design</I> mode again where further changes can be made to the interface or program
+code.</P>
+
+<HR>
+<BR>
+<A HREF="dvbhome.html"><IMG ALIGN=MIDDLE BORDER=0 SRC="left.gif">
+Menu</A>
+
+</BODY>
+
+</HTML>

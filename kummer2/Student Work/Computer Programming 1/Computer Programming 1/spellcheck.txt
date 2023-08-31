@@ -1,0 +1,42 @@
+Dim objWord As Object
+    Dim objDoc  As Object
+    Dim strResult As String
+    
+    'Create a new instance of word Application
+    Set objWord = CreateObject("word.Application")
+
+    Select Case objWord.Version
+        'Office 2000
+        Case "9.0"
+            Set objDoc = objWord.Documents.Add(, , 1, True)
+        'Office XP
+        Case "10.0"
+            Set objDoc = objWord.Documents.Add(, , 1, True)
+        'Office 97
+        Case Else ' Office 97
+            Set objDoc = objWord.Documents.Add
+    End Select
+
+    objDoc.Content = Text1.Text
+    objDoc.CheckSpelling
+
+    strResult = Left(objDoc.Content, Len(objDoc.Content) - 1)
+
+    If Text1.Text = strResult Then
+        ' There were no spelling errors, so give the user a
+        ' visual signal that something happened
+        MsgBox "The spelling check is complete.", vbInformation + vbOKOnly
+    End If
+    
+    'Clean up
+    objDoc.Close False
+    Set objDoc = Nothing
+    objWord.Application.Quit True
+    Set objWord = Nothing
+
+    ' Replace the selected text with the corrected text. It's important that
+    ' this be done after the "Clean Up" because otherwise there are problems
+    ' with the screen not repainting
+    Text1.Text = strResult
+
+    Exit Sub __________________

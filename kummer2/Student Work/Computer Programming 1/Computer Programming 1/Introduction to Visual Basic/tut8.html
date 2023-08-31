@@ -1,0 +1,106 @@
+<HTML>
+
+<HEAD>
+<TITLE>Tutorial 8</TITLE>
+
+</HEAD>
+
+<BODY BGCOLOR="#C0C0C0"><IMG ALIGN=RIGHT SRC="kprog copy.gif" ><BR><H1>Tutorial: Working with Multiple Forms</H1><P><img src="commline.gif"></P><BR>
+<B>The objective of this tutorial is to learn how to create a multi-form application and to navigate between the forms at run time. At the end of this tutorial you should be able to:</B>
+<UL>
+<LI><P>Create applications consisting of more than one form.</P>
+<LI><P>Include in applications forms that have been created previously.</P>
+<LI><P>Provide simple code to enable users to navigate between forms at run time.</P>
+</UL>
+<BR>
+
+<H2><I>Adding new forms to an application</I></H2>
+
+<P>When VB is launched it provides a blank form called Form1. All but the most trivial programs consist of more than one form. For example, it is common to have a welcome screen offering a number of options and for each of these to branch to different forms. The high level structure of an interactive application can often be understood best from a diagram showing the forms hierarchy. Imagine a computer-based learning package containing a number of modules, each of which has a number of forms associated with it.</P>
+
+<UL>
+<LI>To add a new (blank) form to an application, select <TT>New Form</TT> from the <TT>File</TT> menu. This form can now be designed and coded in the same way as the first form.
+
+<P><LI>To include an existing form (one already created and saved on C: drive or diskette) in an application, select <TT>Add File</TT> from the <TT>File</TT> menu.  Remember that VB keeps only one copy of each file (even if it is used in different applications)  so if you want to use and modify an existing file, you must save it with the <TT>Save As</TT> option.</P>
+
+<P><LI>To move between forms at run time you need to <TT>Hide</TT> the current form and <TT>Show</TT> the next one. This is done with the following statements where your own form names are substituted for X and Y. These statements should be attached to the event (e.g. button click) that causes the change of form to occur.</P>
+
+<B><PRE>
+  frmX.<FONT COLOR="#23238E">Hide</FONT>
+  frmY.<FONT COLOR="#23238E">Show</FONT>
+</PRE></B>
+
+<P><B>Note:</B> The name of the form to be hidden or shown is the &#145;internal&#146; name used by VB. This is the name displayed in the right hand column of the Project window and is the nane displayed for a form in the Properties window. Do not confuse this with the name of the form when it gets saved to disk, this name will have the extension <TT>.FRM</TT>.</P>
+
+<P><B>Note:</B> Every form which is displayed (shown) in Visual Basic is first loaded into memory and even when it is hidden it still remains loaded in memory. This is not a problem with two or three forms, but above this and you can run out of available memory. If this happens the solution is to discard some of the forms not required. Use the <TT>Unload</TT>
+command to do this:</P>
+
+<B><PRE>
+  <FONT COLOR="#23238E">Unload</FONT> frmX
+</PRE></B>
+
+<P>Conversely the <TT>Load</TT> command can be used to load a form into memory but without displaying it. It should also be noted that the command  <TT>Show</TT> will automatically load a form if it is not already loaded, and the command <TT>Unload</TT> will automatically hide a form if it is not already hidden before being unloaded.</P> 
+
+<TABLE WIDTH="80%" BORDER=0 CELLPADDING=4>
+<TR>
+<TD VALIGN="TOP"><IMG SRC="cross.gif"></TD>
+<TD><B><PRE>frmX.<FONT COLOR="#23238E">Hide
+Unload</FONT> frmX</PRE></B>
+<P>This is code will run perfectly but the first line is superfluous since VB automatically hides any visible forms before they are unloaded from memory</P>
+</TR>
+<TR>
+<TD VALIGN="TOP"><IMG SRC="cross.gif"></TD>
+<TD><B><PRE><FONT COLOR="#23238E">Unload</FONT> frmX
+frmX.<FONT COLOR="#23238E">Hide</FONT></PRE></B>
+<P>The form <TT>frmX</TT> will automatically be hidden and then unloaded from memory on line 1, then on line 2 the program wishes to hide the form. Because the form which is to be hidden is no longer in memory VB automatically loads it. Thus, the code in line 1 is counteracted.</TD>
+</TR>
+<TR>
+<TD VALIGN="TOP"><IMG SRC="tick.gif"></TD>
+<TD><B><PRE><FONT COLOR="#23238E">Unload</FONT> frmX</PRE</B></TD>
+</TR>
+<TR>
+<TD VALIGN="TOP"><IMG SRC="cross.gif"></TD>
+<TD><B><PRE><FONT COLOR="#23238E">Load</FONT> frmY
+frmY.<FONT COLOR="#23238E">Show</FONT></PRE></B>
+<P>This code will work perfectly but the first line is unnecessary since VB performs a load automatically if the form to be displayed is not already in memory. The only situation where <TT>Load</TT> should be used is if you wish to load a form into main memory, perform some other actions, and then later actually show the form.</TD>
+</TR>
+<TR>
+<TD VALIGN="TOP"><IMG SRC="tick.gif"></TD>
+<TD><B><PRE>frmY.<FONT COLOR="#23238E">Show</FONT></PRE></B></TD>
+</TR>
+</TABLE>
+
+</UL>
+
+<HR NOSHADE SIZE="1"> 
+<H2><I>Task</I></H2> 
+
+<P>Just to get the idea of creating multi-form applications quickly, create a master program to contain several of the tutorial exercises completed already.</P> 
+<P>
+Start a new project. The first form should be a welcome screen (called <TT>frmWelcome</TT>), use graphical techniques to make it look attractive. Include on the form three command buttons with appropriate pictures on them to represent the applications you want to include (perhaps the language tutor, restaurant program and animation program). Add a Quit button to terminate the program.</P>
+<P>
+Using the <TT>Add File</TT> option, load the forms for these applications into your project. The forms will have to have unique names before you load them - hopefully they have been named sensibly and are <B>not</B> all called <TT>Form1</TT>!</P>  
+<P>
+Code the command buttons on the welcome screen to hide that screen and show the appropriate next one.</P>
+<P>
+If the subsequent screens have Quit buttons, change the captions on these and program them to return to the welcome screen. If not, add new buttons to perform this function.</P>
+<P>
+If public variables have been used you will need to preserve these in a shared <TT>Module1.bas</TT>, resolving any duplicate names.</P>
+
+<H2><I>Screen hierarchy</I></H2>
+<DIV ALIGN="CENTER"><IMG SRC="tut_8_1.gif"></DIV>
+
+<P>See if you can work out how to return the program automatically to the welcome screen if there is no interaction from the user for one minute. Hint: You will need to use the <TT>Timer</TT> control <img border=0 align=bottom src="timer.gif">, the <TT>MouseMove</TT> event and a global variable to act as a &#145;clock&#146;. Please read <A HREF="usingtimer.html">Timing events in Visual Basic</A> or use VB&#146;s online help to find out how the <TT>Timer</TT> works.</P>
+
+
+<HR NOSHADE SIZE="1"><BR>
+<BR>
+<A HREF="tut7.html"><img border=0 align="middle" src="up.gif">
+Tutorial 7</A> (Vertical and Horizontal Scrollbars)<BR>
+<A HREF="dvbhome.html"><img border=0 align="middle" src="left.gif">
+Menu</A><BR>
+<A HREF="tut9.html"><img border=0 align="middle" src="down.gif">
+Tutorial 9</A> (Working with Files)<BR>
+
+</BODY>
+</HTML>
